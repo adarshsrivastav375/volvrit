@@ -1,13 +1,14 @@
-import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Navbar from "@/component/commonlayout/Navbar";
-import Footer from "@/component/commonlayout/Footer";
+import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
+
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Volvrit",

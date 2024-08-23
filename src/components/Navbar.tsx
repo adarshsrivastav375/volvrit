@@ -1,3 +1,4 @@
+import "../../src/app/globals.css";
 import Link from "next/link";
 import NavbarItems from "./Items";
 
@@ -9,10 +10,14 @@ const Navbar = () => {
           href={"/"}
           aria-label="Home"
           className="mx-auto w-fit lg:w-auto lg:mx-0"
-        >a</Link>
+        >
+          a
+        </Link>
         <NavbarItems />
         <div className="flex justify-end">
-          <Link href="/login" aria-label="login page">a</Link>
+          <Link href="/login" aria-label="login page">
+            a
+          </Link>
         </div>
       </div>
     </div>
