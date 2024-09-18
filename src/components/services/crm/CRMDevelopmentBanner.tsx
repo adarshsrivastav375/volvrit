@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Card from "../../common/Banner";
+import ContactUsButton from "@/components/common/buttons/ContactUsButton";
 
 const CRMDevelopmentBanner = () => {
   return (
@@ -15,13 +16,7 @@ const CRMDevelopmentBanner = () => {
           we build software from scratch to transform your operations through
           solutions designed to improve your customer interactions
         </p>
-        <Link
-          href={"tel:+01998989289"}
-          className="py-2 px-6 hidden lg:block absolute left-1/2 -translate-x-1/2 -bottom-16 rounded-lg bg-white text-primary transition-all text-sn ease-in-out"
-          aria-label="Phone number"
-        >
-          Contact Us
-        </Link>
+        <ContactUsButton />
       </div>
     </Card>
   );

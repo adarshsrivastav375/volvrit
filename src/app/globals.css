@@ -56,3 +56,14 @@ html {
   background-color: #ffffff !important;
   opacity: 0.4;
 }
+input:-webkit-autofill {
+  box-shadow: 0 0 0 30px white inset;
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+select:-webkit-autofill {
+  box-shadow: 0 0 0 30px white inset;
+  -webkit-box-shadow: 0 0 0 30px white inset;
+}
+input[value=""]:not(:focus) {
+  color: transparent;
+}
