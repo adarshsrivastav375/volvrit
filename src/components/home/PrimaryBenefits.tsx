@@ -1,37 +1,6 @@
 import Image from "next/image";
 import { primaryBenefits } from "@/data/home/primary";
 
-export const trustedClient = [
-  {
-    id: 1,
-    imageUrl: "/assets/logo/unificars.png",
-    width: 160,
-    height: 80,
-    title: "Unifi Cars Logo",
-  },
-  {
-    id: 1,
-    imageUrl: "/assets/logo/affinity.png",
-    width: 100,
-    height: 100,
-    title: "Affinity Logo",
-  },
-  {
-    id: 1,
-    imageUrl: "/assets/logo/unfazed.png",
-    width: 200,
-    height: 100,
-    title: "Unfazed Logo",
-  },
-  {
-    id: 1,
-    imageUrl: "/assets/logo/bookswagon.png",
-    width: 100,
-    height: 100,
-    title: "Books Wagon Logo",
-  },
-];
-
 const PrimaryBenefits = () => {
   return (
     <div className="container mx-auto lg:px-8 lg:py-12">
@@ -56,27 +25,6 @@ const PrimaryBenefits = () => {
             </div>
           );
         })}
-      </div>
-      <div className="flex flex-col justify-center items-center">
-        <h5 className="text-4xl my-8 font-semibold">
-          Trusted by leading companies
-        </h5>
-        <div className="grid grid-cols-4 px-20 gap-5 justify-center items-center">
-          {trustedClient.map((trust: any, idx: any) => {
-            return (
-              <div key={idx}>
-                <Image
-                  priority
-                  width={trust?.width}
-                  height={trust?.height}
-                  src={trust?.imageUrl}
-                  alt={trust?.title}
-                  className="w-fit mx-auto"
-                />
-              </div>
-            );
-          })}
-        </div>
       </div>
     </div>
   );

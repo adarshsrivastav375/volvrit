@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <Navbar />
         <div className="min-h-screen">
-          <Navbar />
           <main>{children}</main>
-          <Footer />
         </div>
+        <Footer />
         <div id="modal-root"></div>
         <ToastContainer
           rtl={false}

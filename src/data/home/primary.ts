@@ -55,3 +55,26 @@ export const caseStudies = [
       "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
   },
 ];
+
+export const websiteStats = [
+  {
+    id: 1,
+    count: "150+",
+    description: "Happy Clients",
+  },
+  {
+    id: 2,
+    count: "350+",
+    description: "Project Done",
+  },
+  {
+    id: 3,
+    count: "100+",
+    description: "Team Members",
+  },
+  {
+    id: 4,
+    count: "30+",
+    description: "Countries",
+  },
+];

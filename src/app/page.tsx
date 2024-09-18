@@ -1,23 +1,47 @@
-import AchievementsSection from "@/components/home/Achievement";
+import Link from "next/link";
+import AboutUs from "@/components/home/AboutUs";
+import Services from "@/components/home/Services";
+import { websiteStats } from "@/data/home/primary";
 import HeroSection from "@/components/home/Banner";
-import CaseStudy from "@/components/home/CaseStudy";
-import Faqs from "@/components/home/Faqs";
 import OurPartners from "@/components/home/OurPartners";
-import PrimaryBenefits from "@/components/home/PrimaryBenefits";
 import Testimonials from "@/components/home/Testimonials";
-import WhoWeAreSection from "@/components/home/WhoWeAre";
+import BackgroundImage from "@/components/common/BackgroundImage";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <WhoWeAreSection />
-      <AchievementsSection />
-      <PrimaryBenefits />
-      <Testimonials />
       <OurPartners />
-      <Faqs />
-      <CaseStudy />
+      <Services />
+      <AboutUs />
+      <div className="bg-primary py-12">
+        <div className="container mx-auto lg:px-20 grid grid-cols-2 md:grid-cols-4 text-center text-white">
+          {websiteStats.map((stats: any) => {
+            return (
+              <div key={stats?.id}>
+                <h3 className="text-5xl font-semibold">{stats?.count}</h3>
+                <p className="font-light">{stats?.description}</p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      <Testimonials />
+      <BackgroundImage>
+        <div className="h-[85vh] text-black flex flex-col justify-center items-center">
+          <h4 className="text-5xl mb-7 font-extralight">
+            Go ahead and discuss your <br />
+            <strong className="font-semibold">project with us</strong>
+          </h4>
+          <Link
+            href={"tel:+01998989289"}
+            className="py-3 px-6 rounded-lg bg-primary hover:bg-primary/80 text-white transition-all text-lg ease-in-out"
+            aria-label="Phone number"
+          >
+            Get Started
+          </Link>
+        </div>
+      </BackgroundImage>
     </>
   );
 }
