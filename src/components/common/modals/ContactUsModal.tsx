@@ -1,5 +1,7 @@
+import { Post } from "@/utils/api";
 import Modal from "../Modal";
 import { useEffect, useState, ChangeEvent, FormEvent } from "react";
+import { toast } from "react-toastify";
 
 const ContactUsModal = ({
   isVisible,
@@ -13,17 +15,18 @@ const ContactUsModal = ({
     email: "",
     service: "",
     phone: "",
-    otp: "",
+    // otp: "",
   });
   const [error, setError] = useState("");
   const [otpSent, setOtpSent] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (event: any) => {
+  const handleSubmit = async (event: any) => {
     event.preventDefault();
     try {
       setLoading(true);
-      console.log(user);
+      const res: any = await Post("/api/send-email", user);
+      if (res.success) toast.success(res.message);
     } catch (error) {
       console.log("Error: ", error); // to avoid warnings from browsers
     } finally {
@@ -120,13 +123,13 @@ const ContactUsModal = ({
               className="flex-1 outline-none w-1/2 md:w-full p-1"
             />
 
-            <button
+            {/* <button
               type="button"
               onClick={handleSendOtp}
               className="ml-2 h-full p-2 bg-primary hover:bg-primary/80 text-[10px] text-white rounded-md"
             >
               {otpSent ? "Resend OTP" : "Send OTP"}
-            </button>
+            </button> */}
           </div>
           {error ? (
             <p className="text-red-500 text-xs font-semibold pt-1 pb-4">

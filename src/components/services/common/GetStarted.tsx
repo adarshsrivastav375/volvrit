@@ -11,7 +11,7 @@ const GetStarted = () => {
             <strong className="font-semibold">project with us</strong>
           </h4>
           <Link
-            href={"tel:+01998989289"}
+            href={"tel:+917599990331"}
             className="py-1 md:py-3 px-2 md:px-6 rounded-lg bg-primary hover:bg-primary/80 text-white transition-all text-sm md:text-lg ease-in-out"
             aria-label="Phone number"
           >

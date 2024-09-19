@@ -50,7 +50,6 @@ const OurPartners = () => {
                 <Image
                   priority
                   alt={trust?.title}
-                  layout="intrinsic"
                   width={trust?.width}
                   src={trust?.imageUrl}
                   height={trust?.height}

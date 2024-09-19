@@ -23,7 +23,7 @@ const Overview = ({
           </p>
           <div className="flex gap-5 justify-center items-center">
             <Link
-              href={"tel:+01998989289"}
+              href={"tel:+917599990331"}
               className="py-2 px-4 rounded-lg bg-primary hover:bg-primary/80 text-white text-sm transition-all ease-in-out"
               aria-label="Phone number"
             >

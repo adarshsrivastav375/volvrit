@@ -67,7 +67,7 @@ const Footer = () => {
         <div className="md:grid md:grid-cols-4 justify-between items-start md:gap-10 lg:gap-20">
           <div className="text-left mb-6 lg:mb-0">
             <Logo />
-            <p className="text-primary md:text-[11px] lg:text-sm my-5">
+            <p className="text-black md:text-[11px] lg:text-sm my-5">
               Volvrit is a one-stop solution for your tech and tax needs. We
               specialize in IT and tax services that deliver effective
               implementation and excellent quality to our clients.
@@ -94,7 +94,7 @@ const Footer = () => {
                 className="w-full hidden md:block mb-6 lg:mb-0"
               >
                 <h3 className="font-bold mb-5">{service.title}</h3>
-                <ul className="text-primary space-y-2">
+                <ul className="text-black space-y-2">
                   {service.links.map((link) => (
                     <li
                       key={link.href}
@@ -116,7 +116,7 @@ const Footer = () => {
             <Accordion services={services} />
             <div className="w-full mb-6 lg:mb-0">
               <h3 className="font-bold mb-5">Contact Address</h3>
-              <ul className="text-primary space-y-2">
+              <ul className="text-black space-y-2">
                 <li className="text-base leading-4 md:text-[10px]">
                   <span className="font-bold text-lg md:text-xs pb-1">
                     Dubai
@@ -141,7 +141,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-start md:items-center mt-5 md:mt-10 text-xs text-left md:text-center lg:text-left text-primary">
+        <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-start md:items-center mt-5 md:mt-10 text-xs text-left md:text-center lg:text-left text-black">
           <p>
             Copyright © {new Date().getFullYear()} Volvrit. All rights reserved.
           </p>

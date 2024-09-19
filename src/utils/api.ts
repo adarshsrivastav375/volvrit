@@ -86,7 +86,7 @@ export const Post = async <T>(
   data: object | FormData,
   timeout?: number
 ): Promise<T> => {
-  toast.info("Submitting data...", { autoClose: false });
+  toast.info("Please wait...", { autoClose: false });
   try {
     const response = await request<T>({
       method: "POST",
@@ -95,7 +95,7 @@ export const Post = async <T>(
       timeout,
     });
     toast.dismiss(); // Dismiss the loading toast
-    toast.success("Data submitted successfully");
+    // toast.success("Data submitted successfully");
     return response.data;
   } catch (error) {
     toast.dismiss(); // Dismiss the loading toast

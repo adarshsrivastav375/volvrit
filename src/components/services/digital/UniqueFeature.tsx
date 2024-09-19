@@ -90,7 +90,7 @@ const UniqueFeature = () => {
           })}
         </div>
         <Link
-          href={"tel:+01998989289"}
+          href={"tel:+917599990331"}
           className="py-2 px-6 left-1/2 -translate-x-1/2 -bottom-16 rounded-lg bg-white text-primary transition-all text-sn ease-in-out"
           aria-label="Phone number"
         >

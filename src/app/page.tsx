@@ -34,7 +34,7 @@ export default function Home() {
             <strong className="font-semibold">project with us</strong>
           </h4>
           <Link
-            href={"tel:+01998989289"}
+            href={"tel:+917599990331"}
             className="py-3 px-6 rounded-lg bg-primary hover:bg-primary/80 text-white transition-all text-lg ease-in-out"
             aria-label="Phone number"
           >

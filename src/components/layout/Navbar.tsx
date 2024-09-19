@@ -17,11 +17,11 @@ const Navbar = () => {
           <MdOutlineMailLock size={20} /> volvrit@gmail.com
         </Link>
         <Link
-          href={"tel:+01998989289"}
+          href={"tel:+917599990331"}
           className="flex justify-start items-center gap-3"
           aria-label="Phone number"
         >
-          <FiPhone size={16} /> +91 998989289
+          <FiPhone size={16} /> +91 7599990331
         </Link>
       </div>
       <div className="w-full bg-white text-primary py-3 md:py-4 shadow-[0_4px_6px_rgb(0,0,0,0.1)]">
@@ -30,7 +30,7 @@ const Navbar = () => {
           <NavbarItems />
           <div className="hidden lg:block place-self-end my-auto">
             <Link
-              href={"tel:+01998989289"}
+              href={"tel:+917599990331"}
               className="py-2 px-4 rounded-lg bg-primary hover:bg-primary/80 text-white text-sm transition-all ease-in-out"
               aria-label="Phone number"
             >
