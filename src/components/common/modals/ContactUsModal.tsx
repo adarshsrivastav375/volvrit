@@ -28,9 +28,7 @@ const ContactUsModal = ({
       console.log("Error: ", error); // to avoid warnings from browsers
     } finally {
       handleClose();
-      setOtpSent(false);
       setLoading(false); // to enable loading state
-      return setUser({ name: "", email: "", service: "", phone: "", otp: "" });
     }
   };
 
@@ -41,7 +39,10 @@ const ContactUsModal = ({
   };
 
   const handleClose = () => {
+    setError("");
+    setOtpSent(false);
     setVisible(false);
+    setUser({ name: "", email: "", service: "", phone: "", otp: "" });
   };
 
   const handleChange = (

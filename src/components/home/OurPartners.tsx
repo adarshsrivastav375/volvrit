@@ -40,7 +40,7 @@ export const trustedClient = [
 
 const OurPartners = () => {
   return (
-    <div className="container mx-auto py-6 md:py-12 pb-6 px-4 md:px-6 lg:px-20 text-center">
+    <div className="container mx-auto py-8 md:py-12 pb-6 px-4 md:px-6 lg:px-20 text-center">
       <h5 className="text-2xl md:text-4xl mb-2 col-span-2 font-semibold">Our Clients</h5>
       <div className="grid grid-cols-3 gap-2 mg:gap-0 md:grid-cols-5 justify-center items-center">
         <>

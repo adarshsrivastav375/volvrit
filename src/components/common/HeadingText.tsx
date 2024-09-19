@@ -13,7 +13,7 @@ const HeadingText = ({
       </h4>
       <p
         className={`text-sm font-extralight ${
-          className ? className : "w-3/5 mx-auto"
+          className ? className : "w-full pt-4 lg:w-3/5 mx-auto"
         }`}
       >
         {paragraph}

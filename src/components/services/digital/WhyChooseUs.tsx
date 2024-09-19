@@ -1,3 +1,4 @@
+import HeadingText from "@/components/common/HeadingText";
 import Image from "next/image";
 
 const WhyChooseUs = () => {
@@ -46,14 +47,18 @@ const WhyChooseUs = () => {
     },
   ];
   return (
-    <div className="container mx-auto pt-10 lg:px-20 text-center">
-      <h4 className="w-2/3 mx-auto text-3xl font-medium">
-        Why Choose Volvrit As Your Digital Marketing Agency
-      </h4>
-      <div className="grid grid-cols-3 gap-5 pt-10">
+    <div className="container mx-auto pt-10 px-4 md:px-6 lg:px-20 text-center">
+      <HeadingText
+        headingText1="Why Choose"
+        headingText2="Volvrit As Your Digital Marketing Agency"
+      />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-5 md:pt-10">
         {chooseUs.map((choose: any) => {
           return (
-            <div key={choose?.id} className="p-4 rounded-xl border-2 border-primary/10">
+            <div
+              key={choose?.id}
+              className="p-4 rounded-xl border-2 border-primary/10"
+            >
               <div className="flex gap-5 items-center justify-start">
                 <Image
                   width={72}
@@ -62,9 +67,7 @@ const WhyChooseUs = () => {
                   src={choose?.icon}
                   className="bg-primary rounded-full"
                 />
-                <h5 className="font-semibold text-left">
-                  {choose?.title}
-                </h5>
+                <h5 className="font-semibold text-left">{choose?.title}</h5>
               </div>
               <p className="text-sm text-left pt-3">{choose?.description}</p>
             </div>

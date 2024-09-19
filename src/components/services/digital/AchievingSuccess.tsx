@@ -8,8 +8,8 @@ const AchievingSuccess = () => {
     "Experimenting and implementing the chosen hypothesis as an experiment.",
   ];
   return (
-    <div className="container mx-auto lg:px-20 flex justify-center items-center gap-10">
-      <div className="lg:w-1/2">
+    <div className="container py-10 mx-auto px-4 md:px-6 lg:px-20 flex flex-col md:flex-row justify-center items-center gap-10">
+      <div className="w-full md:w-1/2 order-last md:order-1">
         <h4 className="text-2xl font-bold text-primary pb-4">
           Achieving Success With Volvrit
         </h4>
@@ -32,7 +32,7 @@ const AchievingSuccess = () => {
           })}
         </div>
       </div>
-      <div className="lg:w-1/2 p-12">
+      <div className="w-full md:w-1/2 lg:p-12 order-1 md:order-last">
         <Image
           src={"/assets/services/achievesuccess.png"}
           alt="Success"

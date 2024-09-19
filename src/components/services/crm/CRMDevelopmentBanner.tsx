@@ -1,11 +1,9 @@
-import React from "react";
-import Link from "next/link";
 import Card from "../../common/Banner";
 import ContactUsButton from "@/components/common/buttons/ContactUsButton";
 
 const CRMDevelopmentBanner = () => {
   return (
-    <Card imageAlt="Web Development" imageUrl="/assets/banners/crm.png">
+    <Card imageAlt="CRM Development" imageUrl="/assets/banners/crm.png">
       <div className="text-white mt-16 md:mt-10 relative">
         <h4 className="text-3xl w-2/3 md:w-full mx-auto md:text-4xl mb-5 font-extralight">
           Small Business Automation <br />

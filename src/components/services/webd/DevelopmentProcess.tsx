@@ -30,16 +30,16 @@ const benefits = [
 
 const DevelopmentProcess = () => {
   return (
-    <div className="container mx-auto lg:px-20 py-12 text-center">
+    <div className="container mx-auto px-4 md:px-6 lg:px-20 py-12 text-center">
       <HeadingText
         headingText2="Process"
         headingText1="Our Web Development"
         colored="font-semibold text-primary"
       />
-      <div className="grid grid-cols-1 md:grid-cols-4 gap-2 lg:gap-6">
+      <div className="grid grid-cols-1 pt-5 md:pt-0 md:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-2 lg:gap-6">
         {benefits.map((benefit, index) => (
-          <div key={index} className="relative px-5 md:px-2 lg:px-5">
-            <div className="text-center p-6 md:p-2 lg:p-4 flex flex-col items-center z-10 relative">
+          <div key={index} className="relative lg:px-5">
+            <div className="text-center md:p-2 lg:p-4 flex flex-col items-center z-10 relative">
               <div className="border-2 border-primary/30 relative rounded-xl p-2">
                 <Image
                   src={benefit.icon}
@@ -52,7 +52,7 @@ const DevelopmentProcess = () => {
                   {index + 1}
                 </span>
               </div>
-              <h3 className="text-lg font-medium mb-2 mt-4">
+              <h3 className="text-lg font-semibold md:font-medium mb-2 mt-4">
                 {benefit.title}
               </h3>
               <p className="text-primary text-[13px] font-light">

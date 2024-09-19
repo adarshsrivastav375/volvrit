@@ -11,15 +11,15 @@ const WebSolutions = () => {
     "Continuous maintenance and reliable support",
   ];
   return (
-    <div className="bg-primary text-white py-16">
-      <div className="container mx-auto lg:px-20 text-center">
+    <div className="bg-primary text-white py-8 md:py-12 lg:py-16">
+      <div className="container mx-auto px-4 md:px-6 lg:px-20 text-center">
         <HeadingText
           headingText2="Web Solution"
           headingText1="Choose Your Ready-to-Use"
           paragraph="At Volvrit, we continuously test, update, and enhance our development processes. Our developers are dedicated to ongoing learning, ensuring that your project leverages the latest innovations and technologies."
         />
-        <div className="flex justify-between items-center gap-10 pt-10">
-          <div className="w-3/5 text-left text-lg flex flex-col gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-10 pt-10">
+          <div className="w-full md:w-1/2 lg:w-3/5 text-left order-last md:order-1 text-base lg:text-lg flex flex-col gap-2 lg:gap-4">
             {pointsToBeSaved.map((point: any, idx: any) => {
               return (
                 <li key={idx} className="list-disc font-light">
@@ -28,7 +28,7 @@ const WebSolutions = () => {
               );
             })}
           </div>
-          <div className="w-2/5">
+          <div className="w-full md:w-1/2 lg:w-2/5 order-1 md:order-last">
             <Image
               width={400}
               height={100}

@@ -64,7 +64,7 @@ const Footer = () => {
   return (
     <footer className="bg-white pt-10 pb-7">
       <div className="container mx-auto px-4 md:px-6 lg:px-20">
-        <div className="md:grid md:grid-cols-3 justify-between items-start md:gap-10 lg:gap-20">
+        <div className="md:grid md:grid-cols-4 justify-between items-start md:gap-10 lg:gap-20">
           <div className="text-left mb-6 lg:mb-0">
             <Logo />
             <p className="text-primary md:text-[11px] lg:text-sm my-5">
@@ -87,7 +87,7 @@ const Footer = () => {
               ))}
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-4 col-span-2 justify-center lg:justify-between w-full">
+          <div className="grid grid-cols-1 md:grid-cols-4 col-span-3 justify-center lg:justify-between w-full">
             {services.map((service) => (
               <div
                 key={service.title}
@@ -117,20 +117,20 @@ const Footer = () => {
             <div className="w-full mb-6 lg:mb-0">
               <h3 className="font-bold mb-5">Contact Address</h3>
               <ul className="text-primary space-y-2">
-                <li className="text-base md:text-[10px]">
+                <li className="text-base leading-4 md:text-[10px]">
                   <span className="font-bold text-lg md:text-xs pb-1">
                     Dubai
                   </span>{" "}
                   : Al Moosa Tower 18th floor Office no #1804, sheikh zayed
                   road, Dubai,U.A.E
                 </li>
-                <li className="text-base md:text-[10px]">
+                <li className="text-base leading-4 md:text-[10px]">
                   <span className="font-bold text-lg md:text-xs pb-1">
                     Australia
                   </span>{" "}
                   : 31 Tweed St, The Ponds. NSW 2769, Sydney
                 </li>
-                <li className="text-base md:text-[10px]">
+                <li className="text-base leading-4 md:text-[10px]">
                   <span className="font-bold text-lg md:text-xs pb-1">
                     India
                   </span>{" "}

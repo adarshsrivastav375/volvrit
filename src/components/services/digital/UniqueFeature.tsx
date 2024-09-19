@@ -45,13 +45,13 @@ const UniqueFeature = () => {
     },
   ];
   return (
-    <div className="bg-primary">
-      <div className="container mx-auto lg:px-20 py-10 text-center text-white">
+    <div className="bg-primary mt-5 md:mt-0">
+      <div className="container mx-auto px-4 md:px-6 lg:px-20 py-10 text-center text-white">
         <p className="text-sm font-light mb-2">— Services</p>
         <h2 className="text-3xl md:text-4xl font-medium mb-4 leading-tight">
           Crafting a Solutions with Unique Features
         </h2>
-        <div className="grid grid-cols-3 gap-5 pt-10 text-left">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-5 pt-10 text-left">
           {uniqueFeatures.slice(0, 6)?.map((item: any) => {
             return (
               <div
@@ -65,12 +65,12 @@ const UniqueFeature = () => {
                   height={40}
                   className="w=fit h-auto object-contain"
                 />
-                <h3 className="font-extralight pt-3 w-1/2">{item?.title}</h3>
+                <h3 className="font-extralight pt-3 lg:w-1/2">{item?.title}</h3>
               </div>
             );
           })}
         </div>
-        <div className="grid grid-cols-2 gap-5 py-10 text-left px-40">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-5 pt-5 pb-9 lg:py-10 text-left md:px-20 lg:px-40">
           {uniqueFeatures.slice(6, 8)?.map((item: any) => {
             return (
               <div
@@ -84,7 +84,7 @@ const UniqueFeature = () => {
                   height={50}
                   className="w=fit h-auto object-contain"
                 />
-                <h3 className="font-extralight pt-3 w-1/2">{item?.title}</h3>
+                <h3 className="font-extralight pt-3 lg:w-1/2">{item?.title}</h3>
               </div>
             );
           })}
