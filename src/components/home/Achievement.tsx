@@ -20,7 +20,7 @@ const AchievementsSection = () => {
           <div className="md:w-1/2">
             <h2 className="text-4xl font-bold">Check recent achievements.</h2>
             <p className="mt-4 text-sm">
-              We provide effective ideas that grow our clients' businesses.
+              We provide effective ideas that grow our client&apos;s businesses.
             </p>
             <button className="mt-6 bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700">
               Request Price

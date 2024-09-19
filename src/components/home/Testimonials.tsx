@@ -34,8 +34,12 @@ const Testimonials = () => {
     <div className="bg-primary">
       <div className="container mx-auto pt-8 md:pt-16 pb-4 md:pb-8 px-4 md:px-8 lg:px-36">
         <div className="text-center text-white mb-8">
-          <p className="uppercase tracking-wider text-xs md:text-sm">— Our Testimonials</p>
-          <h2 className="text-2xl md:text-3xl font-semibold">What They Say About Us</h2>
+          <p className="uppercase tracking-wider text-xs md:text-sm">
+            — Our Testimonials
+          </p>
+          <h2 className="text-2xl md:text-3xl font-semibold">
+            What They Say About Us
+          </h2>
         </div>
         <Swiper
           modules={[Autoplay, Pagination]}
@@ -64,7 +68,7 @@ const Testimonials = () => {
             <SwiperSlide key={index}>
               <div className="bg-white p-8 rounded-xl text-center text-gray-800 shadow-lg">
                 <p className="italic mb-6 text-sm min-h-40">
-                  "{testimonial.text}"
+                  &quot;{testimonial.text}&quot;
                 </p>
                 <h3 className="font-bold text-lg">{testimonial.name}</h3>
                 <p className="text-sm text-gray-600">{testimonial.title}</p>
