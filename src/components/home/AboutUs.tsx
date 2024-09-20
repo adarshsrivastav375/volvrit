@@ -7,19 +7,17 @@ const AboutUs = () => {
         <div className="md:w-1/2 order-last lg:order-1">
           <p className="text-sm font-light mb-2">— About Us</p>
           <h2 className="text-2xl md:text-4xl font-medium mb-4 leading-tight">
-            Bridging Innovation with IT and Tax Excellence
+            Bridging Innovation with IT and Legal Excellence
           </h2>
           <p className="opacity-80 font-light mb-6">
-            Volvrit is a one-stop solution for your tech and tax needs. We
-            specialize in IT and tax services that deliver effective
+            Volvrit is a one-stop solution for your IT and Legal needs. We
+            specialize in IT and Legal services that deliver effective
             implementation and excellent quality to our clients. Our mission is
             to ensure client success through precise and innovative solutions
-            while remaining long-term strategists for client relations.
-          </p>
-          <p className="opacity-80 font-light mb-6">
-            The vision of the company is to become a prime partner in
-            technological and business advancement through the delivery of
-            measured results and long-term success.
+            while remaining long-term strategists for client relations. The
+            vision of the company is to become a prime partner in technological
+            and business advancement through the delivery of measured results
+            and long-term success.
           </p>
           <button className="bg-white text-primary hover:bg-primary hover:text-white border transition-all duration-200 ease-in-out border-primary hover:border-white font-semibold px-10 py-2 rounded-full">
             Learn More

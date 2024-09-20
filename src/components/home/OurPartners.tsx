@@ -84,7 +84,7 @@ const OurPartners = () => {
   return (
     <div className="relative container mx-auto py-8 md:pt-10 pb-6 px-4 md:px-6 lg:px-20 text-center">
       <video
-        className="absolute inset-0 opacity-50 w-full h-full object-cover -z-10"
+        className="absolute inset-0 opacity-30 w-full h-full object-cover -z-10"
         autoPlay
         loop
         muted

@@ -66,7 +66,7 @@ const Testimonials = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white p-8 rounded-xl text-center text-gray-800 shadow-lg">
+              <div className="bg-white p-8 rounded-xl text-center shadow-lg">
                 <p className="italic mb-6 text-sm min-h-40">
                   &quot;{testimonial.text}&quot;
                 </p>

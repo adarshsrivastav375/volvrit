@@ -12,8 +12,8 @@ const Footer = () => {
           <div className="text-left mb-6 lg:mb-0">
             <Logo size={50} />
             <p className="text-black md:text-[11px] lg:text-sm my-5">
-              Volvrit is a one-stop solution for your tech and tax needs. We
-              specialize in IT and tax services that deliver effective
+              Volvrit is a one-stop solution for your IT and Legal needs. We
+              specialize in IT and Legal services that deliver effective
               implementation and excellent quality to our clients.
             </p>
             <SocialMediaLinks size={25} />

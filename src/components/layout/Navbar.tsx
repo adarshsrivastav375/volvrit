@@ -10,11 +10,11 @@ const Navbar = () => {
     <section className="bg-primary fixed w-full top-0 z-50">
       <div className="container hidden mx-auto md:px-4 lg:px-20 md:flex gap-10 items-center justify-start text-white text-sm py-1">
         <Link
-          href={"mailto:volvrit@gmail.com"}
+          href={"mailto:info.volvrit@gmail.com"}
           className="flex justify-start items-center gap-3"
           aria-label="EmailId"
         >
-          <MdOutlineMailLock size={20} /> volvrit@gmail.com
+          <MdOutlineMailLock size={20} /> info.volvrit@gmail.com
         </Link>
         <Link
           href={"tel:+917599990331"}

@@ -24,11 +24,12 @@ const HeroSection = () => {
       />
       <div className="relative z-10 text-center px-4 md:px-6 lg:px-20 md:py-20 lg:py-0">
         <h1 className="text-4xl font-semibold md:w-3/5 mx-auto mb-5">
-          Your Trusted Partner in IT & TAX Services
+          Your Trusted Partner in IT & Legal Services
         </h1>
         <p className="w-4/5 md:w-2/3 mx-auto font-light mb-6">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque
+          Partner with us for all-inclusive IT solutions and expert Legal
+          services to smoothen your operations, ensure compliance, and protect
+          your interest.
         </p>
         <LinkBtn text="Start a Project" href="/it-services/crm-development" />
       </div>
