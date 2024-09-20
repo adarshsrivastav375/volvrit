@@ -22,6 +22,7 @@ const HeroSection = () => {
         poster="/assets/video/home/mobile_herosection.mp4#t=0.1"
         className="md:hidden absolute inset-0 w-full h-full object-cover"
       />
+      <div className="absolute inset-0 bg-black opacity-75 bottom-[5%] md:bottom-0"></div>
       <div className="relative z-10 text-center px-4 md:px-6 lg:px-20 md:py-20 lg:py-0">
         <h1 className="text-4xl font-semibold md:w-3/5 mx-auto mb-5">
           Your Trusted Partner in IT & Legal Services

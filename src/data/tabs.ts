@@ -1,7 +1,7 @@
 export const tabs = [
   { id: 1, label: "Home", path: "/" },
   { id: 2, label: "IT Services", path: "/it-services" },
-  { id: 3, label: "Tax Services", path: "/tax-services" },
+  { id: 3, label: "Legal Services", path: "/legal-services" },
   { id: 4, label: "About", path: "/about" },
   { id: 5, label: "Contact Us", path: "/contact-us" },
 ];
@@ -42,17 +42,17 @@ export const services = [
     ],
   },
   {
-    title: "Tax Services",
+    title: "Legal Services",
     links: [
-      { href: "/tax-services/corporate-tax", label: "Corporate Tax" },
-      { href: "/tax-services/litigation", label: "Litigation" },
+      { href: "/legal-services/corporate-tax", label: "Corporate Tax" },
+      { href: "/legal-services/litigation", label: "Litigation" },
       {
-        href: "/tax-services/advisory-internation",
-        label: "Advisory internation",
+        href: "/legal-services/advisory-internation",
+        label: "Advisory Internation",
       },
-      { href: "/tax-services/tds-and-accounting", label: "TDS & Accounting" },
-      { href: "/tax-services/gst", label: "GST" },
-      { href: "/tax-services/health-checkup", label: "Health Checkup" },
+      { href: "/legal-services/tds-and-accounting", label: "TDS & Accounting" },
+      { href: "/legal-services/gst", label: "GST" },
+      { href: "/legal-services/health-checkup", label: "Health Checkup" },
     ],
   },
   {

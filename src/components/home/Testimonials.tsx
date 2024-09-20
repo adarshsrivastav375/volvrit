@@ -13,7 +13,7 @@ const testimonials = [
     title: "Digital Innovation Agency",
   },
   {
-    text: "It can be challenging for a small business owner to navigate tax-associated issues. Their service delivery and high level of accuracy make them the perfect companion in business tax services in Canada.",
+    text: "It can be challenging for a small business owner to navigate legal-associated issues. Their service delivery and high level of accuracy make them the perfect companion in business legal services in Canada.",
     name: "Rajesh Kumar",
     title: "Business Manager",
   },
