@@ -68,7 +68,7 @@ const ExtraSolutions = () => {
             );
           })}
         </div>
-        <div className="lg:w-[40%] order-1 lg:order-2 rounded-3xl place-self-center">
+        <div className="w-full pb-8 lg:pb-0 lg:w-[40%] order-1 lg:order-2 rounded-3xl place-self-center">
           <Image
             width={400}
             height={100}

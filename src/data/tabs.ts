@@ -10,8 +10,56 @@ export const footerTabs = [
   { id: 1, label: "Privacy Policy", path: "/privacy-policy" },
   {
     id: 2,
-    children: [],
     label: "Terms And Conditions",
     path: "/terms-and-conditions",
+  },
+];
+
+export const SidebarTabs = [
+  { id: 1, label: "About Us", path: "/about" },
+  { id: 2, label: "Contact Us", path: "/contact-us" },
+  { id: 3, label: "Privacy Policy", path: "/privacy-policy" },
+  {
+    id: 4,
+    label: "Terms And Conditions",
+    path: "/terms-and-conditions",
+  },
+];
+
+export const services = [
+  {
+    title: "IT Services",
+    links: [
+      { href: "/it-services/web-development", label: "Web Development" },
+      {
+        href: "/it-services/mobile-development",
+        label: "Mobile Development",
+      },
+      { href: "/it-services/crm-development", label: "CRM Development" },
+      { href: "/it-services/digital-marketing", label: "Digital Marketing" },
+      { href: "/it-services/erp-development", label: "ERP Development" },
+      { href: "/it-services/payment-gateway", label: "Payment Gateway" },
+    ],
+  },
+  {
+    title: "Tax Services",
+    links: [
+      { href: "/tax-services/corporate-tax", label: "Corporate Tax" },
+      { href: "/tax-services/litigation", label: "Litigation" },
+      {
+        href: "/tax-services/advisory-internation",
+        label: "Advisory internation",
+      },
+      { href: "/tax-services/tds-and-accounting", label: "TDS & Accounting" },
+      { href: "/tax-services/gst", label: "GST" },
+      { href: "/tax-services/health-checkup", label: "Health Checkup" },
+    ],
+  },
+  {
+    title: "API Services",
+    links: [
+      { href: "/api-services/api-solutions", label: "API Solutions" },
+      { href: "/api-services/api-development", label: "API Development" },
+    ],
   },
 ];

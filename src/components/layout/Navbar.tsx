@@ -1,8 +1,8 @@
 import Link from "next/link";
+import Sidebar from "./Sidebar";
 import NavbarItems from "./Items";
 import Logo from "../common/Logo";
 import { FiPhone } from "react-icons/fi";
-import { IoIosMenu } from "react-icons/io";
 import { MdOutlineMailLock } from "react-icons/md";
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
               Book A Call
             </Link>
           </div>
-          <IoIosMenu size={30} className="text-primary lg:hidden" />
+          <Sidebar />
         </nav>
       </div>
     </section>

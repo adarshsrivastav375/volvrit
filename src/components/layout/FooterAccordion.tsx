@@ -35,7 +35,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
       >
         <div className="py-2 bg-white">
           {content.map((link: any) => (
-            <li key={link.href} className="text-sm pl-2 list-none pb-1">
+            <li key={link.href} className="text-sm pl-2 list-none pb-2">
               <Link
                 aria-label={link.label}
                 className="hover:underline"
@@ -52,9 +52,15 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
   );
 };
 
-const Accordion = ({ services }: { services: any }) => {
+const Accordion = ({
+  services,
+  sidebar,
+}: {
+  services: any;
+  sidebar?: boolean;
+}) => {
   return (
-    <div className="w-full max-w-md mx-auto pb-4 md:hidden">
+    <div className={`w-full mx-auto ${!sidebar && "pb-4 max-w-md md:hidden"}`}>
       {services.map((service: any) => (
         <React.Fragment key={service.title}>
           <AccordionItem title={service.title} content={service.links} />

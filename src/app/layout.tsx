@@ -9,6 +9,7 @@ import Footer from "@/components/layout/Footer";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
+import InterativeLink from "@/components/common/InterativeLink";
 
 export const metadata: Metadata = {
   title: "Volvrit",
@@ -22,10 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`relative ${inter.className}`}>
         <Navbar />
         <div className="min-h-screen">
           <main>{children}</main>
+          <InterativeLink />
         </div>
         <Footer />
         <div id="modal-root"></div>
