@@ -21,6 +21,10 @@ const Sidebar = () => {
     } else document.body.style.overflow = "scroll";
   }, [isOpen]);
 
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className="relative">
       <div
@@ -39,16 +43,22 @@ const Sidebar = () => {
             <Link
               href={"/"}
               aria-label={"Home"}
+              onClick={handleLinkClick}
               className="relative text-lg font-semibold inline-block py-3 border-b w-full border-primary/20 cursor-pointer"
             >
               Home
             </Link>
-            <Accordion sidebar={true} services={services} />
+            <Accordion
+              sidebar={true}
+              services={services}
+              handleLinkClick={handleLinkClick}
+            />
             {SidebarTabs.map((item) => (
               <div key={item.id} className="relative group">
                 <Link
                   href={item.path}
                   aria-label={item.label}
+                  onClick={handleLinkClick}
                   className="relative text-lg font-semibold inline-block py-3 border-b w-full border-primary/20 cursor-pointer"
                 >
                   {item.label}

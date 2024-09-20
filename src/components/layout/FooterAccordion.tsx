@@ -4,11 +4,16 @@ import React, { useState } from "react";
 import { RiArrowDropDownLine, RiArrowDropUpLine } from "react-icons/ri";
 
 interface AccordionItemProps {
-  title: string;
   content: [];
+  title: string;
+  handleLinkClick?: any;
 }
 
-const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
+const AccordionItem: React.FC<AccordionItemProps> = ({
+  title,
+  content,
+  handleLinkClick,
+}) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -40,6 +45,7 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
                 aria-label={link.label}
                 className="hover:underline"
                 href={link.href}
+                onClick={handleLinkClick && handleLinkClick}
                 passHref
               >
                 {link.label}
@@ -53,17 +59,23 @@ const AccordionItem: React.FC<AccordionItemProps> = ({ title, content }) => {
 };
 
 const Accordion = ({
-  services,
   sidebar,
+  services,
+  handleLinkClick,
 }: {
   services: any;
   sidebar?: boolean;
+  handleLinkClick?: any;
 }) => {
   return (
     <div className={`w-full mx-auto ${!sidebar && "pb-4 max-w-md md:hidden"}`}>
       {services.map((service: any) => (
         <React.Fragment key={service.title}>
-          <AccordionItem title={service.title} content={service.links} />
+          <AccordionItem
+            title={service.title}
+            content={service.links}
+            handleLinkClick={handleLinkClick}
+          />
         </React.Fragment>
       ))}
     </div>
