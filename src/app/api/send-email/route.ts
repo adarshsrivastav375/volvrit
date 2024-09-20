@@ -53,7 +53,7 @@ The Volvrit Team`,
     };
 
     // Admin email template
-    const adminEmailMessageI = {
+    const adminEmailMessage = {
       subject: "New Service Request Received",
       text: `Dear Admin,
     
@@ -69,7 +69,7 @@ Please review the details and follow up with the client as soon as possible.
 Best regards`,
     };
 
-    const adminEmailMessage = {
+    const adminEmailMessageI = {
       subject: "New Inquiry Received",
       text: `Dear Admin,
     
