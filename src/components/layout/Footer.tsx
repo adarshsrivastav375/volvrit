@@ -6,7 +6,7 @@ import SocialMediaLinks from "../common/SocialMediaLinks";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 pt-5 md:pt-10 pb-4 md:pb-7">
+    <footer className="bg-gray-50 pt-5 md:pt-10 pb-4 md:pb-7">
       <div className="container mx-auto px-4 md:px-6 lg:px-20">
         <div className="md:grid md:grid-cols-4 justify-between items-start md:gap-10 lg:gap-20">
           <div className="text-left mb-6 lg:mb-0">

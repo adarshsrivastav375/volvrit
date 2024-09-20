@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto py-12 px-4 md:px-8 lg:px-20">
-      <div className="bg-primary rounded-3xl lg:p-16 text-white relative flex flex-col md:flex-row items-center gap-10">
-        <div className="md:w-1/2">
+    <div className="container mx-auto py-6 md:py-8 lg:py-12 px-4 md:px-8 lg:px-20">
+      <div className="bg-primary rounded-2xl lg:rounded-3xl p-5 md:p-7 lg:p-16 text-white relative flex flex-col md:flex-row items-center gap-5 lg:gap-10">
+        <div className="md:w-1/2 order-last lg:order-1">
           <p className="text-sm font-light mb-2">— About Us</p>
-          <h2 className="text-3xl md:text-4xl font-medium mb-4 leading-tight">
+          <h2 className="text-2xl md:text-4xl font-medium mb-4 leading-tight">
             Bridging Innovation with IT and Tax Excellence
           </h2>
           <p className="opacity-80 font-light mb-6">
@@ -25,7 +25,7 @@ const AboutUs = () => {
             Learn More
           </button>
         </div>
-        <div className="md:w-1/2 mt-8 md:mt-0 md:ml-8 relative">
+        <div className="md:w-1/2 lg:mt-8 md:mt-0 md:ml-8 relative order-1 lg:order-last">
           <Image
             src="/assets/home/aboutUs.png" // Replace with your actual image
             alt="About Us Image"
