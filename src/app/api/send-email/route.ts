@@ -5,7 +5,9 @@ interface EmailRequestBody {
   name: string;
   phone: string;
   email: string;
-  service: string;
+  service?: string;
+  message?: string;
+  country?: string;
 }
 
 export async function POST(req: NextRequest) {
@@ -14,7 +16,7 @@ export async function POST(req: NextRequest) {
 
   try {
     const body: EmailRequestBody = await req.json();
-    const { email, phone, name, service } = body;
+    const { email, phone, name, service, country, message } = body;
 
     const transporter = nodemailer.createTransport({
       service: "gmail",
@@ -36,8 +38,22 @@ Best regards,
 The Volvrit Team`,
     };
 
+    const userEmailMessageI = {
+      subject: "Your Inquiry Has Been Successfully Received",
+      text: `Dear ${name},
+    
+Thank you for contacting us. We have successfully received your inquiry from ${country}, and our team will reach out to you shortly.
+    
+If you need any immediate assistance, feel free to reply to this email or contact us directly at ${email}.
+    
+We appreciate your interest and look forward to assisting you.
+    
+Best regards,  
+The Volvrit Team`,
+    };
+
     // Admin email template
-    const adminEmailMessage = {
+    const adminEmailMessageI = {
       subject: "New Service Request Received",
       text: `Dear Admin,
     
@@ -53,8 +69,34 @@ Please review the details and follow up with the client as soon as possible.
 Best regards`,
     };
 
-    const userMailOptions = { from: user, to: email, ...userEmailMessage };
-    const adminMailOptions = { from: user, to: user, ...adminEmailMessage };
+    const adminEmailMessage = {
+      subject: "New Inquiry Received",
+      text: `Dear Admin,
+    
+A new inquiry has been received. Below are the details of the client:
+
+- Name: ${name}
+- Email: ${email}
+- Phone: ${phone}
+- Country: ${country}
+- Message: ${message}
+    
+Please review the details and follow up with the client as soon as possible.
+    
+Best regards,  
+The Volvrit Team`,
+    };
+
+    const userMailOptions = {
+      from: user,
+      to: email,
+      ...(country ? userEmailMessageI : userEmailMessage),
+    };
+    const adminMailOptions = {
+      from: user,
+      to: user,
+      ...(country ? adminEmailMessageI : adminEmailMessage),
+    };
 
     // Send emails
     await transporter.sendMail(userMailOptions);

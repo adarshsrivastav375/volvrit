@@ -8,7 +8,7 @@ import { MdOutlineMailLock } from "react-icons/md";
 const Navbar = () => {
   return (
     <section className="bg-primary fixed w-full top-0 z-50">
-      <div className="container hidden mx-auto lg:px-20 md:flex gap-10 items-center justify-start text-white text-sm py-1">
+      <div className="container hidden mx-auto md:px-4 lg:px-20 md:flex gap-10 items-center justify-start text-white text-sm py-1">
         <Link
           href={"mailto:volvrit@gmail.com"}
           className="flex justify-start items-center gap-3"

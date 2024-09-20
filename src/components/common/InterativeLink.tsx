@@ -9,7 +9,7 @@ const InterativeLink = () => {
   const encodedMessage = encodeURIComponent(initialMessage);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   return (
-    <div className="fixed bottom-4 right-4 flex flex-col gap-2 lg:bottom-5 lg:right-5">
+    <div className="fixed bottom-4 right-4 flex flex-col gap-2 lg:bottom-5 z-40 lg:right-5">
       <Link
         href={"tel:+917599990331"}
         aria-label="Phone Number"
