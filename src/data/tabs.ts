@@ -1,7 +1,7 @@
 export const tabs = [
   { id: 1, label: "Home", path: "/" },
-  { id: 2, label: "IT Services", path: "/it-services" },
-  { id: 3, label: "Legal Services", path: "/legal-services" },
+  { id: 2, label: "Services", path: "/it-services/web-development" },
+  // { id: 3, label: "Legal Services", path: "/legal-services" },
   { id: 4, label: "About", path: "/about" },
   { id: 5, label: "Contact Us", path: "/contact-us" },
 ];
