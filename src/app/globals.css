@@ -49,11 +49,11 @@ html {
   margin-bottom: 40px;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  background-color: #ffffff !important;
+  background-color: #344080 !important;
   opacity: 0.8;
 }
 .swiper-pagination-bullet {
-  background-color: #ffffff !important;
+  background-color: #344080 !important;
   opacity: 0.4;
 }
 input:-webkit-autofill {

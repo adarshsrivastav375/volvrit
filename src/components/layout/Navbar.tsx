@@ -1,40 +1,57 @@
+"use client";
 import Link from "next/link";
 import Sidebar from "./Sidebar";
 import NavbarItems from "./Items";
 import Logo from "../common/Logo";
 import { FiPhone } from "react-icons/fi";
 import { MdOutlineMailLock } from "react-icons/md";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import useScrollPosition from "@/hooks/useScrollPosition";
 
 const Navbar = () => {
+  const isScrolled = useScrollPosition(
+    typeof window !== "undefined" ? window.innerHeight : 720
+  );
+
   return (
-    <section className="bg-primary fixed w-full top-0 z-50">
-      <div className="container hidden mx-auto md:px-4 lg:px-20 md:flex gap-10 items-center justify-start text-white text-sm py-1">
-        <Link
-          href={"mailto:info@volvrit.com"}
-          className="flex justify-start items-center gap-3"
-          aria-label="EmailId"
-        >
-          <MdOutlineMailLock size={20} /> info@volvrit.com
-        </Link>
-        <Link
-          href={"tel:+917599990331"}
-          className="flex justify-start items-center gap-3"
-          aria-label="Phone number"
-        >
-          <FiPhone size={16} /> +91 7599990331
-        </Link>
+    <section
+      className={`fixed w-full top-0 z-50 ${
+        isScrolled ? "text-black" : "text-white"
+      }`}
+    >
+      <div className={`bg-[#003070] ${isScrolled && "text-white"}`}>
+        <div className="w-full hidden mx-auto md:px-4 lg:px-20 md:flex gap-10 items-center justify-end text-sm 2xl:text-xl py-2">
+          <Link
+            href={"mailto:info@volvrit.com"}
+            className="flex justify-start items-center gap-3"
+            aria-label="EmailId"
+          >
+            <MdOutlineMailLock size={20} /> info@volvrit.com
+          </Link>
+          <Link
+            href={"tel:+917599990331"}
+            className="flex justify-start items-center gap-3"
+            aria-label="Phone number"
+          >
+            <FiPhone size={16} /> +91 7599990331
+          </Link>
+        </div>
       </div>
-      <div className="w-full bg-white text-primary py-3 md:py-4 shadow-[0_4px_6px_rgb(0,0,0,0.1)]">
-        <nav className="flex container mx-auto justify-between lg:grid lg:grid-cols-5 place-items-center items-center px-2 md:px-4 lg:px-20">
-          <Logo />
-          <NavbarItems />
+      <div
+        className={`w-full transition-all ease-linear duration-200 ${
+          isScrolled ? "bg-white shadow-md" : "bg-transparent backdrop-blur-md"
+        }  py-3 md:py-4`}
+      >
+        <nav className="flex mx-auto justify-between lg:grid lg:grid-cols-5 place-items-center items-center px-2 md:px-4 lg:px-20">
+          <Logo textColor={isScrolled ? "text-black" : "text-white"} />
+          <NavbarItems isScrolled={isScrolled} />
           <div className="hidden lg:block place-self-end my-auto">
             <Link
-              href={"tel:+917599990331"}
-              className="py-2 px-4 rounded-lg bg-primary hover:bg-primary/80 text-white text-sm transition-all ease-in-out"
-              aria-label="Phone number"
+              href={"/contact-us"}
+              className="py-2 px-5 flex gap-2 items-center rounded-lg bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-base 2xl:text-lg transition-all duration-200 ease-in-out"
+              aria-label="Contact Us"
             >
-              Book A Call
+              <span>Contact Us</span> <BsArrowRightCircleFill />
             </Link>
           </div>
           <Sidebar />

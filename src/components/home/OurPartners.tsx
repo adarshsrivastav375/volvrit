@@ -78,12 +78,19 @@ export const trustedClient = [
     height: 200,
     title: "Zresh Logo",
   },
+  {
+    id: 12,
+    imageUrl: "/assets/logo/excellence.png",
+    width: 200,
+    height: 200,
+    title: "excellence Logo",
+  },
 ];
 
 const OurPartners = () => {
   return (
     <div className="relative container mx-auto py-8 md:pt-10 pb-6 px-4 md:px-6 lg:px-20 text-center">
-      <video
+      {/* <video
         className="absolute inset-0 opacity-5 w-full h-full object-cover -z-10"
         autoPlay
         loop
@@ -91,22 +98,23 @@ const OurPartners = () => {
         playsInline
         src="/assets/video/home/ourpartner.mp4"
         poster="/assets/video/home/ourpartner.mp4#t=0.1"
-      />
+      /> */}
       <h5 className="relative text-2xl md:text-4xl mb-2 col-span-2 font-semibold z-10 text-black">
-        Our Clients
+        A few companies who trusted <br />
+        us with their projects
       </h5>
-      <div className="relative grid grid-cols-3 md:grid-cols-4 pt-5 lg:py-5 overflow-auto gap-2 md:gap-0 justify-center items-center z-10">
+      <div className="relative grid grid-cols-3 md:grid-cols-4 gap-10 pt-5 overflow-auto md:gap-0 justify-center items-center z-10">
         <>
           {trustedClient.map((trust, idx) => {
             return (
-              <div key={idx}>
+              <div key={idx} className="mb-5">
                 <Image
                   priority
                   alt={trust?.title}
                   width={trust?.width}
                   src={trust?.imageUrl}
                   height={trust?.height}
-                  className="w-fit mx-auto object-contain"
+                  className="w-fit 2xl:w-48 mx-auto object-contain"
                 />
               </div>
             );

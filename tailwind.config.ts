@@ -16,6 +16,13 @@ const config: Config = {
       colors: {
         primary: "#344080",
       },
+      boxShadow: {
+        corner:
+          "rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+      },
+      maxWidth: {
+        "8xl": "124rem", // 1984 px
+      },
     },
   },
   plugins: [],

@@ -2,14 +2,14 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className="container mx-auto py-6 md:py-8 lg:py-12 px-4 md:px-8 lg:px-20">
-      <div className="bg-primary rounded-2xl lg:rounded-3xl p-5 md:p-7 lg:p-16 text-white relative flex flex-col md:flex-row items-center gap-5 lg:gap-10">
+    <div className="max-w-8xl mx-auto pb-6 md:pb-8 lg:pb-12 px-4 md:px-8 lg:px-20 2xl:px-40">
+      <div className="bg-primary rounded-2xl lg:rounded-3xl p-5 md:p-7 lg:p-14 text-white relative flex flex-col md:flex-row items-center gap-5 lg:gap-10">
         <div className="md:w-1/2 order-last lg:order-1">
-          <p className="text-sm font-light mb-2">— About Us</p>
-          <h2 className="text-2xl md:text-4xl font-medium mb-4 leading-tight">
+          <p className="text-base 2xl:text-2xl font-light mb-2">— About Us</p>
+          <h2 className="text-2xl md:text-4xl 2xl:text-6xl font-medium mb-4 leading-tight">
             Bridging Innovation with IT and Legal Excellence
           </h2>
-          <p className="opacity-80 font-light mb-6">
+          <p className="opacity-80 2xl:text-xl font-light mb-6">
             Volvrit is a one-stop solution for your IT and Legal needs. We
             specialize in IT and Legal services that deliver effective
             implementation and excellent quality to our clients. Our mission is
@@ -19,13 +19,13 @@ const AboutUs = () => {
             and business advancement through the delivery of measured results
             and long-term success.
           </p>
-          <button className="bg-white text-primary hover:bg-primary hover:text-white border transition-all duration-200 ease-in-out border-primary hover:border-white font-semibold px-10 py-2 rounded-full">
+          <button className="bg-white text-primary 2xl:text-2xl hover:bg-primary hover:text-white border transition-all duration-200 ease-in-out border-primary hover:border-white font-semibold px-10 py-2 rounded-full">
             Learn More
           </button>
         </div>
-        <div className="md:w-1/2 lg:mt-8 md:mt-0 md:ml-8 relative order-1 lg:order-last">
+        <div className="md:w-1/2 md:mt-0 md:ml-8 relative order-1 lg:order-last">
           <Image
-            src="/assets/home/aboutUs.png" // Replace with your actual image
+            src="/assets/home/aboutUs.png"
             alt="About Us Image"
             width={100}
             height={100}
