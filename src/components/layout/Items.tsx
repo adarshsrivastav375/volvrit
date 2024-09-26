@@ -5,7 +5,13 @@ import { useState } from "react";
 import { services, tabs } from "@/data/tabs";
 import { usePathname } from "next/navigation";
 
-const NavbarItems = ({ isScrolled }: { isScrolled: any }) => {
+const NavbarItems = ({
+  isScrolled,
+  pathname,
+}: {
+  isScrolled: any;
+  pathname: string;
+}) => {
   const pathName = usePathname();
   const [show, setShow] = useState(false);
   const [showLink, setLinkShow] = useState("");
@@ -35,7 +41,7 @@ const NavbarItems = ({ isScrolled }: { isScrolled: any }) => {
               className={`absolute inset-x-0 bottom-0 h-0.5 transform origin-left transition-transform ${
                 isActive(item.path) ? "scale-x-100" : "scale-x-0"
               } ${
-                isScrolled ? "bg-primary" : "bg-white"
+                isScrolled || pathname !== "/" ? "bg-primary" : "bg-white"
               } group-hover:scale-x-100`}
             ></span>
           </Link>

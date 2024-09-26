@@ -4,11 +4,13 @@ import Sidebar from "./Sidebar";
 import NavbarItems from "./Items";
 import Logo from "../common/Logo";
 import { FiPhone } from "react-icons/fi";
+import { usePathname } from "next/navigation";
 import { MdOutlineMailLock } from "react-icons/md";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import useScrollPosition from "@/hooks/useScrollPosition";
 
 const Navbar = () => {
+  const pathname = usePathname();
   const isScrolled = useScrollPosition(
     typeof window !== "undefined" ? window.innerHeight : 720
   );
@@ -16,10 +18,14 @@ const Navbar = () => {
   return (
     <section
       className={`fixed w-full top-0 z-50 ${
-        isScrolled ? "text-black" : "text-white"
+        isScrolled
+          ? "text-black"
+          : pathname === "/"
+          ? "text-white"
+          : "text-black"
       }`}
     >
-      <div className={`bg-[#003070] ${isScrolled && "text-white"}`}>
+      <div className={`bg-[#003070] ${"text-white"}`}>
         <div className="w-full hidden mx-auto md:px-4 lg:px-20 md:flex gap-10 items-center justify-end text-sm 2xl:text-xl py-2">
           <Link
             href={"mailto:info@volvrit.com"}
@@ -39,12 +45,20 @@ const Navbar = () => {
       </div>
       <div
         className={`w-full transition-all ease-linear duration-200 ${
-          isScrolled ? "bg-white shadow-md" : "bg-transparent backdrop-blur-md"
+          isScrolled
+            ? "bg-white shadow-md"
+            : pathname === "/"
+            ? "bg-transparent backdrop-blur-md"
+            : "bg-white shadow-md"
         }  py-3 md:py-4`}
       >
         <nav className="flex mx-auto justify-between lg:grid lg:grid-cols-5 place-items-center items-center px-2 md:px-4 lg:px-20">
-          <Logo textColor={isScrolled ? "text-black" : "text-white"} />
-          <NavbarItems isScrolled={isScrolled} />
+          <Logo
+            textColor={
+              isScrolled || pathname !== "/" ? "text-black" : "text-white"
+            }
+          />
+          <NavbarItems isScrolled={isScrolled} pathname={pathname} />
           <div className="hidden lg:block place-self-end my-auto">
             <Link
               href={"/contact-us"}
