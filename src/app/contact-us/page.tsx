@@ -76,6 +76,9 @@ const GetStartedForm = () => {
     if (formData.services.length === 0) {
       newErrors.services = ["Please select at least one service."];
     }
+    if (formData.message.length < 10) {
+      newErrors.message = ["Please describe your message."];
+    }
     setErrors(newErrors);
     return Object.values(newErrors).every((error) => error === "");
   };
@@ -235,7 +238,7 @@ const GetStartedForm = () => {
                   htmlFor="message"
                   className="text-white 2xl:text-2xl 3xl:text-3xl"
                 >
-                  Share a brief project description (optional)
+                  Share a brief project description
                 </label>
                 <textarea
                   id="message"
@@ -246,6 +249,9 @@ const GetStartedForm = () => {
                   className="w-full p-2 2xl:p-3 3xl:p-4 mt-2 rounded bg-gray-800 text-white border border-gray-600 focus:border-blue-500 focus:outline-none"
                   rows={4}
                 />
+                {errors.message && (
+                  <p className="text-red-500 mt-1 text-sm">{errors.message}</p>
+                )}
               </div>
               <button
                 type="submit"

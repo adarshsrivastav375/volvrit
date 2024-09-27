@@ -37,13 +37,13 @@ const gallery = [
 const Gallery = () => {
   return (
     <div className="">
-      <div className="bg-white p-5 lg:p-10 lg:pb-8 rounded-xl flex flex-col justify-center items-center gap-5">
+      <div className="bg-white p-5 3xl:p-10 pb-0 rounded-xl flex flex-col justify-center items-center">
         {gallery.map((gal: any, index) => {
           return (
             <Swiper
               key={index}
               modules={[Autoplay, Pagination]}
-              spaceBetween={40}
+              spaceBetween={20}
               slidesPerView={3}
               loop={true}
               autoplay={{

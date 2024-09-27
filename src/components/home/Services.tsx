@@ -13,23 +13,23 @@ const services = [
     title: "WEB DEVELOPMENT",
     description:
       "We have developed secure and user-friendly applications for both iOS and Android to give you the best experience with numerous business requirements.",
-    image: "/assets/home/mobile.png",
-    bgClass: "bg-primary text-white",
+    image: "/assets/logo/svg/webdevelopment.svg",
+    bgClass: "bg-white text-black hover:bg-primary hover:text-white",
   },
   {
     id: 2,
     title: "APP DEVELOPMENT",
     description:
       "Our best-in-class dynamic responsive websites focus upon business needs with a promise for maximum performance, user experience, as well as cross-platform compatibility.",
-    image: "/assets/home/web.png",
-    bgClass: "bg-white text-black hover:bg-primary hover:text-white",
+    image: "/assets/logo/svg/mobile.svg",
+    bgClass: "bg-primary text-white",
   },
   {
     id: 3,
     title: "Artifical Intelligence",
     description:
       "Volvrit designs advanced AI algorithms to help in smarter automation, better data analysis, and improved decision-making in a diverse range of industries.",
-    image: "/assets/home/digital.png",
+    image: "/assets/logo/svg/artificial.svg",
     bgClass: "bg-white text-black hover:bg-primary hover:text-white",
   },
   {
@@ -37,15 +37,15 @@ const services = [
     title: "Saas Development",
     description:
       "Volvrit builds scalable SaaS platforms, providing smooth cloud-based solutions to simplify the deployment, management, and collaboration of software services.",
-    image: "/assets/home/crm.png",
+    image: "/assets/logo/svg/saas.svg",
     bgClass: "bg-white text-black hover:bg-primary hover:text-white",
   },
   {
     id: 5,
     title: "Blockchain DEVELOPMENT",
     description:
-      "Volvrit develops secure blockchain solutions, which tend to ensure secure, transparent, and decentralized transactions across finance, supply chains, and more.Volvrit develops secure blockchain solutions, which tend to ensure secure, transparent, and decentralized transactions across finance, supply chains, and more.",
-    image: "/assets/home/web.png",
+      "Volvrit develops secure blockchain solutions, which tend to ensure secure, transparent, and decentralized transactions across finance, supply chains, and more.",
+    image: "/assets/logo/svg/blockchain.svg",
     bgClass: "bg-white text-black hover:bg-primary hover:text-white",
   },
   {
@@ -53,7 +53,7 @@ const services = [
     title: "UI/UX Desiging",
     description:
       "We create high-performance mobile and web apps, delivering seamless user experiences to drive your business forward..",
-    image: "/assets/home/web.png",
+    image: "/assets/logo/svg/pencil.svg",
     bgClass: "bg-white text-black hover:bg-primary hover:text-white",
   },
   {
@@ -61,7 +61,7 @@ const services = [
     title: "DIGITAL MARKETING",
     description:
       "We create high-performance mobile and web apps, delivering seamless user experiences to drive your business forward.",
-    image: "/assets/home/digital.png",
+    image: "/assets/logo/svg/marketing.svg",
     bgClass: "bg-white text-black hover:bg-primary hover:text-white",
   },
   {
@@ -69,15 +69,15 @@ const services = [
     title: "CRM DEVELOPMENT",
     description:
       "We create high-performance mobile and web apps, delivering seamless user experiences to drive your business forward.",
-    image: "/assets/home/crm.png",
+    image: "/assets/logo/svg/crm.svg",
     bgClass: "bg-white text-black hover:bg-primary hover:text-white",
   },
   {
     id: 9,
     title: "API DEVELOPMENT",
     description:
-      "Development of customized CRM solutions to set up an efficient customer interaction model, efficient sales processes, and improvement of client relationship management.",
-    image: "/assets/home/crm.png",
+      "Development of customized CRM solutions to set up an efficient customer interaction model, efficient sales processes, and improvement.",
+    image: "/assets/logo/svg/api.svg",
     bgClass: "bg-white text-black hover:bg-primary hover:text-white",
   },
 ];
@@ -96,7 +96,7 @@ const Services = () => {
                 width={40}
                 height={40}
                 alt={service.title}
-                className="3xl:w-20 4xl:w-28 object-contain"
+                className="w-14 3xl:w-20 4xl:w-28 object-contain"
                 src={service.image}
               />
             </div>
@@ -107,7 +107,7 @@ const Services = () => {
               </span>
               <span>{service.title.split(" ")[1]}</span>
             </h3>
-            <p className="text-sm 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+            <p className="text-base lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
               {service.description}
             </p>
           </div>

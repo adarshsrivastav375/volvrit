@@ -2,6 +2,20 @@ import Image from "next/image";
 
 export const trustedClient = [
   {
+    id: 4,
+    imageUrl: "/assets/logo/fitness.png",
+    width: 200,
+    height: 200,
+    title: "Fitness Logo",
+  },
+  {
+    id: 9,
+    imageUrl: "/assets/logo/unificars.png",
+    width: 200,
+    height: 200,
+    title: "Unificars Logo",
+  },
+  {
     id: 1,
     imageUrl: "/assets/logo/affinity.png",
     width: 200,
@@ -9,25 +23,11 @@ export const trustedClient = [
     title: "Affinity Logo",
   },
   {
-    id: 5,
-    imageUrl: "/assets/logo/intense.png",
-    width: 200,
-    height: 200,
-    title: "Intense Logo",
-  },
-  {
     id: 8,
     imageUrl: "/assets/logo/unfazed.png",
     width: 200,
     height: 200,
     title: "Unfazed Logo",
-  },
-  {
-    id: 4,
-    imageUrl: "/assets/logo/fitness.png",
-    width: 200,
-    height: 200,
-    title: "Fitness Logo",
   },
   {
     id: 2,
@@ -57,13 +57,7 @@ export const trustedClient = [
     height: 200,
     title: "Kingsmen Logo",
   },
-  {
-    id: 9,
-    imageUrl: "/assets/logo/unificars.png",
-    width: 200,
-    height: 200,
-    title: "Unificars Logo",
-  },
+
   {
     id: 10,
     imageUrl: "/assets/logo/woodheaven.png",
@@ -79,6 +73,14 @@ export const trustedClient = [
     title: "Zresh Logo",
   },
   {
+    id: 5,
+    imageUrl: "/assets/logo/intense.png",
+    width: 200,
+    height: 200,
+    title: "Intense Logo",
+  },
+
+  {
     id: 12,
     imageUrl: "/assets/logo/excellence.png",
     width: 200,
@@ -89,7 +91,7 @@ export const trustedClient = [
 
 const OurPartners = () => {
   return (
-    <div className="relative max-w-9xl mx-auto py-8 md:pt-10 pb-6 px-4 md:px-6 lg:px-20 2xl:px-40 2xl:py-20 text-center">
+    <div className="relative max-w-9xl mx-auto py-8 md:pt-10 pb-6 px-4 md:px-6 lg:px-20 2xl:px-40 lg:pt-20 text-center">
       {/* <video
         className="absolute inset-0 opacity-5 w-full h-full object-cover -z-10"
         autoPlay
@@ -99,11 +101,11 @@ const OurPartners = () => {
         src="/assets/video/home/ourpartner.mp4"
         poster="/assets/video/home/ourpartner.mp4#t=0.1"
       /> */}
-      <h5 className="relative text-2xl md:text-3xl 2xl:text-6xl mb-2 col-span-2 font-semibold z-10 text-black">
+      <h5 className="relative text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl mb-2 col-span-2 font-semibold z-10 text-black">
         A few companies who trusted <br />
         us with their projects
       </h5>
-      <div className="relative grid grid-cols-3 md:grid-cols-4 gap-10 pt-5 overflow-auto md:gap-0 justify-center items-center z-10">
+      <div className="relative grid grid-cols-3 gap-10 pt-5 overflow-auto md:gap-0 justify-center items-center z-10">
         <>
           {trustedClient.map((trust, idx) => {
             return (
@@ -114,7 +116,7 @@ const OurPartners = () => {
                   width={trust?.width}
                   src={trust?.imageUrl}
                   height={trust?.height}
-                  className="w-fit lg:w-40 2xl:w-56 3xl:w-64 4xl:w-72 mx-auto object-contain"
+                  className="w-fit mx-auto object-contain"
                 />
               </div>
             );

@@ -27,11 +27,11 @@ const HeroSection = () => {
       />
       <div className="relative z-10 text-center px-4 md:px-6 lg:px-20 md:py-20 lg:py-0">
         <h1 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-8xl font-semibold mx-auto mb-5">
-          Web Design & Development
+          Web Designing & Development
           <br /> Digital marketing & Mobile App&apos;s
         </h1>
-        <p className="w-4/5 md:w-2/3 text-sm md:text-base 2xl:text-xl 3xl:text-3xl mx-auto font-light mb-6 2xl:mb-10 3xl:my-14 4xl:my-20">
-          At VOLVRIT we help B2B-B2C & Startup&aos;s to create custom
+        <p className="w-4/5 md:w-2/3 text-sm md:text-base lg:text-xl 2xl:text-2xl 3xl:text-3xl mx-auto font-light mb-6 2xl:mb-10 3xl:my-14 4xl:my-20">
+          At VOLVRIT we help B2B-B2C & Startup&apos;s to create custom
           development solutions, Crafted by our experienced IT TEAM.
         </p>
         <LinkBtn text="Start a Project" href="/it-services/crm-development" />
