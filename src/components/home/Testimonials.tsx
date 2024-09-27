@@ -11,7 +11,7 @@ import "swiper/css/pagination";
 const testimonials = [
   {
     date: "15/04/2024",
-    text: "The IT services provided by Volvnit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
+    text: "The IT services provided by Volvrit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
     name: "Priya Sharma",
     title: "Digital Innovation Agency",
   },
@@ -23,13 +23,13 @@ const testimonials = [
   },
   {
     date: "15/04/2024",
-    text: "For a new business, we require good IT solutions and consulting services. Volvnit IT Services created a wonderful IT solution plan within our budget with an affordable and flexible cost.",
+    text: "For a new business, we require good IT solutions and consulting services. Volvrit IT Services created a wonderful IT solution plan within our budget with an affordable and flexible cost.",
     name: "Anjali Patel",
     title: "Co-Founder Figo",
   },
   {
     date: "15/04/2024",
-    text: "The IT services provided by Volvnit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
+    text: "The IT services provided by Volvrit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
     name: "Riya Sharma",
     title: "Digital Innovation Agency",
   },

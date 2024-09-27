@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import CalenderModal from "./modals/CalenderModal";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 
 const Calendar = () => {
@@ -18,13 +19,7 @@ const Calendar = () => {
         <span className="text-xl 2xl:text-2xl 3xl:text-2xl">Book A Call</span>{" "}
         <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl 3xl:text-4xl" />
       </button>
-      {isOpen && (
-        <iframe
-          src="https://cal.com/volvrit"
-          width="100%"
-          height="800"
-        ></iframe>
-      )}
+      <CalenderModal isVisible={isOpen} setIsVisible={setIsOpen} />
     </div>
   );
 };
