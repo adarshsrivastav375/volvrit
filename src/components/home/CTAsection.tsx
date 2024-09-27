@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { BsArrowRightCircleFill } from "react-icons/bs";
-import Calendar from "../common/Calender";
 
 const CTASection = () => {
   return (
@@ -24,7 +23,6 @@ const CTASection = () => {
           <span>Start a Project</span> <BsArrowRightCircleFill />
         </Link>
       </div>
-      {/* <Calendar /> */}
     </div>
   );
 };
