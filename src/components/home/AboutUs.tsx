@@ -5,28 +5,29 @@ const AboutUs = () => {
   return (
     <div className="max-w-9xl mx-auto pb-6 md:pb-8 lg:pb-12 px-4 md:px-8 lg:px-20 2xl:px-40">
       <div className="bg-primary rounded-2xl lg:rounded-3xl p-5 md:p-7 lg:p-14 text-white relative flex flex-col lg:flex-row items-center gap-5 lg:gap-10">
-        <div className="w-full text-center lg:text-left lg:w-1/2">
+        <div className="w-full text-center lg:text-left lg:w-3/5">
           <p className="text-base 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl font-light mb-2">
             — About Us
           </p>
           <h2 className="text-2xl md:text-4xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-medium mb-4 leading-tight">
-            Bridging Innovation with IT and Legal Excellence
+            Leading the Way in IT Services
           </h2>
           <p className="opacity-80 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl font-light mb-6">
-            Volvrit is a one-stop solution for your IT and Legal needs. We
-            specialize in IT and Legal services that deliver effective
-            implementation and excellent quality to our clients. Our mission is
-            to ensure client success through precise and innovative solutions
-            while remaining long-term strategists for client relations. The
-            vision of the company is to become a prime partner in technological
-            and business advancement through the delivery of measured results
-            and long-term success.
+            Welcome to our website where innovation has been pioneered in the IT
+            services world. Founded in [2023], we have since built a strong
+            foundation on technology and excellence grounds, consistently
+            innovating through real-time solutions that would empower businesses
+            in the complex digital landscape. Our success stories span over 1
+            year in which we completed for multinational corporations and even
+            startups. Our commitment to quality and customer satisfaction has
+            made us one of the most trusted partners, recognized for our ability
+            to adapt and meet the ever-changing needs of clients.
           </p>
           <button className="bg-white text-primary 2xl:text-2xl hover:bg-primary hover:text-white border transition-all duration-200 ease-in-out border-primary hover:border-white font-semibold px-10 py-2 rounded-full">
-            Learn More
+            Know More
           </button>
         </div>
-        <div className="w-full lg:w-1/2 mt-2 lg:ml-8 relative">
+        <div className="w-full lg:w-2/5 mt-2 lg:ml-8 relative">
           <Gallery />
           {/* <Image
             src="/assets/home/aboutUs.png"
