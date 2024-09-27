@@ -151,7 +151,7 @@ const GetStartedForm = () => {
           </div>
 
           {/* Right section - Form */}
-          <div className="w-full lg:w-1/2 bg-black p-6 md:p-8 2xl:p-12 3xl:p-14 4xl:p-16 border border-b-4 border-white/40 rounded-2xl">
+          <div className="w-full lg:w-1/2 h-fit bg-black p-6 md:p-8 2xl:p-12 3xl:p-14 4xl:p-16 border border-b-4 border-white/40 rounded-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
               <p className="text-lg text-white 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-4 2xl:mb-10 font-extralight">
                 Complete the form, and a member of our team will reach out to
