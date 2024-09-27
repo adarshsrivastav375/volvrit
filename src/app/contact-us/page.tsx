@@ -239,6 +239,7 @@ const GetStartedForm = () => {
                 </label>
                 <textarea
                   id="message"
+                  required
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
