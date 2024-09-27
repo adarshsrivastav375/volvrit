@@ -52,22 +52,22 @@ const Footer = () => {
                 Contact Address
               </h3>
               <ul className="text-black space-y-2">
-                <li className="text-sm leading-4 md:text-[10px] lg:text-xs 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
-                  <span className="font-bold text-base md:text-xs 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
+                <li className="text-sm leading-4 md:text-[10px] lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
+                  <span className="font-bold text-base md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
                     India
                   </span>{" "}
                   : Building No.9 Plot No.1 Moti Nagar, DLF Industrial Area, New
                   Delhi, 110015
                 </li>
-                <li className="text-sm leading-4 md:text-[10px] lg:text-xs 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
-                  <span className="font-bold text-base md:text-xs 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
+                <li className="text-sm leading-4 md:text-[10px] lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
+                  <span className="font-bold text-base md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
                     Dubai
                   </span>{" "}
                   : Al Moosa Tower 18th floor Office no #1804, sheikh zayed
                   road, Dubai,U.A.E
                 </li>
-                <li className="text-sm leading-4 md:text-[10px] lg:text-xs 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
-                  <span className="font-bold text-base md:text-xs 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
+                <li className="text-sm leading-4 md:text-[10px] lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
+                  <span className="font-bold text-base md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
                     Australia
                   </span>{" "}
                   : 31 Tweed St, The Ponds. NSW 2769, Sydney
