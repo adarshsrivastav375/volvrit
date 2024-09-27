@@ -41,6 +41,7 @@ const Gallery = () => {
         {gallery.map((gal: any, index) => {
           return (
             <Swiper
+              key={index}
               modules={[Autoplay, Pagination]}
               spaceBetween={40}
               slidesPerView={3}
