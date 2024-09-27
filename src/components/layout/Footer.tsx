@@ -11,10 +11,10 @@ const Footer = () => {
         <div className="md:grid md:grid-cols-4 justify-between items-start md:gap-10 lg:gap-20">
           <div className="text-left mb-6 lg:mb-0">
             <Logo size={50} />
-            <p className="text-black md:text-[11px] lg:text-sm 2xl:text-xl 4xl:text-2xl my-5">
-              Volvrit is a one-stop solution for your IT and Legal needs. We
-              specialize in IT and Legal services that deliver effective
-              implementation and excellent quality to our clients.
+            <p className="text-black md:text-base lg:text-base 2xl:text-xl 4xl:text-2xl my-5">
+              Our vision is to lead the IT services sector by leveraging
+              technology to drive growth and efficiency for clients all around
+              the world.
             </p>
             <SocialMediaLinks size={25} />
           </div>
@@ -24,14 +24,14 @@ const Footer = () => {
                 key={service.title}
                 className="w-full hidden md:block mb-6 lg:mb-0"
               >
-                <h3 className="font-bold 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-5">
+                <h3 className="font-bold text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-5">
                   {service.title}
                 </h3>
                 <ul className="text-black space-y-2">
                   {service.links.map((link) => (
                     <li
                       key={link.href}
-                      className="text-xs md:text-[10px] 2xl:text-lg 3xl:text-xl 4xl:text-2xl lg:text-xs"
+                      className="text-xs md:text-lg 2xl:text-lg 3xl:text-xl 4xl:text-2xl lg:text-base"
                     >
                       <Link
                         aria-label={link.label}
@@ -48,7 +48,7 @@ const Footer = () => {
             ))}
             <Accordion services={services} />
             <div className="w-full mb-6 lg:mb-0">
-              <h3 className="font-bold 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-5">
+              <h3 className="font-bold text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-5">
                 Contact Address
               </h3>
               <ul className="text-black space-y-2">
