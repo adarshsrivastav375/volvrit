@@ -2,7 +2,6 @@
 
 import ReactDOM from "react-dom";
 import { RxCross1 } from "react-icons/rx";
-import Logo from "./Logo";
 
 interface ModalProps {
   showLogo?: any;
@@ -23,7 +22,7 @@ const Modal: React.FC<ModalProps> = ({
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="fixed inset-0 bg-white backdrop-blur-lg bg-opacity-10"></div>
       <div className="bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl overflow-hidden w-fit z-10 relative">
-        <div className="bg-white overflow-scroll no-scrollbar max-h-[90vh]">
+        <div className="bg-white overflow-scroll no-scrollbar max-h-[80vh] md:max-h-[90vh]">
           <div className="flex justify-between items-center p-4">
             {showLogo && (
               <span
