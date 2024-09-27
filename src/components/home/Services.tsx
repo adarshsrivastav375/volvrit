@@ -1,4 +1,11 @@
+"use client";
 import Image from "next/image";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const services = [
   {
@@ -77,8 +84,8 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="w-full p-4 md:p-6 lg:pt-20 lg:px-36 container mx-auto bg-white">
-      <div className="grid grid-cols-3 gap-7 container mx-auto">
+    <div className="w-full px-4 md:px-6 lg:pt-20 lg:px-36 max-w-8xl mx-auto bg-white">
+      <div className="hidden lg:grid grid-cols-3 gap-7">
         {services.map((service, index) => (
           <div
             key={service.id}
@@ -100,23 +107,58 @@ const Services = () => {
               </span>
               <span>{service.title.split(" ")[1]}</span>
             </h3>
-            <p className="text-sm 2xl:text-lg">{service.description}</p>
+            <p className="text-sm 2xl:text-xl">{service.description}</p>
           </div>
         ))}
       </div>
-      {/* <div className="lg:w-1/2">
-        <video
-          loop
-          muted
-          autoPlay
-          playsInline
-          src={"/assets/video/home/smartphone.mp4"}
-          poster={"/assets/video/home/smartphone.mp4#t=0.1"}
-          className="w-full h-[50vh] bg-black md:h-full object-cover rounded-2xl"
+      <div className="lg:hidden mt-6">
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          spaceBetween={30}
+          breakpoints={{
+            640: {
+              slidesPerView: 1.4,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+          }}
+          loop={true}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          pagination={{ clickable: true }}
+          className="w-full mx-auto rounded-xl h-full"
         >
-          Your browser does not support the video tag.
-        </video>
-      </div> */}
+          {services.map((service, index) => (
+            <SwiperSlide key={index}>
+              <div
+                key={service.id}
+                className={`${service.bgClass} cursor-pointer h-72 md:h-96 p-5 rounded-xl shadow-corner hover:shadow-none transition-all duration-200 ease-linear`}
+              >
+                <div className="px-3">
+                  <Image
+                    width={40}
+                    height={40}
+                    alt={service.title}
+                    className="object-contain"
+                    src={service.image}
+                  />
+                </div>
+                <h3 className="text-xl md:text-2xl 2xl:text-4xl py-3 md:py-5 font-bold uppercase">
+                  <span>
+                    {service.title.split(" ")[0]}
+                    <br />
+                  </span>
+                  <span>{service.title.split(" ")[1]}</span>
+                </h3>
+                <p className="text-sm 2xl:text-xl">{service.description}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

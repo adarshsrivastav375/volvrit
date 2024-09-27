@@ -39,7 +39,7 @@ const Sidebar = () => {
               x
             </p>
           </div>
-          <div className="p-4 pb-40 overflow-auto h-screen">
+          <div className="p-4 pb-40 bg-white overflow-auto h-screen">
             <Link
               href={"/"}
               aria-label={"Home"}
@@ -72,11 +72,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-      <IoIosMenu
-        size={30}
-        onClick={toggleSidebar}
-        className="text-primary lg:hidden"
-      />
+      <IoIosMenu size={30} onClick={toggleSidebar} className="lg:hidden" />
       {isOpen && (
         <div
           onClick={toggleSidebar}

@@ -14,11 +14,11 @@ const Logo = ({ size, textColor }: { size?: number; textColor?: string }) => {
           height={size ?? 48}
           alt="volvrit Logo"
           src={"/assets/logo/volvrit_logo.png"}
-          className="md:w-4/5 lg:w-full h-full aspect-square object-contain"
+          className="md:w-4/5 lg:w-full 2xl:w-20 3xl:w-24 4xl:w-28 5xl:w-36 h-full aspect-square object-contain"
         />
       </figure>
       <figcaption
-        className={`text-xl md:text-base lg:text-xl ${
+        className={`text-xl md:text-base lg:text-xl 2xl:text-3xl 3xl:text-4xl 4xl:text-6xl 5xl:text-7xl ${
           textColor ? textColor : "text-black"
         } uppercase font-semibold`}
       >

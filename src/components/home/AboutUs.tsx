@@ -3,13 +3,13 @@ import Image from "next/image";
 const AboutUs = () => {
   return (
     <div className="max-w-8xl mx-auto pb-6 md:pb-8 lg:pb-12 px-4 md:px-8 lg:px-20 2xl:px-40">
-      <div className="bg-primary rounded-2xl lg:rounded-3xl p-5 md:p-7 lg:p-14 text-white relative flex flex-col md:flex-row items-center gap-5 lg:gap-10">
-        <div className="md:w-1/2 order-last lg:order-1">
+      <div className="bg-primary rounded-2xl lg:rounded-3xl p-5 md:p-7 lg:p-14 text-white relative flex flex-col lg:flex-row items-center gap-5 lg:gap-10">
+        <div className="w-full text-center lg:text-left lg:w-1/2">
           <p className="text-base 2xl:text-2xl font-light mb-2">— About Us</p>
           <h2 className="text-2xl md:text-4xl 2xl:text-6xl font-medium mb-4 leading-tight">
             Bridging Innovation with IT and Legal Excellence
           </h2>
-          <p className="opacity-80 2xl:text-xl font-light mb-6">
+          <p className="opacity-80 2xl:text-2xl font-light mb-6">
             Volvrit is a one-stop solution for your IT and Legal needs. We
             specialize in IT and Legal services that deliver effective
             implementation and excellent quality to our clients. Our mission is
@@ -23,7 +23,7 @@ const AboutUs = () => {
             Learn More
           </button>
         </div>
-        <div className="md:w-1/2 md:mt-0 md:ml-8 relative order-1 lg:order-last">
+        <div className="w-full lg:w-1/2 mt-2 lg:ml-8 relative">
           <Image
             src="/assets/home/aboutUs.png"
             alt="About Us Image"

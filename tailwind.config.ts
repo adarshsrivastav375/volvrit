@@ -23,6 +23,11 @@ const config: Config = {
       maxWidth: {
         "8xl": "124rem", // 1984 px
       },
+      screens: {
+        "3xl": "1920px", // for screens like 1080p monitors
+        "4xl": "2560px", // for screens between 2K and 4K
+        "5xl": "3840px", // for 4K screens
+      },
     },
   },
   plugins: [],

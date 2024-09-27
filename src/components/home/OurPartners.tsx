@@ -89,7 +89,7 @@ export const trustedClient = [
 
 const OurPartners = () => {
   return (
-    <div className="relative container mx-auto py-8 md:pt-10 pb-6 px-4 md:px-6 lg:px-20 text-center">
+    <div className="relative max-w-8xl mx-auto py-8 md:pt-10 pb-6 px-4 md:px-6 lg:px-20 2xl:px-40 2xl:py-20 text-center">
       {/* <video
         className="absolute inset-0 opacity-5 w-full h-full object-cover -z-10"
         autoPlay
@@ -99,7 +99,7 @@ const OurPartners = () => {
         src="/assets/video/home/ourpartner.mp4"
         poster="/assets/video/home/ourpartner.mp4#t=0.1"
       /> */}
-      <h5 className="relative text-2xl md:text-4xl mb-2 col-span-2 font-semibold z-10 text-black">
+      <h5 className="relative text-2xl md:text-3xl 2xl:text-6xl mb-2 col-span-2 font-semibold z-10 text-black">
         A few companies who trusted <br />
         us with their projects
       </h5>
@@ -114,7 +114,7 @@ const OurPartners = () => {
                   width={trust?.width}
                   src={trust?.imageUrl}
                   height={trust?.height}
-                  className="w-fit 2xl:w-48 mx-auto object-contain"
+                  className="w-fit lg:w-40 2xl:w-56 mx-auto object-contain"
                 />
               </div>
             );

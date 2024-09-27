@@ -68,7 +68,7 @@ const Accordion = ({
   handleLinkClick?: any;
 }) => {
   return (
-    <div className={`w-full mx-auto ${!sidebar && "pb-4 max-w-md md:hidden"}`}>
+    <div className={`w-full mx-auto ${!sidebar && "pb-4 md:hidden"}`}>
       {services.map((service: any) => (
         <React.Fragment key={service.title}>
           <AccordionItem

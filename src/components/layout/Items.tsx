@@ -6,13 +6,15 @@ import { services, tabs } from "@/data/tabs";
 import { usePathname } from "next/navigation";
 
 const NavbarItems = ({
-  isScrolled,
   pathname,
+  darkMode,
+  isScrolled,
 }: {
   isScrolled: any;
   pathname: string;
+  darkMode?: boolean;
 }) => {
-  const pathName = usePathname();
+  const pathName: any = usePathname();
   const [show, setShow] = useState(false);
   const [showLink, setLinkShow] = useState("");
   const isActive = (path: string) => pathName === path;
@@ -34,14 +36,14 @@ const NavbarItems = ({
             onMouseEnter={() => {
               if (item?.label === "Services") handleShowChildren();
             }}
-            className="relative inline-block py-1 cursor-pointer 2xl:text-xl"
+            className="relative inline-block py-1 cursor-pointer 2xl:text-2xl"
           >
             {item.label}
             <span
               className={`absolute inset-x-0 bottom-0 h-0.5 transform origin-left transition-transform ${
                 isActive(item.path) ? "scale-x-100" : "scale-x-0"
               } ${
-                isScrolled || pathname !== "/" ? "bg-primary" : "bg-white"
+                isScrolled || !darkMode ? "bg-primary" : "bg-white"
               } group-hover:scale-x-100`}
             ></span>
           </Link>
@@ -56,11 +58,11 @@ const NavbarItems = ({
                   return (
                     <div
                       key={index}
-                      className={`px-8 ${
+                      className={`px-8 2xl:px-10 ${
                         index === 1 && "border-x border-white/20"
                       }`}
                     >
-                      <h2 className="text-2xl 2xl:text-3xl font-medium text-left text-nowrap">
+                      <h2 className="text-2xl 2xl:text-4xl font-medium text-left text-nowrap">
                         {service?.title}
                       </h2>
                       <ul>

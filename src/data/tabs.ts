@@ -41,20 +41,20 @@ export const services = [
       { href: "/it-services/payment-gateway", label: "Payment Gateway" },
     ],
   },
-  {
-    title: "Legal Services",
-    links: [
-      { href: "/legal-services/corporate-tax", label: "Corporate Tax" },
-      { href: "/legal-services/litigation", label: "Litigation" },
-      {
-        href: "/legal-services/advisory-internation",
-        label: "Advisory Internation",
-      },
-      { href: "/legal-services/tds-and-accounting", label: "TDS & Accounting" },
-      { href: "/legal-services/gst", label: "GST" },
-      { href: "/legal-services/health-checkup", label: "Health Checkup" },
-    ],
-  },
+  // {
+  //   title: "Legal Services",
+  //   links: [
+  //     { href: "/legal-services/corporate-tax", label: "Corporate Tax" },
+  //     { href: "/legal-services/litigation", label: "Litigation" },
+  //     {
+  //       href: "/legal-services/advisory-internation",
+  //       label: "Advisory Internation",
+  //     },
+  //     { href: "/legal-services/tds-and-accounting", label: "TDS & Accounting" },
+  //     { href: "/legal-services/gst", label: "GST" },
+  //     { href: "/legal-services/health-checkup", label: "Health Checkup" },
+  //   ],
+  // },
   {
     title: "API Services",
     links: [
