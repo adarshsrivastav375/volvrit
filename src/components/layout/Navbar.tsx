@@ -12,7 +12,7 @@ import useScrollPosition from "@/hooks/useScrollPosition";
 
 const Navbar = () => {
   const pathname = usePathname();
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const isScrolled = useScrollPosition(
     typeof window !== "undefined"
       ? window.innerWidth > 768
