@@ -55,14 +55,14 @@ const cardData = [
 
 const CardComponent: React.FC = () => {
   return (
-    <div className="max-w-8xl pt-5 pb-10 px-4 md:px-8 lg:px-24 2xl:px-40 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
+    <div className="max-w-9xl pt-5 pb-10 px-4 md:px-8 lg:px-24 2xl:px-40 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
       {cardData.map((card, index) => (
         <div
           key={index}
           className="border rounded-2xl shadow-corner flex flex-col overflow-hidden"
         >
           <div
-            className={`border-[16px] ${
+            className={`border-[16px] 3xl:border-[24px] 4xl:border-[32px] ${
               index % 2 === 0 ? "border-blue-500" : "border-blue-300"
             } w-full h-full`}
           >
@@ -71,7 +71,7 @@ const CardComponent: React.FC = () => {
               height={500}
               src={card.image}
               alt={card.title}
-              className="mb-4 w-full h-[250px] 2xl:h-96 object-cover object-top"
+              className="mb-4 w-full h-[250px] 2xl:h-96 3xl:h-[424px] 4xl:h-[512px] object-cover object-top"
             />
           </div>
           <div className="p-5">
@@ -89,7 +89,9 @@ const CardComponent: React.FC = () => {
               {card.title}
             </h2>
             <div className="flex justify-between items-center mr-[10%]">
-              <p className="font-light text-xl 2xl:text-4xl">{card.fundingStatus}</p>
+              <p className="font-light text-xl 2xl:text-4xl">
+                {card.fundingStatus}
+              </p>
               <Link
                 href="/"
                 className="inline-block hover:scale-110 transition-all duration-200 ease-linear rounded-full border-gray-400 border p-2"

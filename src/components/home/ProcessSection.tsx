@@ -90,29 +90,29 @@ const ProcessSection: React.FC = () => {
             >
               Deploy
             </motion.div>
-            <div className="absolute left-4 md:left-3 2xl:left-6 bottom-11 md:bottom-16 2xl:bottom-20 w-8 md:w-16 h-[2px] bg-red-500 -rotate-90" />
+            <div className="absolute left-4 md:left-3 2xl:left-6 bottom-11 md:bottom-16 2xl:bottom-20 w-8 md:w-16 h-[2px] bg-blue-500 -rotate-90" />
 
-            <div className="absolute -left-10 md:-left-36 lg:-left-48 -bottom-4 md:-bottom-12 lg:-bottom-16 w-8 md:w-28 lg:w-36 h-[2px] bg-red-500 -rotate-[45deg]" />
-            <div className="absolute -left-10 md:-left-36 lg:-left-48 -top-4 md:-top-12 lg:-top-16 w-8 md:w-28 lg:w-36 h-[2px] bg-red-500 rotate-[30deg]" />
-            <div className="absolute -right-10 md:-right-36 lg:-right-48 -top-4 md:-top-12 lg:-top-16 w-8 md:w-28 lg:w-36 h-[2px] bg-red-500 -rotate-[30deg]" />
-            <div className="absolute -right-10 md:-right-36 lg:-right-48 -bottom-4 md:-bottom-12 lg:-bottom-16 w-8 md:w-28 lg:w-36 h-[2px] bg-red-500 rotate-[30deg]" />
+            <div className="absolute -left-10 md:-left-36 lg:-left-48 -bottom-4 md:-bottom-12 lg:-bottom-16 w-8 md:w-28 lg:w-36 h-[2px] bg-blue-500 -rotate-[45deg]" />
+            <div className="absolute -left-10 md:-left-36 lg:-left-48 -top-4 md:-top-12 lg:-top-16 w-8 md:w-28 lg:w-36 h-[2px] bg-blue-500 rotate-[30deg]" />
+            <div className="absolute -right-10 md:-right-36 lg:-right-48 -top-4 md:-top-12 lg:-top-16 w-8 md:w-28 lg:w-36 h-[2px] bg-blue-500 -rotate-[30deg]" />
+            <div className="absolute -right-10 md:-right-36 lg:-right-48 -bottom-4 md:-bottom-12 lg:-bottom-16 w-8 md:w-28 lg:w-36 h-[2px] bg-blue-500 rotate-[30deg]" />
 
-            <div className="absolute -left-[125px] md:-left-[310px] lg:-left-[424px] -bottom-[26px] md:-bottom-[76px] lg:-bottom-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[2px] bg-red-500">
+            <div className="absolute -left-[125px] md:-left-[310px] lg:-left-[424px] -bottom-[26px] md:-bottom-[76px] lg:-bottom-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[2px] bg-blue-500">
               <span className="relative bottom-7 2xl:bottom-10">
                 <AnimatedText text="Development" />
               </span>
             </div>
-            <div className="absolute -left-[125px] md:-left-[310px] lg:-left-[424px] -top-[26px] md:-top-[76px] lg:-top-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[2px] bg-red-500">
+            <div className="absolute -left-[125px] md:-left-[310px] lg:-left-[424px] -top-[26px] md:-top-[76px] lg:-top-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[2px] bg-blue-500">
               <span className="relative bottom-7 2xl:bottom-10">
                 <AnimatedText text="User Research" />
               </span>
             </div>
-            <div className="absolute -right-[125px] md:-right-[310px] lg:-right-[424px] -top-[26px] md:-top-[76px] lg:-top-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[2px] bg-red-500">
+            <div className="absolute -right-[125px] md:-right-[310px] lg:-right-[424px] -top-[26px] md:-top-[76px] lg:-top-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[2px] bg-blue-500">
               <span className="relative bottom-7 2xl:bottom-10">
                 <AnimatedText text="UI/UX Design" />
               </span>
             </div>
-            <div className="absolute -right-[125px] md:-right-[310px] lg:-right-[424px] -bottom-[26px] md:-bottom-[76px] lg:-bottom-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[2px] bg-red-500">
+            <div className="absolute -right-[125px] md:-right-[310px] lg:-right-[424px] -bottom-[26px] md:-bottom-[76px] lg:-bottom-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[2px] bg-blue-500">
               <span className="relative bottom-7 2xl:bottom-10">
                 <AnimatedText text="Testing" />
               </span>
@@ -131,12 +131,12 @@ const ProcessSection: React.FC = () => {
         </div>
       </div>
 
-      <div className="mx-auto max-w-8xl lg:px-40 2xl:px-40 md:px-8 px-4">
-        <div className="text-center pt-10">
-          <h4 className="text-2xl lg:text-3xl 2xl:text-5xl font-bold pb-2">
+      <div className="mx-auto max-w-9xl lg:px-40 2xl:px-40 md:px-8 px-4">
+        <div className="text-center pt-10 3xl:pt-16 4xl:pt-28">
+          <h4 className="text-2xl lg:text-3xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-bold pb-2">
             Tackling complex integrations?
           </h4>
-          <p className="text-base 2xl:text-xl md:w-2/3 mx-auto">
+          <p className="text-base 2xl:text-xl md:w-2/3 mx-auto 3xl:text-2xl 4xl:text-3xl">
             From intricate challenges to seamless execution, We&apos;ll
             integrate all your marketing tools and automations with your website
           </p>

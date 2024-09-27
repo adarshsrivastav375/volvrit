@@ -84,29 +84,28 @@ const images = [
 ];
 
 interface FormValues {
-  fullName: string;
+  name: string;
   email: string;
+  message: string;
   services: string[];
-  projectDescription: string;
 }
 
 const GetStartedForm = () => {
   const router = useRouter();
   const [formData, setFormData] = useState<FormValues>({
-    fullName: "",
+    name: "",
     email: "",
     services: [],
-    projectDescription: "",
+    message: "",
   });
 
   const [errors, setErrors] = useState<FormValues>({
-    fullName: "",
+    name: "",
     email: "",
     services: [],
-    projectDescription: "",
+    message: "",
   });
 
-  // Services options
   const servicesOptions = [
     "App Development",
     "Web Development",
@@ -132,7 +131,7 @@ const GetStartedForm = () => {
 
   const validateForm = () => {
     let newErrors: any = {};
-    if (!formData.fullName) newErrors.fullName = "Full name is required.";
+    if (!formData.name) newErrors.name = "Full name is required.";
     if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = "A valid email is required.";
     }
@@ -148,21 +147,30 @@ const GetStartedForm = () => {
     if (!validateForm()) return;
     try {
       setErrors({
-        fullName: "",
+        name: "",
         email: "",
         services: [],
-        projectDescription: "",
+        message: "",
       });
-      const response: any = await Post("/api/start-project", formData);
-      if (response) toast.success("Form saved successfully!");
+      const data = {
+        name: formData.name,
+        email: formData.email,
+        service: formData.services.join(", "),
+        message: formData.message,
+      };
+      const response: any = await Post(
+        "https://crm.volvrit.com/api/contact-us",
+        data
+      );
+      if (response?.message) toast.success(response?.message);
     } catch (error) {
       console.error("Form submission error:", error);
     } finally {
       setFormData({
-        fullName: "",
+        name: "",
         email: "",
         services: [],
-        projectDescription: "",
+        message: "",
       });
     }
   };
@@ -173,9 +181,9 @@ const GetStartedForm = () => {
       style={{ backgroundImage: "url('/assets/home/banner.jpg')" }} // Change to your background image path
     >
       <div className="p-4 md:p-8 w-full">
-        <div className="flex flex-col lg:flex-row gap-5 lg:gap-20 2xl:gap-24 3xl:gap-28 4xl:gap-96">
+        <div className="flex flex-col lg:flex-row gap-5 lg:gap-20 2xl:gap-24 3xl:gap-28 4xl:gap-40">
           <div className="w-full lg:w-1/2 text-white">
-            <h1 className="text-5xl md:text-7xl 3xl:text-8xl mb-6 font-medium">
+            <h1 className="text-5xl md:text-7xl 3xl:text-9xl mb-6 font-medium">
               Get Started
             </h1>
             <p className="text-lg 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-4 font-extralight">
@@ -183,7 +191,7 @@ const GetStartedForm = () => {
               the form and tell us about your vision. We&apos;re here to bring
               your ideas into a stunning digital experience.
             </p>
-            <div className="grid grid-cols-5 md:grid-cols-7 lg:grid-cols-5 py-5 gap-10 justify-center items-center">
+            <div className="grid grid-cols-5 md:grid-cols-7 lg:grid-cols-5 2xl:grid-cols-6 py-5 gap-10 justify-center items-center">
               {images.map((image, index) => {
                 return (
                   <div key={index}>
@@ -213,36 +221,40 @@ const GetStartedForm = () => {
           </div>
 
           {/* Right section - Form */}
-          <div className="w-full lg:w-1/2 bg-black p-6 md:p-8 2xl:p-12 3xl:p-16 4xl:p-20 border border-b-4 border-white/40 rounded-2xl">
+          <div className="w-full lg:w-1/2 bg-black p-6 md:p-8 2xl:p-12 3xl:p-14 4xl:p-16 border border-b-4 border-white/40 rounded-2xl">
             <form onSubmit={handleSubmit} className="space-y-6">
-              <p className="text-lg text-white 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-4 font-extralight">
+              <p className="text-lg text-white 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-4 2xl:mb-10 font-extralight">
                 Complete the form, and a member of our team will reach out to
                 you within 24hrs.
               </p>
-              <div className="grid grid-cols-1 gap-6 2xl:gap-10 4xl:gap-14 md:grid-cols-2">
+              <div className="grid grid-cols-1 gap-6 2xl:gap-10 md:grid-cols-2">
                 {/* Full name */}
                 <div>
-                  <label htmlFor="fullName" className="text-white 2xl:text-2xl 3xl:text-3xl">
+                  <label
+                    htmlFor="name"
+                    className="text-white 2xl:text-2xl 3xl:text-3xl"
+                  >
                     Full Name*
                   </label>
                   <input
-                    id="fullName"
-                    name="fullName"
+                    id="name"
+                    name="name"
                     type="text"
-                    value={formData.fullName}
+                    value={formData.name}
                     onChange={handleChange}
                     className="w-full p-2 2xl:p-3 3xl:p-4 mt-2 rounded bg-gray-800 text-white border border-gray-600 focus:border-blue-500 focus:outline-none"
                   />
-                  {errors.fullName && (
-                    <p className="text-red-500 text-sm mt-1">
-                      {errors.fullName}
-                    </p>
+                  {errors.name && (
+                    <p className="text-red-500 text-sm mt-1">{errors.name}</p>
                   )}
                 </div>
 
                 {/* Email */}
                 <div>
-                  <label htmlFor="email" className="text-white 2xl:text-2xl 3xl:text-3xl">
+                  <label
+                    htmlFor="email"
+                    className="text-white 2xl:text-2xl 3xl:text-3xl"
+                  >
                     Email*
                   </label>
                   <input
@@ -260,11 +272,11 @@ const GetStartedForm = () => {
               </div>
 
               {/* Services Selection */}
-              <div>
+              <div className="2xl:py-5">
                 <label className="text-white 2xl:text-2xl 3xl:text-3xl">
                   What services are you interested in?*
                 </label>
-                <div className="flex flex-wrap gap-3 mt-2">
+                <div className="flex flex-wrap gap-3 2xl:gap-5 mt-2 2xl:pt-4">
                   {servicesOptions.map((service) => (
                     <button
                       type="button"
@@ -289,13 +301,16 @@ const GetStartedForm = () => {
 
               {/* Project Description */}
               <div>
-                <label htmlFor="projectDescription" className="text-white 2xl:text-2xl 3xl:text-3xl">
+                <label
+                  htmlFor="message"
+                  className="text-white 2xl:text-2xl 3xl:text-3xl"
+                >
                   Share a brief project description (optional)
                 </label>
                 <textarea
-                  id="projectDescription"
-                  name="projectDescription"
-                  value={formData.projectDescription}
+                  id="message"
+                  name="message"
+                  value={formData.message}
                   onChange={handleChange}
                   className="w-full p-2 2xl:p-3 3xl:p-4 mt-2 rounded bg-gray-800 text-white border border-gray-600 focus:border-blue-500 focus:outline-none"
                   rows={4}

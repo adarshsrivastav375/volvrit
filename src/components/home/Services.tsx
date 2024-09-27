@@ -84,7 +84,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="w-full px-4 md:px-6 lg:pt-20 lg:px-36 max-w-8xl mx-auto bg-white">
+    <div className="w-full px-4 md:px-6 lg:pt-20 lg:px-36 max-w-9xl mx-auto bg-white">
       <div className="hidden lg:grid grid-cols-3 gap-7">
         {services.map((service, index) => (
           <div
@@ -96,18 +96,20 @@ const Services = () => {
                 width={40}
                 height={40}
                 alt={service.title}
-                className="object-contain"
+                className="3xl:w-20 4xl:w-28 object-contain"
                 src={service.image}
               />
             </div>
-            <h3 className="text-2xl 2xl:text-4xl py-5 font-bold uppercase">
+            <h3 className="text-2xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl py-5 font-bold uppercase">
               <span>
                 {service.title.split(" ")[0]}
                 <br />
               </span>
               <span>{service.title.split(" ")[1]}</span>
             </h3>
-            <p className="text-sm 2xl:text-xl">{service.description}</p>
+            <p className="text-sm 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+              {service.description}
+            </p>
           </div>
         ))}
       </div>

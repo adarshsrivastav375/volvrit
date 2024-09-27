@@ -43,15 +43,15 @@ const Navbar = () => {
             className="flex justify-start items-center gap-3"
             aria-label="EmailId"
           >
-            <MdOutlineMailLock size={20} /> info@volvrit.com
+            <MdOutlineMailLock size={20} /> hi@volvrit.com
           </Link>
-          <Link
+          {/* <Link
             href={"tel:+917599990331"}
             className="flex justify-start items-center gap-3"
             aria-label="Phone number"
           >
             <FiPhone size={16} /> +91 7599990331
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div
@@ -67,7 +67,11 @@ const Navbar = () => {
           <Logo
             textColor={isScrolled || !darkMode ? "text-black" : "text-white"}
           />
-          <NavbarItems isScrolled={isScrolled} pathname={pathname} darkMode={darkMode} />
+          <NavbarItems
+            isScrolled={isScrolled}
+            pathname={pathname}
+            darkMode={darkMode}
+          />
           <div className="hidden lg:block place-self-end my-auto">
             <Link
               href={"/contact-us"}
