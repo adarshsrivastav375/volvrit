@@ -24,6 +24,7 @@ const images = [
 interface FormValues {
   name: string;
   email: string;
+  phone: string;
   message: string;
   services: string[];
 }
@@ -33,12 +34,14 @@ const GetStartedForm = () => {
   const [formData, setFormData] = useState<FormValues>({
     name: "",
     email: "",
+    phone: "",
     services: [],
     message: "",
   });
 
   const [errors, setErrors] = useState<FormValues>({
     name: "",
+    phone: "",
     email: "",
     services: [],
     message: "",
@@ -90,14 +93,16 @@ const GetStartedForm = () => {
       setErrors({
         name: "",
         email: "",
+        phone: "",
         services: [],
         message: "",
       });
       const data = {
         name: formData.name,
+        phone: formData.phone,
         email: formData.email,
-        service: formData.services.join(", "),
         message: formData.message,
+        service: formData.services.join(", "),
       };
       const response: any = await Post(
         "https://crm.volvrit.com/api/contact-us",
@@ -110,6 +115,7 @@ const GetStartedForm = () => {
       setFormData({
         name: "",
         email: "",
+        phone: "",
         services: [],
         message: "",
       });
@@ -203,7 +209,26 @@ const GetStartedForm = () => {
                   )}
                 </div>
               </div>
-
+              <div>
+                <label
+                  htmlFor="email"
+                  className="text-white 2xl:text-2xl 3xl:text-3xl"
+                >
+                  Phone Number*
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="text"
+                  maxLength={15}
+                  value={formData.phone}
+                  onChange={handleChange}
+                  className="w-full p-2 2xl:p-3 3xl:p-4 mt-2 rounded bg-gray-800 text-white border border-gray-600 focus:border-blue-500 focus:outline-none"
+                />
+                {errors.email && (
+                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                )}
+              </div>
               {/* Services Selection */}
               <div className="2xl:py-5">
                 <label className="text-white 2xl:text-2xl 3xl:text-3xl">
