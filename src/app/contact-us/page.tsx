@@ -79,6 +79,9 @@ const GetStartedForm = () => {
     if (formData.services.length === 0) {
       newErrors.services = ["Please select at least one service."];
     }
+    if (formData.phone.length < 10) {
+      newErrors.phone = ["Must be at least 10 characters."];
+    }
     if (formData.message.length < 10) {
       newErrors.message = ["Please describe your message."];
     }
@@ -221,12 +224,13 @@ const GetStartedForm = () => {
                   name="phone"
                   type="text"
                   maxLength={15}
+                  inputMode="numeric"
                   value={formData.phone}
                   onChange={handleChange}
                   className="w-full p-2 2xl:p-3 3xl:p-4 mt-2 rounded bg-gray-800 text-white border border-gray-600 focus:border-blue-500 focus:outline-none"
                 />
-                {errors.email && (
-                  <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+                {errors.phone && (
+                  <p className="text-red-500 text-sm mt-1">{errors.phone}</p>
                 )}
               </div>
               {/* Services Selection */}
