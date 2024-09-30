@@ -32,7 +32,7 @@ const Sidebar = () => {
           isOpen ? "w-[90%] md:w-3/4" : "w-0"
         } transition-all duration-500 ease-in-out`}
       >
-        <div className={`${isOpen ? "block" : "hidden"}`}>
+        <div>
           <div className="flex p-3 shadow-md z-50 justify-between items-center">
             <Logo />
             <p className="font-extrabold text-2xl" onClick={toggleSidebar}>

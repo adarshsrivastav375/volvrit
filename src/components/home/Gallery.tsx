@@ -14,6 +14,8 @@ const gallery = [
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
+      "/assets/home/aboutUs.png",
+      "/assets/home/aboutUs.png",
     ],
   },
   {
@@ -22,11 +24,15 @@ const gallery = [
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
+      "/assets/home/aboutUs.png",
     ],
   },
   {
     id: 3,
     images: [
+      "/assets/home/aboutUs.png",
+      "/assets/home/aboutUs.png",
+      "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",

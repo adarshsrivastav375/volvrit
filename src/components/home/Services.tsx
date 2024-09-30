@@ -137,25 +137,25 @@ const Services = () => {
             <SwiperSlide key={index}>
               <div
                 key={service.id}
-                className={`${service.bgClass} cursor-pointer h-72 md:h-96 p-5 rounded-xl shadow-corner hover:shadow-none transition-all duration-200 ease-linear`}
+                className={`${service.bgClass} cursor-pointer mx-2 md:mx-0 h-80 md:h-96 p-5 rounded-xl shadow-corner hover:shadow-none transition-all duration-200 ease-linear`}
               >
                 <div className="px-3">
                   <Image
                     width={40}
                     height={40}
                     alt={service.title}
-                    className="object-contain"
+                    className="w-12 md:w-auto object-contain"
                     src={service.image}
                   />
                 </div>
-                <h3 className="text-xl md:text-2xl 2xl:text-4xl py-3 md:py-5 font-bold uppercase">
+                <h3 className="text-2xl 2xl:text-4xl py-3 md:py-5 font-bold uppercase">
                   <span>
                     {service.title.split(" ")[0]}
                     <br />
                   </span>
                   <span>{service.title.split(" ")[1]}</span>
                 </h3>
-                <p className="text-sm 2xl:text-xl">{service.description}</p>
+                <p className="text-lg 2xl:text-xl">{service.description}</p>
               </div>
             </SwiperSlide>
           ))}

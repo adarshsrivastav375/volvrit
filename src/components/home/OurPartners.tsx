@@ -105,7 +105,7 @@ const OurPartners = () => {
         A few companies who trusted <br />
         us with their projects
       </h5>
-      <div className="relative grid grid-cols-3 gap-10 pt-5 overflow-auto md:gap-0 justify-center items-center z-10">
+      <div className="relative grid grid-cols-3 gal-5 lg:gap-10 pt-5 overflow-auto md:gap-0 justify-center items-center z-10">
         <>
           {trustedClient.map((trust, idx) => {
             return (

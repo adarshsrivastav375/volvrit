@@ -26,7 +26,7 @@ const HeroSection = () => {
         className="bg-violet-950 absolute inset-0 w-full h-full object-cover"
       />
       <div className="relative z-10 text-center px-4 md:px-6 lg:px-20 md:py-20 lg:py-0">
-        <h1 className="text-3xl md:text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-8xl font-semibold mx-auto mb-5">
+        <h1 className="text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-8xl font-semibold mx-auto mb-5">
           Web Designing & Development
           <br /> Digital marketing & Mobile App&apos;s
         </h1>
@@ -48,7 +48,7 @@ const HeroSection = () => {
                   src={image?.url}
                   width={image?.width}
                   alt={`image-${index}`}
-                  className={`h-fit w-10 md:w-20 lg:w-auto 2xl:w-28 3xl:w-36 4xl:w-48 ${
+                  className={`h-fit w-12 md:w-20 lg:w-auto 2xl:w-28 3xl:w-36 4xl:w-48 ${
                     image?.nograyscale ? "" : "brightness-[.5]"
                   } `}
                 />

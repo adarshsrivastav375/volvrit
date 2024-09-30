@@ -49,7 +49,7 @@ const Testimonials = () => {
         </div>
         <Swiper
           modules={[Autoplay, Pagination]}
-          spaceBetween={30}
+          spaceBetween={20}
           slidesPerView={1.4}
           breakpoints={{
             640: {
@@ -74,7 +74,7 @@ const Testimonials = () => {
             <SwiperSlide key={index} className="h-full">
               <div
                 key={index}
-                className="bg-white h-full shadow-corner mt-2 p-5 rounded-lg flex flex-col"
+                className="bg-white ml-2 md:ml-0 h-full shadow-corner mt-2 p-5 rounded-lg flex flex-col"
               >
                 <div className="flex justify-between items-start w-full mb-2">
                   <div className="flex gap-2 2xl:gap-5 items-center text-left">

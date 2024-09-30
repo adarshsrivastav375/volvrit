@@ -31,11 +31,11 @@ const contentData = [
 const StatsComponent: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-9xl mx-auto py-10 px-4 md:px-8 lg:px-16 2xl:px-40 2xl:py-20 3xl:py-40">
-      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-5 w-full">
+      <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-5 w-full">
         {contentData.map((item, index) => (
           <div
             key={index}
-            className="text-center border-l border-gray-400 px-5 pb-5 lg:first:border-l-0"
+            className="text-center border-l border-gray-400 px-5 py-2 lg:first:border-l-0"
           >
             <h2 className="text-5xl 2xl:text-7xl 3xl:text-8xl pb-2 font-semibold text-nowrap flex justify-center items-center gap-2">
               {item.rating}{" "}
