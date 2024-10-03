@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useInView } from "framer-motion";
+import ConcentricCircles from "./ConcentricCircle";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 
 // Animation Variants for Framer Motion
@@ -34,7 +35,7 @@ const AnimatedText = ({ text }: { text: string }) => (
     {text.split("").map((letter, idx) => (
       <motion.span
         key={idx}
-        className="text-xs md:text-xl lg:text-2xl 2xl:text-3xl font-semibold"
+        className="text-xs md:text-xl lg:text-2xl border-b-2 3xl:border-b-4 border-b-red-500 pb-2 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl font-semibold"
         variants={letterVariant}
       >
         {letter}
@@ -50,7 +51,7 @@ const ProcessSection: React.FC = () => {
 
   return (
     <>
-      <div className="relative">
+      <div className="relative h-screen">
         <Image
           src="/assets/home/bg.png"
           width={100}
@@ -58,7 +59,7 @@ const ProcessSection: React.FC = () => {
           alt="First Image"
           unoptimized
           priority
-          className="w-full h-auto relative z-10" // Add a margin at the bottom of the first image
+          className="w-full h-screen relative z-10" // Add a margin at the bottom of the first image
         />
         <div>
           <Image
@@ -68,16 +69,15 @@ const ProcessSection: React.FC = () => {
             alt="Second Image"
             unoptimized
             priority
-            className="absolute top-0 left-0 right-0 w-full md:w-4/5 lg:w-[90%] flex justify-center items-start mx-auto h-auto transform translate-y-10"
-            style={{ marginBottom: "10px" }}
+            className="absolute top-0 left-0 right-0 w-full flex justify-center items-start mx-auto h-screen"
           />
         </div>
-        <div className="absolute inset-0 md:right-0 md:left-0 md:top-5 lg:inset-0 w-full lg:h-screen flex flex-col justify-center gap-10 md:gap-20 items-center">
+        <div className="absolute inset-0 -top-[5vw] w-full lg:h-screen flex flex-col justify-center gap-10 md:gap-20 items-center">
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="bg-gradient-to-tr 2xl:text-2xl from-black via-primary to-black text-white text-sm md:text-xl font-bold w-20 md:w-32 2xl:w-48 flex justify-center items-center aspect-square rounded-full shadow-lg"
+            className="bg-gradient-to-tr 2xl:text-2xl from-black via-primary to-black text-white text-sm md:text-xl font-bold w-[20vw] md:w-[25vw] lg:w-[10vw] 2xl:w-[20vw] 4xl:w-[15vw] 3xl:text-6xl 4xl:text-7xl flex justify-center items-center aspect-square rounded-full shadow-lg"
           >
             Process
           </motion.div>
@@ -90,32 +90,24 @@ const ProcessSection: React.FC = () => {
             >
               Deploy
             </motion.div>
-            <div className="absolute left-4 md:left-3 2xl:left-6 bottom-11 md:bottom-16 2xl:bottom-20 w-8 md:w-16 h-[1px] md:h-[2px] bg-blue-500 -rotate-90" />
+            <div className="absolute left-4 md:left-3 2xl:left-6 bottom-11 md:bottom-16 2xl:bottom-20 w-8 md:w-16 h-[1px] md:h-[2px] bg-red-500 -rotate-90" />
 
-            <div className="absolute -left-10 md:-left-36 lg:-left-48 -bottom-4 md:-bottom-12 lg:-bottom-16 w-8 md:w-28 lg:w-36 h-[1px] md:h-[2px] bg-blue-500 -rotate-[30deg]" />
-            <div className="absolute -left-10 md:-left-36 lg:-left-48 -top-4 md:-top-12 lg:-top-16 w-8 md:w-28 lg:w-36 h-[1px] md:h-[2px] bg-blue-500 rotate-[30deg]" />
-            <div className="absolute -right-10 md:-right-36 lg:-right-48 -top-4 md:-top-12 lg:-top-16 w-8 md:w-28 lg:w-36 h-[1px] md:h-[2px] bg-blue-500 -rotate-[30deg]" />
-            <div className="absolute -right-10 md:-right-36 lg:-right-48 -bottom-4 md:-bottom-12 lg:-bottom-16 w-8 md:w-28 lg:w-36 h-[1px] md:h-[2px] bg-blue-500 rotate-[30deg]" />
+            <div className="absolute -left-[5vw] md:-left-[10vw] lg:-left-[12vw] 3xl:-left-[15vw] -bottom-4 md:-bottom-[5vw] lg:-bottom-[5vw] w-[8vw] md:w-[12vw] lg:w-[13vw] 3xl:w-[15vw] h-[1px] md:h-[2px] bg-red-500 -rotate-[30deg]" />
+            <div className="absolute -left-[5vw] md:-left-[10vw] lg:-left-[12vw] 3xl:-left-[15vw] -top-4 md:-top-[5vw] lg:-top-[5vw] w-[8vw] md:w-[12vw] lg:w-[13vw] 3xl:w-[15vw] h-[1px] md:h-[2px] bg-red-500 rotate-[30deg]" />
+            <div className="absolute -right-[5vw] md:-right-[10vw] lg:-right-[12vw] 3xl:-right-[15vw] -top-4 md:-top-[5vw] lg:-top-[5vw] w-[8vw] md:w-[12vw] lg:w-[13vw] 3xl:w-[15vw] h-[1px] md:h-[2px] bg-red-500 -rotate-[30deg]" />
+            <div className="absolute -right-[5vw] md:-right-[10vw] lg:-right-[12vw] 3xl:-right-[15vw] -bottom-4 md:-bottom-[5vw] lg:-bottom-[5vw] w-[8vw] md:w-[12vw] lg:w-[13vw] 3xl:w-[15vw] h-[1px] md:h-[2px] bg-red-500 rotate-[30deg]" />
 
-            <div className="absolute -left-[125px] md:-left-[310px] lg:-left-[424px] -bottom-[26px] md:-bottom-[76px] lg:-bottom-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[1px] md:h-[2px] bg-blue-500">
-              <span className="relative bottom-7 2xl:bottom-10">
-                <AnimatedText text="Development" />
-              </span>
+            <div className="absolute -left-[30vw] md:-left-[35vw] lg:-left-[30vw] 3xl:-left-[35vw] -bottom-[7vw] md:-bottom-[8vw] lg:-bottom-[8vw]">
+              <AnimatedText text="Development" />
             </div>
-            <div className="absolute -left-[125px] md:-left-[310px] lg:-left-[424px] -top-[26px] md:-top-[76px] lg:-top-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[1px] md:h-[2px] bg-blue-500">
-              <span className="relative bottom-7 2xl:bottom-10">
-                <AnimatedText text="User Research" />
-              </span>
+            <div className="absolute -left-[30vw] md:-left-[35vw] lg:-left-[30vw] 3xl:-left-[35vw] -top-[13vw] md:-top-[12vw] lg:-top-[11vw]">
+              <AnimatedText text="User Research" />
             </div>
-            <div className="absolute -right-[125px] md:-right-[310px] lg:-right-[424px] -top-[26px] md:-top-[76px] lg:-top-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[1px] md:h-[2px] bg-blue-500">
-              <span className="relative bottom-7 2xl:bottom-10">
-                <AnimatedText text="UI/UX Design" />
-              </span>
+            <div className="absolute -right-[30vw] md:-right-[35vw] lg:-right-[30vw] 3xl:-right-[35vw] -top-[14vw] md:-top-[13vw] lg:-top-[11vw]">
+              <AnimatedText text="UI/UX Design" />
             </div>
-            <div className="absolute -right-[125px] md:-right-[310px] lg:-right-[424px] -bottom-[26px] md:-bottom-[76px] lg:-bottom-[99px] w-20 md:w-40 lg:w-52 2xl:w-56 h-[1px] md:h-[2px] bg-blue-500">
-              <span className="relative bottom-7 2xl:bottom-10">
-                <AnimatedText text="Testing" />
-              </span>
+            <div className="absolute -right-[23vw] md:-right-[29vw] lg:-right-[26vw] 3xl:-right-[30vw] -bottom-[7vw] md:-bottom-[9vw] lg:-bottom-[8vw]">
+              <AnimatedText text="Testing" />
             </div>
           </div>
         </div>
@@ -123,7 +115,7 @@ const ProcessSection: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.5 }}
+            transition={{ duration: 0.5 }}
             className="py-2 2xl:py-4 px-5 w-fit mx-auto mb-5 cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
           >
             <span>Start a Project</span> <BsArrowRightCircleFill />
@@ -148,8 +140,9 @@ const ProcessSection: React.FC = () => {
           alt="Figma"
           unoptimized
           priority
-          className="w-full md:w-2/3 2xl:w-4/5 my-10 lg:mt-20 mx-auto h-auto"
+          className="w-full md:w-2/3 2xl:w-1/2 my-10 lg:mt-20 mx-auto h-auto"
         />
+        {/* <ConcentricCircles /> */}
       </div>
     </>
   );

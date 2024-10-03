@@ -38,6 +38,10 @@ export const services = [
       { href: "/it-services/crm-development", label: "CRM Development" },
       { href: "/it-services/digital-marketing", label: "Digital Marketing" },
       { href: "/it-services/erp-development", label: "ERP Development" },
+      {
+        href: "/it-services/blockchain-development",
+        label: "Blockchain Development",
+      },
       { href: "/it-services/payment-gateway", label: "Payment Gateway" },
     ],
   },

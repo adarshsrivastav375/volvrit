@@ -22,18 +22,19 @@ const Navbar = () => {
   );
 
   useEffect(() => {
-    if (pathname === "/" || pathname === "/contact-us") setDarkMode(true);
+    if (
+      pathname === "/" ||
+      pathname === "/contact-us" ||
+      pathname === "/it-services/blockchain-development"
+    )
+      setDarkMode(true);
     else setDarkMode(false);
   }, [pathname]);
 
   return (
     <section
       className={`fixed w-full top-0 z-50 ${
-        isScrolled
-          ? "text-black"
-          : pathname === "/" || pathname === "/contact-us"
-          ? "text-white"
-          : "text-black"
+        isScrolled ? "text-black" : darkMode ? "text-white" : "text-black"
       }`}
     >
       <div className={`bg-[#003070] ${"text-white"}`}>

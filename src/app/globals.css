@@ -67,3 +67,33 @@ select:-webkit-autofill {
 input[value=""]:not(:focus) {
   color: transparent;
 }
+
+.aboutUsSwiper > .swiper-wrapper {
+  margin-bottom: 12px !important;
+}
+
+@keyframes spinOrbit {
+  0% {
+    transform: rotate(0deg) translateX(12.5vw) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(12.5vw) rotate(-360deg);
+  }
+}
+
+@keyframes spinOrbitDelay {
+  0% {
+    transform: rotate(180deg) translateX(12.5vw) rotate(0deg);
+  }
+  100% {
+    transform: rotate(540deg) translateX(12.5vw) rotate(-360deg);
+  }
+}
+
+.animate-spin-orbit {
+  animation: spinOrbit 5s linear infinite;
+}
+
+.animate-spin-orbit-delay {
+  animation: spinOrbitDelay 5s linear infinite;
+}

@@ -55,11 +55,11 @@ const cardData = [
 
 const CardComponent: React.FC = () => {
   return (
-    <div className="max-w-9xl pt-5 pb-10 px-4 md:px-8 lg:px-24 2xl:px-40 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8">
+    <div className="max-w-9xl pt-5 pb-10 px-4 md:px-8 lg:px-24 2xl:px-40 mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-8 3xl:gap-16">
       {cardData.map((card, index) => (
         <div
           key={index}
-          className="border rounded-2xl shadow-corner flex flex-col overflow-hidden"
+          className="border rounded-2xl 3xl:rounded-3xl shadow-corner flex flex-col overflow-hidden"
         >
           <div
             className={`border-[16px] 3xl:border-[24px] 4xl:border-[32px] ${

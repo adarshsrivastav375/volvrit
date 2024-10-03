@@ -49,7 +49,7 @@ const Testimonials = () => {
         </div>
         <Swiper
           modules={[Autoplay, Pagination]}
-          spaceBetween={20}
+          spaceBetween={5}
           slidesPerView={1.4}
           breakpoints={{
             640: {
@@ -71,10 +71,10 @@ const Testimonials = () => {
           className="w-full mx-auto rounded-xl h-full"
         >
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index} className="h-full">
+            <SwiperSlide key={index} className="h-full px-2">
               <div
                 key={index}
-                className="bg-white ml-2 md:ml-0 h-full shadow-corner mt-2 p-5 rounded-lg flex flex-col"
+                className="bg-white ml-2 md:ml-0 h-full shadow-corner mt-2 p-5 rounded-xl 3xl:rounded-3xl flex flex-col"
               >
                 <div className="flex justify-between items-start w-full mb-2">
                   <div className="flex gap-2 2xl:gap-5 items-center text-left">
@@ -99,7 +99,7 @@ const Testimonials = () => {
                   <PiStarFill />
                   <PiStarFill />
                 </p>
-                <p className="text-gray-700 min-h-32 2xl:min-h-40 3xl:min-h-52 4xl:min-h-64 mb-4 text-sm 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+                <p className="text-gray-700 min-h-36 2xl:min-h-40 3xl:min-h-52 4xl:min-h-64 mb-4 text-sm 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                   {testimonial.text}
                 </p>
               </div>

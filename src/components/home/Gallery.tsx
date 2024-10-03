@@ -14,8 +14,6 @@ const gallery = [
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
-      "/assets/home/aboutUs.png",
-      "/assets/home/aboutUs.png",
     ],
   },
   {
@@ -24,15 +22,11 @@ const gallery = [
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
-      "/assets/home/aboutUs.png",
     ],
   },
   {
     id: 3,
     images: [
-      "/assets/home/aboutUs.png",
-      "/assets/home/aboutUs.png",
-      "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
       "/assets/home/aboutUs.png",
@@ -57,10 +51,10 @@ const Gallery = () => {
                 disableOnInteraction: false,
               }}
               pagination={{ clickable: true }}
-              className="w-full mx-auto rounded-xl h-full"
+              className="w-full mx-auto rounded-xl h-full aboutUsSwiper"
             >
               {gal.images.map((image: any, index: any) => (
-                <SwiperSlide key={index} className="h-full">
+                <SwiperSlide key={index} className="h-full mb-2 3xl:mb-5 3xl:mx-2">
                   <div
                     key={index}
                     className="bg-gray-200 rounded-xl w-full h-full aspect-square shadow-corner flex flex-col"
