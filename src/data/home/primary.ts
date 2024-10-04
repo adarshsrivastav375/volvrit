@@ -34,7 +34,7 @@ export const caseStudies = [
     imageUrl: "",
     title: "Spotlight - Equinox Collection by Shane Griffin",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.",
   },
   {
     id: 12,
@@ -43,7 +43,7 @@ export const caseStudies = [
     imageUrl: "",
     title: "Spotlight - Equinox Collection by Shane Griffin",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.",
   },
   {
     id: 13,
@@ -52,7 +52,7 @@ export const caseStudies = [
     imageUrl: "",
     title: "Spotlight - Equinox Collection by Shane Griffin",
     description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.",
   },
 ];
 

@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" }, // Adjust to -50% for seamless looping
+        },
+      },
+      animation: {
+        marquee: "marquee 20s linear infinite", // Make it infinite for continuous looping
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -19,6 +28,9 @@ const config: Config = {
       boxShadow: {
         corner:
           "rgba(60, 64, 67, 0.3) 0px 0px 0px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",
+      },
+      dropShadow: {
+        "4xl": "0 35px 35px rgba(0, 0, 0, 0.25)",
       },
       maxWidth: {
         "8xl": "124rem", // 1984 px

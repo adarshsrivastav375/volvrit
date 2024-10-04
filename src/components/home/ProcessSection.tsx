@@ -51,7 +51,7 @@ const ProcessSection: React.FC = () => {
 
   return (
     <>
-      <div className="relative h-screen">
+      <div className="relative lg:h-screen">
         <Image
           src="/assets/home/bg.png"
           width={100}
@@ -59,7 +59,7 @@ const ProcessSection: React.FC = () => {
           alt="First Image"
           unoptimized
           priority
-          className="w-full h-screen relative z-10" // Add a margin at the bottom of the first image
+          className="w-full lg:h-screen relative z-10" // Add a margin at the bottom of the first image
         />
         <div>
           <Image
@@ -69,10 +69,10 @@ const ProcessSection: React.FC = () => {
             alt="Second Image"
             unoptimized
             priority
-            className="absolute top-0 left-0 right-0 w-full flex justify-center items-start mx-auto h-screen"
+            className="absolute top-0 left-0 right-0 w-full flex justify-center items-start mx-auto lg:h-screen"
           />
         </div>
-        <div className="absolute inset-0 -top-[5vw] w-full lg:h-screen flex flex-col justify-center gap-10 md:gap-20 items-center">
+        <div className="absolute inset-0 -top-[14vw] md:-top-[20vw] lg:-top-[5vw] w-full lg:h-screen flex flex-col justify-center gap-10 md:gap-20 items-center">
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}

@@ -25,7 +25,12 @@ const Navbar = () => {
     if (
       pathname === "/" ||
       pathname === "/contact-us" ||
-      pathname === "/it-services/blockchain-development"
+      pathname === "/it-services/blockchain-development" ||
+      pathname === "/it-services/mobile-development" ||
+      pathname === "/it-services/web-development" ||
+      pathname === "/it-services/crm-development" ||
+      pathname === "/it-services/shopify-development" ||
+      pathname === "/it-services/saas-development"
     )
       setDarkMode(true);
     else setDarkMode(false);

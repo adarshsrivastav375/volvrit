@@ -3,17 +3,17 @@ import Image from "next/image";
 const BlockchainInfo: React.FC = () => {
   return (
     <div className="bg-[#0C2C4F]">
-      <div className="text-white py-20 max-w-9xl mx-auto px-4 md:px-6 lg:px-20 shadow-lg flex flex-col md:flex-row md:items-center md:gap-10">
+      <div className="text-white py-20 max-w-9xl mx-auto px-4 md:px-6 lg:px-20 shadow-lg flex flex-col md:flex-row justify-start md:items-start md:gap-10">
         <div className="flex-shrink-0 mb-4 md:mb-0 lg:w-1/3">
           <h2 className="text-2xl lg:text-4xl 3xl:text-6xl 4xl:text-7xl font-bold mb-2">
             How Blockchain <br /> Works
           </h2>
-          <div className="bg-gradient-to-b from-[#044CAD] via-[#152F87] to-[#211C63] w-full flex justify-center p-8 items-center rounded-xl my-8">
+          <div className="bg-gradient-to-b from-[#044CAD] via-[#152F87] to-[#211C63] w-full flex justify-center p-5 items-center rounded-xl my-8">
             <Image
               width={100}
               height={100}
               alt="Bitcoin Icon"
-              className="w-1/2 rounded-full"
+              className="w-3/5 rounded-full"
               src={"https://volvrit.s3.ap-south-1.amazonaws.com/bitcoin.png"}
             />
           </div>

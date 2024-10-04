@@ -1,19 +1,45 @@
 import Link from "next/link";
+import Image from "next/image";
 import { questions } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
 import { BsArrowRightCircleFill } from "react-icons/bs";
-import HeroSection from "@/components/services/mobile/Herosection";
-import WhatWeOffer from "@/components/services/mobile/WhatWeOffer";
-import IndustryWeTarget from "@/components/services/mobile/IndustryWeTarget";
-import WhyChooseVolvrit from "@/components/services/mobile/WhyChooseVolvrit";
+import { trustedClient } from "@/components/home/OurPartners";
+import CRMBenefits from "@/components/services/crm/CRMBenefits";
+import HeroSection from "@/components/services/crm/Herosection";
+import CRMSolutions from "@/components/services/crm/CRMSolutions";
+import ExtraBenefits from "@/components/services/crm/ExtraBenefits";
 
+const images = [
+  { width: 100, url: "/assets/logo/services/nextjs.png" },
+  { width: 70, url: "/assets/logo/services/blockchain.png" },
+  { width: 70, url: "/assets/logo/services/bubble.png" },
+  { width: 80, url: "/assets/logo/services/reactjs.png" },
+  { width: 90, url: "/assets/logo/services/ios.png" },
+  { width: 100, nograyscale: true, url: "/assets/logo/services/aws.png" },
+  { width: 120, url: "/assets/logo/services/nodejs.png" },
+  { width: 70, url: "/assets/logo/services/group.png" },
+  { width: 50, url: "/assets/logo/services/android.png" },
+  { width: 90, nograyscale: true, url: "/assets/logo/services/53.png" },
+];
 export default function Page() {
   return (
     <>
       <HeroSection />
-      <WhatWeOffer />
-      <WhyChooseVolvrit />
-      <IndustryWeTarget />
+      <div className="overflow-hidden py-2">
+        <div className="flex animate-marquee justify-start items-center whitespace-nowrap">
+          {[...trustedClient, ...trustedClient].map((client) => (
+            <div key={client.id} className="flex-none px-6">
+              <Image
+                src={client.imageUrl}
+                alt={client.title}
+                width={client.width}
+                height={client.height}
+                className="w-fit object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="relative text-white max-w-9xl mx-[6vw] rounded-3xl overflow-hidden p-4 md:p-6 lg:p-16">
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-top"
@@ -22,7 +48,7 @@ export default function Page() {
         <div className="relative z-10 flex flex-col justify-center items-center">
           <div className="text-center">
             <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
-              Let&apos;s Get Started on Your Mobile App Development Services
+              Let&apos;s start growing your business
             </h4>
             <p className="text-sm font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
               Be ready to create a personalized mobile application that could

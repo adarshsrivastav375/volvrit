@@ -42,7 +42,7 @@ const HeroSection = () => {
             height={100}
             alt="Home page Bannr"
             src="https://volvrit.s3.ap-south-1.amazonaws.com/Union.png"
-            className="w-3/4 h-full object-contain"
+            className="w-2/3 h-full object-contain"
           />
         </div>
       </div>
