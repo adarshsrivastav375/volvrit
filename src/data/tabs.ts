@@ -50,6 +50,14 @@ export const services = [
         href: "/it-services/shopify-development",
         label: "Shopify Development",
       },
+      {
+        href: "/it-services/ui-ux-development",
+        label: "UI / UX Development",
+      },
+      {
+        href: "/it-services/artificial-intelligence-development",
+        label: "AI Development",
+      },
       // { href: "/it-services/payment-gateway", label: "Payment Gateway" },
     ],
   },
@@ -70,7 +78,7 @@ export const services = [
   {
     title: "API Services",
     links: [
-      { href: "/api-services/api-solutions", label: "API Solutions" },
+      // { href: "/api-services/api-solutions", label: "API Solutions" },
       { href: "/api-services/api-development", label: "API Development" },
     ],
   },

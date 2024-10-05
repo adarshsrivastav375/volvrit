@@ -1,4 +1,6 @@
+import Link from "next/link";
 import Image from "next/image";
+import { BsArrowRightCircleFill } from "react-icons/bs";
 
 const Optimize = () => {
   const solutions = [
@@ -32,7 +34,7 @@ const Optimize = () => {
       <h4 className="text-4xl md:text-5xl font-semibold 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl">
         We optimize marketing for <br /> business continuity
       </h4>
-      <div className="flex justify-start md:justify-center md:items-center gap-5 lg:gap-10 px-4 md:px-6">
+      <div className="flex justify-start md:justify-center md:items-center gap-5 px-4 md:px-6">
         <div className="w-1/2 lg:w-1/5 flex flex-col gap-5">
           {solutions.slice(0, 2).map((item: any) => {
             return (
@@ -85,6 +87,13 @@ const Optimize = () => {
           })}
         </div>
       </div>
+      <Link
+        href="/contact-us"
+        className="py-3 mx-auto justify-center 2xl:py-4 px-5 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
+      >
+        <span className="text-xl 2xl:text-2xl">Contact Us</span>{" "}
+        <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl" />
+      </Link>
     </div>
   );
 };

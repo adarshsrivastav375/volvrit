@@ -56,7 +56,7 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="bg-[#0B2D52] text-center rounded-3xl relative bottom-10 z-20 text-white">
-        <div className="max-w-9xl mx-auto py-16 px-4 md:px-6 lg:px-20">
+        <div className="max-w-9xl mx-auto py-10 px-4 md:px-6 lg:px-20">
           <h4 className="text-2xl md:text-3xl font-medium 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5">
             Modern Technology Stack for Optimal Results
           </h4>
