@@ -177,7 +177,7 @@ const Services = () => {
                   onMouseLeave={handleMouseLeave}
                   className={`bg-white text-black hover:bg-[#00295A] hover:text-white cursor-pointer mx-2 md:mx-0 p-5 rounded-xl shadow-lg hover:shadow-none transition-all duration-200 ease-linear`}
                 >
-                  <div className="px-3">
+                  <div className="px-3 w-24 h-24">
                     <Imageicon
                       color={hoveredId === service.id ? "white" : "black"}
                     />

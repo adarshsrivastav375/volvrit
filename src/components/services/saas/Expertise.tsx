@@ -36,6 +36,8 @@ const Expertise = () => {
             src={"https://volvrit.s3.ap-south-1.amazonaws.com/overview.png"}
             alt="overview"
             width={200}
+            unoptimized
+            priority
             height={200}
             className="w-full object-contain"
           />
@@ -61,6 +63,8 @@ const Expertise = () => {
               alt="overview"
               width={200}
               height={200}
+              unoptimized
+              priority
               className="w-full object-cover"
             />
           </div>
@@ -72,6 +76,8 @@ const Expertise = () => {
               alt="overview"
               width={200}
               height={200}
+              unoptimized
+              priority
               className="w-full object-cover"
             />
           </div>
@@ -106,6 +112,8 @@ const Expertise = () => {
               src={"https://volvrit.s3.ap-south-1.amazonaws.com/finance.png"}
               alt="overview"
               width={200}
+              unoptimized
+              priority
               height={200}
               className="w-full object-cover"
             />
