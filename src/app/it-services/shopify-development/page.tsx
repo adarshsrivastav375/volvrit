@@ -50,7 +50,7 @@ export default function Page() {
               Let&apos;s Build Your Shopify Store
               <br /> Together
             </h4>
-            <p className="text-sm font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
+            <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
               Whether you&apos;re launching a new store or improving an existing
               one, our Shopify development services are designed to help you
               succeed. Get in touch with us today to discuss your project and

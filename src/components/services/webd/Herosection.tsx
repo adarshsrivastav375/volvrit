@@ -14,7 +14,7 @@ const HeroSection = () => {
           <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
             Best Website Development <br /> Services Company in India
           </h4>
-          <p className="text-sm font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
+          <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
             A great, easy-to-use website will make your business in today&apos;s
             digital world.
           </p>

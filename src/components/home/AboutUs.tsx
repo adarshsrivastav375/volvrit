@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Gallery from "./Gallery";
+import VideoComponent from "./VideoComponent";
 
 const AboutUs = () => {
   return (
     <div className="max-w-9xl mx-auto pb-6 md:pb-8 lg:pb-12 px-4 md:px-8 lg:px-20 2xl:px-40">
       <div className="bg-primary rounded-2xl lg:rounded-3xl p-5 md:p-7 lg:p-14 text-white relative flex flex-col lg:flex-row items-center gap-5 lg:gap-10">
-        <div className="w-full text-center lg:text-left lg:w-[65%]">
+        <div className="w-full text-center lg:text-left lg:w-3/5">
           <p className="text-base 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl font-light mb-2">
             — About Us
           </p>
@@ -27,17 +28,9 @@ const AboutUs = () => {
             Know More
           </button>
         </div>
-        <div className="w-full lg:w-[35%] mt-2 lg:ml-8 relative">
-          <Gallery />
-          {/* <Image
-            src="/assets/home/aboutUs.png"
-            alt="About Us Image"
-            width={100}
-            height={100}
-            unoptimized
-            priority
-            className="w-full rounded-xl object-contain"
-          /> */}
+        <div className="w-full lg:w-2/5 mt-2 lg:ml-8 relative">
+          {/* <Gallery /> */}
+          <VideoComponent />
           {/* Arrow Decorations */}
           {/* <div className="absolute top-12 left-0 w-20 h-12 bg-primary rounded-r-full z-10"></div>
           <div className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 -right-10 w-20 h-12 bg-primary rounded-l-full z-10"></div>

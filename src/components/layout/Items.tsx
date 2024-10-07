@@ -70,7 +70,7 @@ const NavbarItems = ({
                           return (
                             <li
                               key={index}
-                              className="my-3 2xl:my-5 relative group"
+                              className="my-3 2xl:my-5 relative group w-fit"
                             >
                               <Link
                                 onClick={() => setShow(false)}

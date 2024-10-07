@@ -1,57 +1,57 @@
-"use client";
+// "use client";
 
-import { useRef } from "react";
+// import { useRef } from "react";
 import Image from "next/image";
-import { motion, useInView } from "framer-motion";
-import ConcentricCircles from "./ConcentricCircle";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+// import { motion, useInView } from "framer-motion";
+// import ConcentricCircles from "./ConcentricCircle";
+// import { BsArrowRightCircleFill } from "react-icons/bs";
 
-// Animation Variants for Framer Motion
-const textVariant = {
-  hidden: { opacity: 0, x: -50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-      staggerChildren: 0.05, // Stagger for each letter
-    },
-  },
-};
+// // Animation Variants for Framer Motion
+// const textVariant = {
+//   hidden: { opacity: 0, x: -50 },
+//   visible: {
+//     opacity: 1,
+//     x: 0,
+//     transition: {
+//       duration: 1,
+//       ease: "easeInOut",
+//       staggerChildren: 0.05, // Stagger for each letter
+//     },
+//   },
+// };
 
-const letterVariant = {
-  hidden: { opacity: 0, x: -10 },
-  visible: { opacity: 1, x: 0 },
-};
+// const letterVariant = {
+//   hidden: { opacity: 0, x: -10 },
+//   visible: { opacity: 1, x: 0 },
+// };
 
-const AnimatedText = ({ text }: { text: string }) => (
-  <motion.div
-    variants={textVariant}
-    initial="hidden"
-    whileInView="visible"
-    className="inline-flex"
-  >
-    {text.split("").map((letter, idx) => (
-      <motion.span
-        key={idx}
-        className="text-xs md:text-xl lg:text-2xl border-b-2 3xl:border-b-4 border-b-red-500 pb-2 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl font-semibold"
-        variants={letterVariant}
-      >
-        {letter}
-      </motion.span>
-    ))}
-  </motion.div>
-);
+// const AnimatedText = ({ text }: { text: string }) => (
+//   <motion.div
+//     variants={textVariant}
+//     initial="hidden"
+//     whileInView="visible"
+//     className="inline-flex"
+//   >
+//     {text.split("").map((letter, idx) => (
+//       <motion.span
+//         key={idx}
+//         className="text-xs md:text-xl lg:text-2xl border-b-2 3xl:border-b-4 border-b-red-500 pb-2 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl font-semibold"
+//         variants={letterVariant}
+//       >
+//         {letter}
+//       </motion.span>
+//     ))}
+//   </motion.div>
+// );
 
 const ProcessSection: React.FC = () => {
   // Refs for each section
-  const processRef = useRef(null);
-  const isInView = useInView(processRef, { once: true }); // Animate only once when in view
+  // const processRef = useRef(null);
+  // const isInView = useInView(processRef, { once: true }); // Animate only once when in view
 
   return (
     <>
-      <div className="relative lg:h-screen">
+      {/* <div className="relative lg:h-screen">
         <Image
           src="/assets/home/bg.png"
           width={100}
@@ -121,7 +121,7 @@ const ProcessSection: React.FC = () => {
             <span>Start a Project</span> <BsArrowRightCircleFill />
           </motion.div>
         </div>
-      </div>
+      </div> */}
 
       <div className="mx-auto max-w-9xl lg:px-40 2xl:px-40 md:px-8 px-4">
         <div className="text-center pt-10 3xl:pt-16 4xl:pt-28">

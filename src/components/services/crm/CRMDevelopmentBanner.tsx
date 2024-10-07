@@ -10,7 +10,7 @@ const CRMDevelopmentBanner = () => {
           and
           <strong className="font-medium"> CRM Software</strong>
         </h4>
-        <p className="text-sm font-extralight px-4 md:px-0 md:w-1/2 mx-auto">
+        <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-1/2 mx-auto">
           we build software from scratch to transform your operations through
           solutions designed to improve your customer interactions
         </p>

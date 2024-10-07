@@ -2,8 +2,8 @@ export const tabs = [
   { id: 1, label: "Home", path: "/" },
   { id: 2, label: "Services", path: "/it-services/web-development" },
   // { id: 3, label: "Legal Services", path: "/legal-services" },
-  { id: 4, label: "About", path: "/about" },
-  { id: 5, label: "Contact Us", path: "/contact-us" },
+  // { id: 4, label: "About", path: "/about" },
+  // { id: 5, label: "Contact Us", path: "/contact-us" },
 ];
 
 export const footerTabs = [
@@ -58,6 +58,7 @@ export const services = [
         href: "/it-services/artificial-intelligence-development",
         label: "AI Development",
       },
+      { href: "/api-services/api-development", label: "API Development" },
       // { href: "/it-services/payment-gateway", label: "Payment Gateway" },
     ],
   },
@@ -75,11 +76,19 @@ export const services = [
   //     { href: "/legal-services/health-checkup", label: "Health Checkup" },
   //   ],
   // },
+  // {
+  //   title: "API Services",
+  //   links: [
+  //     // { href: "/api-services/api-solutions", label: "API Solutions" },
+  //     { href: "/api-services/api-development", label: "API Development" },
+  //     { href: "/api-services/api-development", label: "API Development" },
+  //   ],
+  // },
   {
-    title: "API Services",
+    title: "Fractional Services",
     links: [
-      // { href: "/api-services/api-solutions", label: "API Solutions" },
-      { href: "/api-services/api-development", label: "API Development" },
+      { href: "/fractional-cto", label: "Fractional CTO" },
+      { href: "/fractional-cfo", label: "Fractional CFO" },
     ],
   },
 ];

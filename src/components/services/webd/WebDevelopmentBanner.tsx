@@ -13,7 +13,7 @@ const WebDevelopmentBanner = () => {
           Transform Your Vision into <br />
           <strong className="font-medium">a Stunning Website</strong>
         </h4>
-        <p className="text-sm font-extralight px-4 md:px-0 md:w-1/2 mx-auto">
+        <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-1/2 mx-auto">
           Our expert team specializes in creating beautiful, responsive, and
           user-friendly websites that captivate your audience and drive results.
           Whether you&apos;re launching a new brand or revamping your online

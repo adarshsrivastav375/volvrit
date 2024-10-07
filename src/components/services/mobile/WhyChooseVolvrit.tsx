@@ -56,7 +56,7 @@ const WhyChooseVolvrit = () => {
         <h4 className="text-3xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-medium">
           Why Choose Volvrit for Your <br /> Mobile App Development?
         </h4>
-        <p className="text-sm font-extralight px-4 md:px-0 md:w-3/4 mx-auto my-8">
+        <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-3/4 mx-auto my-8">
           There are hundreds and thousands of mobile app development companies
           in India, but there is a reason why Volvrit is good at everything.
         </p>

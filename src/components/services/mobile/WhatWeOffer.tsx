@@ -33,7 +33,7 @@ const WhatWeOffer = () => {
           We Offering Custom Mobile
           <br /> App Development Services
         </h4>
-        <p className="text-sm font-extralight px-4 md:px-0 md:w-4/5 mx-auto my-8">
+        <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto my-8">
           Each business is unique and has its particular requirement. We create
           custom mobile app development for such businesses. We design
           applications specifically for your business to reach your customers.

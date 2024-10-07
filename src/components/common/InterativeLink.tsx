@@ -15,12 +15,11 @@ const InterativeLink = () => {
         aria-label="Phone Number"
         title="Call us"
         rel="noopener noreferrer"
-        className="bg-white shadow-md p-1 rounded-md"
+        className="bg-white shadow-md hover:shadow-corner transition-all duration-300 ease-linear p-1 rounded-md"
       >
         <PiPhoneCall
-          size={30}
           color="white"
-          className="bg-primary hover:bg-primary/80 transition-all duration-200 ease-linear rounded-full p-1"
+          className="bg-primary text-3xl md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl hover:bg-primary/80 transition-all duration-200 ease-linear rounded-full p-1"
         />
       </Link>
       <Link
@@ -30,12 +29,11 @@ const InterativeLink = () => {
         rel="noopener noreferrer"
         aria-label="Chat with us"
         passHref
-        className="bg-white shadow-md p-[2px] rounded-md"
+        className="bg-white shadow-md hover:shadow-corner transition-all duration-300 ease-linear p-[2px] rounded-md"
       >
         <IoLogoWhatsapp
-          size={33}
           color="#25D366"
-          className="hover:text-[#25D366]/80 transition-all duration-200 ease-linear"
+          className="hover:text-[#25D366]/80 text-3xl md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl transition-all duration-200 ease-linear"
         />
       </Link>
     </div>

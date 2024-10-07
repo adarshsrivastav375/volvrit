@@ -16,7 +16,7 @@ const MobileDevelopmentBanner = () => {
           </strong>
           That Wows Your Users
         </h4>
-        <p className="text-sm font-extralight px-4 md:px-0 md:w-1/2 mx-auto">
+        <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-1/2 mx-auto">
           From concept to launch, we craft mobile apps that not only look great
           but also deliver exceptional user experiences across all devices.
         </p>

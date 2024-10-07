@@ -15,7 +15,7 @@ const HeroSection = () => {
             Best Mobile App Development <br />
             Services Company In India
           </h4>
-          <p className="text-sm font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
+          <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
             We provide the complete scale of services relating to the
             development of mobile applications at Volvrit, which covers all
             aspects of a life cycle involving an application. So, it is

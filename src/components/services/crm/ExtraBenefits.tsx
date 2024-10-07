@@ -53,15 +53,15 @@ const ExtraSolutions = () => {
   ];
   return (
     <div className="container mx-auto px-4 md:px-6 lg:px-20 text-center mb-7 lg:mb-16">
-      <div className="flex flex-col lg:flex-row justify-center items-start lg:gap-10 mt-14">
+      <div className="flex flex-col lg:flex-row justify-center items-start lg:gap-2 mt-14">
         <div className="lg:w-[30%] order-2 lg:order-1 flex flex-col">
           {solutions.slice(0, 4).map((item: any) => {
             return (
               <div key={item?.id} className="pb-3 md:p-2">
-                <p className="text-base font-bold pt-2 text-left">
+                <p className="text-lg lg:text-2xl font-bold pt-2 text-left">
                   {item?.title}
                 </p>
-                <p className="text-xs font-medium pt-2 text-left">
+                <p className="text-sm lg:text-base font-medium pt-2 text-left">
                   {item?.description}
                 </p>
               </div>
@@ -81,10 +81,10 @@ const ExtraSolutions = () => {
           {solutions.slice(4, 8).map((item: any) => {
             return (
               <div key={item?.id} className="pb-3 md:p-2">
-                <p className="text-base font-bold pt-2 text-left">
+                <p className="text-lg lg:text-2xl font-bold pt-2 text-left">
                   {item?.title}
                 </p>
-                <p className="text-xs font-medium pt-2 text-left">
+                <p className="text-sm lg:text-base font-medium pt-2 text-left">
                   {item?.description}
                 </p>
               </div>

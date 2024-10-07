@@ -45,7 +45,7 @@ export const questions = [
   },
   {
     id: 3,
-    question: "What&apos;s the cost of developing a mobile app?",
+    question: "What's the cost of developing a mobile app?",
     answer:
       "Our prices depend on the complexity of your website, but we have relatively affordable options to fit any business.",
   },

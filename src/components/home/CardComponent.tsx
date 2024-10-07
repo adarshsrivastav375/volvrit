@@ -5,51 +5,67 @@ import { LuArrowUpRight } from "react-icons/lu";
 const cardData = [
   {
     image: "/assets/home/unificars.png", // Replace with your image path
-    title: "UnifiWheels Pvt ltd",
+    title: "UnifiWheels",
     fundingStatus: "Seed funded",
-    tags: ["Development", "Design", "SEO"],
+    tags: [
+      "UI/UX",
+      "SAAS",
+      "CRM",
+      "INSPECTION APP",
+      "USER APP",
+      "PERFORMANCE MARKETING",
+      "SEO",
+    ],
   },
   {
     image: "/assets/home/unfazed.png", // Replace with your image path
     title: "Unfazed",
-    fundingStatus: "Seed funded",
-    tags: ["Development", "Design", "SEO"],
-  },
-  {
-    image: "/assets/home/bookswagon.png", // Replace with your image path
-    title: "Bookswagon",
-    fundingStatus: "Seed funded",
-    tags: ["Development", "Design", "SEO"],
+    fundingStatus: "BOOTSTRAP FUNDING",
+    tags: ["UI/UX", "SAAS", "MOBILE APP", "PERFORMANCE MARKETING", "SEO"],
   },
   {
     image: "/assets/home/intensefocus.png", // Replace with your image path
     title: "Intense Focus",
     fundingStatus: "Seed funded",
-    tags: ["Development", "Design", "SEO"],
+    tags: [
+      "UI/UX",
+      "SAAS",
+      "CRM",
+      "INSPECTION APP",
+      "USER APP",
+      "PERFORMANCE MARKETING",
+      "SEO",
+    ],
+  },
+  {
+    image: "/assets/home/bookswagon.png", // Replace with your image path
+    title: "Bookswagon",
+    fundingStatus: "Bootstrapped",
+    tags: ["UI/UX", "WEB DEVELOPMENT", "SEO"],
   },
   {
     image: "/assets/home/tourtravel.png", // Replace with your image path
     title: "TourTravelWorld",
     fundingStatus: "Seed funded",
-    tags: ["Development", "Design", "SEO"],
+    tags: ["UI/UX", "WEB PORTAL DEVELOPMENT", "CMS", "INDIAN GOVERNMENT NGO"],
   },
   {
     image: "/assets/home/safeway.png", // Replace with your image path
     title: "Safewayrssi",
     fundingStatus: "Seed funded",
-    tags: ["Development", "Design", "SEO"],
+    tags: ["UI/UX", "WWB DEVELOPMENT", "CMS"],
   },
   {
     image: "/assets/home/keintchi.png", // Replace with your image path
     title: "keintchi",
     fundingStatus: "Seed funded",
-    tags: ["Development", "Design", "SEO"],
+    tags: ["UI/UX", "WEB DEVELOPMENT"],
   },
   {
     image: "/assets/home/fortuna.png", // Replace with your image path
     title: "Grow Fortuna",
     fundingStatus: "Seed funded",
-    tags: ["Development", "Design", "SEO"],
+    tags: ["UI/UX", "WEB DEVELOPMENT", "CRM"],
   },
 ];
 
@@ -75,11 +91,11 @@ const CardComponent: React.FC = () => {
             />
           </div>
           <div className="p-5">
-            <div className="flex space-x-2 mb-2">
+            <div className="flex flex-wrap gap-2 mb-4">
               {card.tags.map((tag, idx) => (
                 <span
                   key={idx}
-                  className="px-3 py-1 text-sm border border-gray-300 2xl:text-lg rounded-full"
+                  className="px-3 py-1 text-sm border text-nowrap border-gray-300 2xl:text-lg rounded-full font-bold"
                 >
                   {tag}
                 </span>

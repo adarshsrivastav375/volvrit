@@ -24,7 +24,7 @@ export default function Page() {
             <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
               Let&apos;s start growing your business
             </h4>
-            <p className="text-sm font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
+            <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
               Be ready to create a personalized mobile application that could
               take your business to the next level. Do similar businesses
               require boosting their customer engagement efficiency and growth

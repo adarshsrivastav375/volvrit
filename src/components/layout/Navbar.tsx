@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="w-full hidden mx-auto md:px-4 lg:px-20 md:flex gap-10 items-center justify-end text-sm 2xl:text-xl py-2">
           <Link
             href={"mailto:info@volvrit.com"}
-            className="flex justify-start items-center gap-3"
+            className="flex justify-start items-center gap-3 pr-1"
             aria-label="EmailId"
           >
             <MdOutlineMailLock size={20} /> hi@volvrit.com
