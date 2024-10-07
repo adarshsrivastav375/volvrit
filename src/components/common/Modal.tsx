@@ -39,7 +39,7 @@ const Modal: React.FC<ModalProps> = ({
               />
             </p>
           </div>
-          <div>{children}</div>
+          <div className="-mt-10">{children}</div>
         </div>
       </div>
     </div>,
