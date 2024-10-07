@@ -6,7 +6,7 @@ const cardData = [
   {
     image: "/assets/home/unificars.png", // Replace with your image path
     title: "UnifiWheels",
-    fundingStatus: "Seed funded",
+    fundingStatus: "BOOTSTRAP",
     tags: [
       "UI/UX",
       "SAAS",
@@ -20,13 +20,13 @@ const cardData = [
   {
     image: "/assets/home/unfazed.png", // Replace with your image path
     title: "Unfazed",
-    fundingStatus: "BOOTSTRAP FUNDING",
+    fundingStatus: "BOOTSTRAP",
     tags: ["UI/UX", "SAAS", "MOBILE APP", "PERFORMANCE MARKETING", "SEO"],
   },
   {
     image: "/assets/home/intensefocus.png", // Replace with your image path
     title: "Intense Focus",
-    fundingStatus: "Seed funded",
+    fundingStatus: "BOOTSTRAP",
     tags: [
       "UI/UX",
       "SAAS",
@@ -40,31 +40,31 @@ const cardData = [
   {
     image: "/assets/home/bookswagon.png", // Replace with your image path
     title: "Bookswagon",
-    fundingStatus: "Bootstrapped",
+    fundingStatus: "BOOTSTRAP",
     tags: ["UI/UX", "WEB DEVELOPMENT", "SEO"],
   },
   {
     image: "/assets/home/tourtravel.png", // Replace with your image path
     title: "TourTravelWorld",
-    fundingStatus: "Seed funded",
+    fundingStatus: "BOOTSTRAP",
     tags: ["UI/UX", "WEB PORTAL DEVELOPMENT", "CMS", "INDIAN GOVERNMENT NGO"],
   },
   {
     image: "/assets/home/safeway.png", // Replace with your image path
     title: "Safewayrssi",
-    fundingStatus: "Seed funded",
+    fundingStatus: "BOOTSTRAP",
     tags: ["UI/UX", "WWB DEVELOPMENT", "CMS"],
   },
   {
     image: "/assets/home/keintchi.png", // Replace with your image path
     title: "keintchi",
-    fundingStatus: "Seed funded",
+    fundingStatus: "BOOTSTRAP",
     tags: ["UI/UX", "WEB DEVELOPMENT"],
   },
   {
     image: "/assets/home/fortuna.png", // Replace with your image path
     title: "Grow Fortuna",
-    fundingStatus: "Seed funded",
+    fundingStatus: "BOOTSTRAP",
     tags: ["UI/UX", "WEB DEVELOPMENT", "CRM"],
   },
 ];

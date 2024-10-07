@@ -24,7 +24,7 @@ const Expertise = () => {
             communication for healthcare providers.
           </p>
           <Link
-            href="/it-services/crm-development"
+            href="/contact-us"
             className="py-2 mt-5 justify-center 2xl:py-3 px-3 2xl:px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-full bg-black text-white text-base 2xl:text-xl transition-all duration-200 ease-in-out"
           >
             <span className="text-base 2xl:text-lg">Get Details</span>{" "}
@@ -48,7 +48,7 @@ const Expertise = () => {
               E-Commerce
             </h4>
             <Link
-              href="/it-services/crm-development"
+              href="/contact-us"
               className="py-2 mt-5 justify-center 2xl:py-3 px-3 2xl:px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-full bg-black text-white transition-all duration-200 ease-in-out"
             >
               <span className="text-base 2xl:text-lg">Get Details</span>{" "}
@@ -80,7 +80,7 @@ const Expertise = () => {
               Education
             </h4>
             <Link
-              href="/it-services/crm-development"
+              href="/contact-us"
               className="py-2 mt-5 justify-center 2xl:py-3 px-3 2xl:px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-full bg-black text-white transition-all duration-200 ease-in-out"
             >
               <span className="text-base 2xl:text-lg">Get Details</span>{" "}
@@ -94,7 +94,7 @@ const Expertise = () => {
               Finance
             </h4>
             <Link
-              href="/it-services/crm-development"
+              href="/contact-us"
               className="py-2 mt-5 justify-center 2xl:py-3 px-3 2xl:px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-full bg-black text-white transition-all duration-200 ease-in-out"
             >
               <span className="text-base 2xl:text-lg">Get Details</span>{" "}

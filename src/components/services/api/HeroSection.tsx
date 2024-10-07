@@ -43,7 +43,7 @@ const HeroSection = () => {
                 a makeover. A facelift you didn&apos;t know you needed.
               </p>
               <Link
-                href="/it-services/crm-development"
+                href="/contact-us"
                 className="py-3 mx-auto justify-center 2xl:py-4 px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
               >
                 <span className="text-xl 2xl:text-2xl">Start a Project</span>{" "}
@@ -86,7 +86,7 @@ const HeroSection = () => {
               audience.
             </p>
             <Link
-              href="/it-services/crm-development"
+              href="/contact-us"
               className="py-3 justify-center 2xl:py-4 px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
             >
               <span className="text-xl 2xl:text-2xl">Start a Project</span>{" "}
