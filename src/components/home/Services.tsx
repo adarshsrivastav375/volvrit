@@ -110,7 +110,7 @@ const Services = () => {
       {/* For desktop and larger screens */}
       <div className="hidden lg:grid grid-cols-3 gap-7 2xl:gap-10 3xl:gap-14">
         {services.map((service) => {
-          let Image = service.Image;
+          let Imageicon = service.Image;
           return (
             <div
               key={service.id}
@@ -119,7 +119,9 @@ const Services = () => {
               className={`bg-white text-black hover:bg-[#00295A] hover:text-white cursor-pointer p-5 3xl:p-10 rounded-xl shadow-lg hover:shadow-none transition-all duration-200 ease-linear`}
             >
               <div className="px-3 w-24 h-24">
-                <Image color={hoveredId === service.id ? "white" : "black"} />
+                <Imageicon
+                  color={hoveredId === service.id ? "white" : "black"}
+                />
               </div>
               <h3 className="text-2xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl py-5 2xl:py-10 3xl:py-14 font-bold uppercase">
                 <span>
@@ -166,7 +168,7 @@ const Services = () => {
           className="w-full mx-auto rounded-xl h-full"
         >
           {services.map((service, index) => {
-            let Image = service.Image;
+            let Imageicon = service.Image;
             return (
               <SwiperSlide key={index}>
                 <div
@@ -176,7 +178,7 @@ const Services = () => {
                   className={`bg-white text-black hover:bg-[#00295A] hover:text-white cursor-pointer mx-2 md:mx-0 p-5 rounded-xl shadow-lg hover:shadow-none transition-all duration-200 ease-linear`}
                 >
                   <div className="px-3">
-                    <Image
+                    <Imageicon
                       color={hoveredId === service.id ? "white" : "black"}
                     />
                   </div>
