@@ -22,7 +22,7 @@ const Modal: React.FC<ModalProps> = ({
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="fixed inset-0 bg-white backdrop-blur-lg bg-opacity-10"></div>
       <div className="bg-opacity-50 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl overflow-hidden w-fit z-10 relative">
-        <div className="bg-white overflow-scroll no-scrollbar max-h-[80vh] md:max-h-[95vh]">
+        <div className="bg-white overflow-scroll lg:overflow-hidden no-scrollbar max-h-[80vh] lg:min-h-[95vh] 2xl:min-h-[80vh] 3xl:min-h-[65vh]">
           <div className="flex fixed top-0 bg-white w-full justify-between items-center p-4">
             {showLogo && (
               <span
@@ -39,7 +39,7 @@ const Modal: React.FC<ModalProps> = ({
               />
             </p>
           </div>
-          <div className="-mt-10">{children}</div>
+          <div className="-mt-5 lg:-mt-16">{children}</div>
         </div>
       </div>
     </div>,
