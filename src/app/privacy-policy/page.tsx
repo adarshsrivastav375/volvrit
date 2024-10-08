@@ -42,15 +42,16 @@ export default function Page() {
           <li>
             <strong>Affiliate</strong> means an entity that controls, is
             controlled by or is under common control with a party, where
-            "control" means ownership of 50% or more of the shares, equity
-            interest or other securities entitled to vote for election of
+            &quot;control&quot; means ownership of 50% or more of the shares,
+            equity interest or other securities entitled to vote for election of
             directors or other managing authority.
           </li>
           <li>
-            <strong>Company</strong> (referred to as either "the Company", "We",
-            "Us" or "Our" in this Agreement) refers to Volvrit - IT Service
-            Company, No - 9 Plot, Building, 2nd, 3rd and 4th Floor, 1, Moti
-            Nagar Rd, DLE Industrial Area, New Delhi, Delhi 110015.
+            <strong>Company</strong> (referred to as either &quot;the
+            Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
+            this Agreement) refers to Volvrit - IT Service Company, No - 9 Plot,
+            Building, 2nd, 3rd and 4th Floor, 1, Moti Nagar Rd, DLE Industrial
+            Area, New Delhi, Delhi 110015.
           </li>
           <li>
             <strong>Cookies</strong> are small files that are placed on Your

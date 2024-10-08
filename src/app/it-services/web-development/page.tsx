@@ -68,7 +68,7 @@ export default function Page() {
               Are you ready to take your business to the next level? Contact us
               today! We&apos;ll be more than happy to further address your
               questions or get you started. Just fill in the form below and
-              we'll get right back to you.
+              we&apos;ll get right back to you.
             </p>
             <Link
               href="/contact-us"

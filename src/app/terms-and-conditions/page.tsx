@@ -95,22 +95,23 @@ export default function Page() {
             Limitation of Liability
           </h2>
           <p className="text-gray-700">
-            The Company's liability is limited to the maximum extent permitted
-            by law. In no event shall the Company be liable for special,
-            incidental, indirect, or consequential damages, even if advised of
-            the possibility.
+            The Company&apos;s liability is limited to the maximum extent
+            permitted by law. In no event shall the Company be liable for
+            special, incidental, indirect, or consequential damages, even if
+            advised of the possibility.
           </p>
         </section>
 
         {/* "AS IS" and "AS AVAILABLE" Disclaimer Section */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">
-            "AS IS" and "AS AVAILABLE" Disclaimer
+            &quot;AS IS&quot; and &quot;AS AVAILABLE&quot; Disclaimer
           </h2>
           <p className="text-gray-700">
-            The Service is provided "AS IS" and "AS AVAILABLE," without
-            warranties of any kind, whether express or implied. We do not
-            warrant that the Service will be error-free or uninterrupted.
+            The Service is provided &quot;AS IS&quot; and &quot;AS
+            AVAILABLE,&quot; without warranties of any kind, whether express or
+            implied. We do not warrant that the Service will be error-free or
+            uninterrupted.
           </p>
         </section>
 
@@ -190,7 +191,7 @@ export default function Page() {
           </h2>
           <p className="text-gray-700">
             We reserve the right to modify these Terms at any time. If a
-            revision is material, we will provide at least 30 days' notice. Your
+            revision is material, we will provide at least 30 days notice. Your
             continued use of the Service after the changes become effective
             means you agree to be bound by the revised terms.
           </p>
