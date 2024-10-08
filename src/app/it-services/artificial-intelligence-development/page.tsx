@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { AI_FAQs } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import HeroSection from "@/components/services/ai/HeroSection";
@@ -41,10 +42,10 @@ export default function Page() {
         <h5 className="text-3xl text-center w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-8 font-semibold">
           Frequently Asked Quesions
         </h5>
-        {/* <Accordion
-          faqs={API_FAQs}
+        <Accordion
+          faqs={AI_FAQs}
           colored="bg-[#0B2D52] text-white rounded-xl"
-        /> */}
+        />
       </div>
     </>
   );

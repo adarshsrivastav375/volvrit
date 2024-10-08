@@ -277,3 +277,36 @@ export const API_FAQs = [
       "We offer comprehensive support, including bug fixes, updates, and ongoing maintenance to ensure your API operates at its best.",
   },
 ];
+export const AI_FAQs = [
+  {
+    id: 1,
+    question: "What is AI Development?",
+    answer:
+      "AI development is basically the process of developing software that possesses Artificial Intelligence through which those activities shall be performed that require human intelligence. For example, problem-solving, learning, and decision-making.",
+  },
+  {
+    id: 2,
+    question:
+      "Which types of industries are likely to benefit from AI-based solutions?",
+    answer:
+      "AI will automate processes and improve customer experience across such sectors as healthcare, finance, retail, manufacturing, and many more through large data analysis.",
+  },
+  {
+    id: 3,
+    question: "How long does it take to develop an AI solution?",
+    answer:
+      "The time scale differs to complete the projects according to their complexity, and that may take a week or so in case of easier applications and may rise to months when the solution is complex.",
+  },
+  {
+    id: 4,
+    question: "What types of AI solutions do you have?",
+    answer:
+      "We have the entire range of AI solutions: from ML models and NL apps to the computer vision system and data analytics tools, all powered by AI.",
+  },
+  {
+    id: 5,
+    question: "How do I start an AI project for my organization?",
+    answer:
+      "Let's build AI with a call to us for consultancy. Let us assess your needs, discuss possible solutions, and map the way forward in integrating AI into your processes.",
+  },
+];
