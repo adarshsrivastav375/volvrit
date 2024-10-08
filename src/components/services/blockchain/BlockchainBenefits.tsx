@@ -58,7 +58,7 @@ const BlockchainBenefits: React.FC = () => {
                     width={24}
                     height={24}
                   />
-                  <h3 className="relative z-10 text-sm 2xl:text-lg 3xl:text-2xl 4xl:text-3xl font-normal">
+                  <h3 className="relative z-10 text-base 2xl:text-xl 3xl:text-3xl 4xl:text-4xl font-normal">
                     Enhanced Security : Blockchain uses cryptographic algorithms
                     to secure data. Its decentralized nature makes it highly
                     resistant to hacking and fraud.
@@ -73,7 +73,7 @@ const BlockchainBenefits: React.FC = () => {
                     width={24}
                     height={24}
                   />
-                  <h3 className="relative z-10 text-sm 2xl:text-lg 3xl:text-2xl 4xl:text-3xl font-normal">
+                  <h3 className="relative z-10 text-base 2xl:text-xl 3xl:text-3xl 4xl:text-4xl font-normal">
                     Transparency : All transactions on the blockchain are
                     recorded and visible to all participants, providing
                     transparency and accountability.
@@ -88,7 +88,7 @@ const BlockchainBenefits: React.FC = () => {
                     width={24}
                     height={24}
                   />
-                  <h3 className="relative z-10 text-sm 2xl:text-lg 3xl:text-2xl 4xl:text-3xl font-normal">
+                  <h3 className="relative z-10 text-base 2xl:text-xl 3xl:text-3xl 4xl:text-4xl font-normal">
                     Decentralization : By eliminating the need for
                     intermediaries, blockchain empowers peer-to-peer
                     transactions, reducing costs and increasing efficiency.
@@ -103,7 +103,7 @@ const BlockchainBenefits: React.FC = () => {
                     width={24}
                     height={24}
                   />
-                  <h3 className="relative z-10 text-sm 2xl:text-lg 3xl:text-2xl 4xl:text-3xl font-normal">
+                  <h3 className="relative z-10 text-base 2xl:text-xl 3xl:text-3xl 4xl:text-4xl font-normal">
                     Traceability : Blockchain provides an immutable record of
                     transactions, making it ideal for supply chain management,
                     where tracing the origin and movement of products is
@@ -119,7 +119,7 @@ const BlockchainBenefits: React.FC = () => {
                     width={24}
                     height={24}
                   />
-                  <h3 className="relative z-10 text-sm 2xl:text-lg 3xl:text-2xl 4xl:text-3xl font-normal">
+                  <h3 className="relative z-10 text-base 2xl:text-xl 3xl:text-3xl 4xl:text-4xl font-normal">
                     Cost Efficiency : By removing the need for intermediaries
                     and automating transactions through smart contracts,
                     blockchain can significantly reduce costs in financial and

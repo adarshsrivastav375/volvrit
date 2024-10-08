@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { questions } from "@/data/home/faqs";
+import { API_FAQs } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { trustedClient } from "@/components/home/OurPartners";
@@ -59,7 +59,7 @@ export default function Page() {
           Frequently Asked Quesions
         </h5>
         <Accordion
-          faqs={questions}
+          faqs={API_FAQs}
           colored="bg-[#0B2D52] text-white rounded-xl"
         />
       </div>

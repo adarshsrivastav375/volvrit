@@ -20,31 +20,37 @@ const WhatWeOffer = () => {
   ];
   const services = [
     {
-      title: "UX Audit",
+      id: 1,
+      title: "UI Design Service",
       description:
-        "As you blaze new trails, we stand firm to obsess over detail and quality. With a quick design audit, identify usability issues and find gaps in your experience to deliver a truly world-class product.",
+        "We create appealing interfaces that are easy to navigate and enjoyable to use.",
     },
     {
-      title: "User Experience Design",
+      id: 2,
+      title: "UX Development Service",
       description:
-        "Great user experiences are vital to building trust and core to our approach in pursuing simplicity. Poor UX can be an expensive mistake and avoiding that is our reason to exist.",
+        "Our UX development focuses on providing users with smooth and intuitive experiences, ensuring they return to your product.",
     },
     {
-      title: "User Interface Design",
+      id: 3,
+      title: "Wireframing & Prototyping",
       description:
-        "Design is at the heart of all that we do, drawing on our passion for creativity geared toward success. We’re not just designers, we’re creators. We’re technology focused and a creative house.",
+        "Design is at the heart of all that we do, drawing on our passion for creativity geared toward success. We’re not just designers, we’re creators. We’re technology-focused and a creative house.",
     },
     {
-      title: "Brand Identity Design",
+      id: 4,
+      title: "Responsive Design",
       description:
-        "Where do you stand in the eyes and minds of your user? We translate your brand purpose into user-centric experiences that lets the world see you for what you really mean.",
+        "We ensure your website or app works perfectly on all devices, whether it's a smartphone, tablet, or desktop.",
     },
     {
+      id: 5,
       title: "Front-end Development",
       description:
-        "We believe in giving dev justice to the beautiful designs we create. Our front-end development team works collaboratively to produce exceptional code adapting best practices in web standards.",
+        "Our front-end development team works collaboratively to produce exceptional code adapting best practices in web standards.",
     },
     {
+      id: 6,
       title: "Back-end Development",
       description:
         "And not just front-end, we architect, build, and deliver robust digital products entirely in-house with an agile, iterative method, backed by our reputation for quality, stability, and support.",

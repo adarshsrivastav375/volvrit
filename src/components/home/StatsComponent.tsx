@@ -35,9 +35,9 @@ const StatsComponent: React.FC = () => {
         {contentData.map((item, index) => (
           <div
             key={index}
-            className="text-center border-l border-gray-400 px-5 py-2 lg:first:border-l-0"
+            className="text-left border-l border-gray-400 px-5 py-2 lg:first:border-l-0"
           >
-            <h2 className="text-5xl 2xl:text-7xl 3xl:text-8xl pb-2 font-semibold text-nowrap flex justify-center items-center gap-2">
+            <h2 className="text-5xl 2xl:text-7xl 3xl:text-8xl pb-2 font-semibold text-nowrap flex justify-start items-center gap-2">
               {item.rating}{" "}
               {item.source && (
                 <span>

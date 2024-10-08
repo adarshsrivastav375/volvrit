@@ -10,8 +10,8 @@ const Expertise = () => {
           Expertise Across Various Domains
         </h4>
         <p className="text-lg md:text-xl font-medium w-1/2 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl">
-          Our custom SaaS development services cater to a wide range of
-          industries, including:
+          Volvrit delivers customised SaaS solutions for healthcare, finance,
+          and retail, driving efficiency and growth.
         </p>
       </div>
       <div className="bg-gradient-to-br overflow-hidden flex items-center gap-20 my-10 from-[#B86DF6] via-[#A723EA] to-[#F27D56] rounded-3xl text-left text-white">
@@ -27,7 +27,7 @@ const Expertise = () => {
             href="/contact-us"
             className="py-2 mt-5 justify-center 2xl:py-3 px-3 2xl:px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-full bg-black text-white text-base 2xl:text-xl transition-all duration-200 ease-in-out"
           >
-            <span className="text-base 2xl:text-lg">Get Details</span>{" "}
+            <span className="text-sm 2xl:text-lg">See More Details</span>{" "}
             <BsArrowRightCircleFill className="text-xl 2xl:text-2xl -rotate-45" />
           </Link>
         </div>
@@ -53,7 +53,7 @@ const Expertise = () => {
               href="/contact-us"
               className="py-2 mt-5 justify-center 2xl:py-3 px-3 2xl:px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-full bg-black text-white transition-all duration-200 ease-in-out"
             >
-              <span className="text-base 2xl:text-lg">Get Details</span>{" "}
+              <span className="text-sm 2xl:text-lg">See More Details</span>{" "}
               <BsArrowRightCircleFill className="text-xl 2xl:text-2xl -rotate-45" />
             </Link>
           </div>
@@ -89,7 +89,7 @@ const Expertise = () => {
               href="/contact-us"
               className="py-2 mt-5 justify-center 2xl:py-3 px-3 2xl:px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-full bg-black text-white transition-all duration-200 ease-in-out"
             >
-              <span className="text-base 2xl:text-lg">Get Details</span>{" "}
+              <span className="text-sm 2xl:text-lg">See More Details</span>{" "}
               <BsArrowRightCircleFill className="text-xl 2xl:text-2xl -rotate-45" />
             </Link>
           </div>{" "}
@@ -103,7 +103,7 @@ const Expertise = () => {
               href="/contact-us"
               className="py-2 mt-5 justify-center 2xl:py-3 px-3 2xl:px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-full bg-black text-white transition-all duration-200 ease-in-out"
             >
-              <span className="text-base 2xl:text-lg">Get Details</span>{" "}
+              <span className="text-sm 2xl:text-lg">See More Details</span>{" "}
               <BsArrowRightCircleFill className="text-xl 2xl:text-2xl -rotate-45" />
             </Link>
           </div>

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { questions } from "@/data/home/faqs";
+import { CRM_FAQs } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import { trustedClient } from "@/components/home/OurPartners";
@@ -35,14 +35,19 @@ export default function Page() {
         ></div>
         <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 py-10 md:py-20 lg:py-[25vh]">
           <div className="text-center">
-            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
+            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl my-8 font-semibold">
               Your Customer Relationship
               <br /> through Digital Transformation
             </h4>
-            <p className="text-base font-extralight px-4 md:px-0 md:w-1/2 mx-auto mb-6">
-              From concept to launch, we bring your digital ideas to life with
-              custom web solutions that elevate your brand and engage your
-              audience.
+            <p className="text-lg font-extralight px-4 md:px-0 md:w-3/4 mx-auto mb-8">
+              Digital transformation redefines customer relationships by
+              integrating advanced technologies into everyday interactions. By
+              utilizing data analytics, businesses can gain insights into
+              customer behavior, enabling personalized experiences and timely
+              responses. Automation streamlines processes, ensuring efficient
+              communication and enhancing satisfaction. This strategic approach
+              fosters trust and loyalty, making customers feel valued in a
+              dynamic digital environment
             </p>
             <Link
               href="/contact-us"
@@ -56,17 +61,19 @@ export default function Page() {
       </div>
       <div className="overflow-hidden py-2">
         <div className="flex animate-marquee justify-start items-center whitespace-nowrap">
-          {[...trustedClient, ...trustedClient].map((client) => (
-            <div key={client.id} className="flex-none px-6">
-              <Image
-                src={client.imageUrl}
-                alt={client.title}
-                width={client.width}
-                height={client.height}
-                className="w-fit object-contain"
-              />
-            </div>
-          ))}
+          {[...trustedClient, ...trustedClient, ...trustedClient].map(
+            (client) => (
+              <div key={client.id} className="flex-none px-6">
+                <Image
+                  src={client.imageUrl}
+                  alt={client.title}
+                  width={client.width}
+                  height={client.height}
+                  className="w-fit object-contain"
+                />
+              </div>
+            )
+          )}
         </div>
       </div>
       <CRMSolutions />
@@ -137,7 +144,7 @@ export default function Page() {
           Frequently Asked Quesions
         </h5>
         <Accordion
-          faqs={questions}
+          faqs={CRM_FAQs}
           colored="bg-[#0B2D52] text-white rounded-xl"
         />
       </div>

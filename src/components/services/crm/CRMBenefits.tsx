@@ -49,7 +49,7 @@ const CRMBenefits = () => {
             return (
               <div
                 key={benefit?.id}
-                className="bg-white border border-gray-500 p-4 md:p-6 rounded-lg text-black"
+                className="bg-white border border-gray-500 p-4 md:p-6 lg:p-8 rounded-lg text-black"
               >
                 <h3 className="text-lg md:text-xl lg:text-2xl font-semibold mb-1 md:mb-3">
                   {benefit?.title}

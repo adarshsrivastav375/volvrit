@@ -21,8 +21,9 @@ const HeroSection = () => {
             <br /> blockchain Experts?
           </h1>
           <p className="text-sm md:text-base lg:text-xl 2xl:text-2xl 3xl:text-3xl font-light mb-6 2xl:mb-10 3xl:my-14 4xl:my-20">
-            At VOLVRIT we help B2B-B2C & Startup&apos;s to create custom
-            development solutions, Crafted by our experienced IT TEAM.
+            Partner with our blockchain experts to develop secure, scalable, and
+            innovative solutions that drive your business growth and ensure
+            success.
           </p>
           <Link
             href="/contact-us"

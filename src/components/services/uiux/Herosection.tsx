@@ -17,9 +17,8 @@ const HeroSection = () => {
             designing
           </h4>
           <p className="text-lg font-extralight px-4 md:px-0 mb-8">
-            Simplifying complex ideas into clear and engaging interfaces,
-            ensuring that every interaction is intuitive, efficient, and
-            visually pleasing.
+            Elevate Your Digital Products with Impressive UI/UX Design by
+            Volvrit
           </p>
         </div>
         <div className="w-full col-span-2 space-y-10">

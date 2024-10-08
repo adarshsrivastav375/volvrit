@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { questions } from "@/data/home/faqs";
+import { mobileDFaqs } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import HeroSection from "@/components/services/mobile/Herosection";
@@ -47,7 +47,7 @@ export default function Page() {
           Frequently Asked Quesions
         </h5>
         <Accordion
-          faqs={questions}
+          faqs={mobileDFaqs}
           colored="bg-[#0B2D52] text-white rounded-xl"
         />
       </div>

@@ -38,9 +38,11 @@ const HeroSection = () => {
               <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
                 Explore Our APIs
               </h4>
-              <p className="text-base font-extralight px-4 md:px-0 md:w-1/2 mx-auto mb-6">
-                Volvrit is a digital marketing agency in India that can give you
-                a makeover. A facelift you didn&apos;t know you needed.
+              <p className="text-base lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl font-extralight px-4 md:px-0 md:w-1/2 mx-auto mb-6">
+                Optimize your applications with secure and scalable API
+                solutions that enhance efficiency, ensure smooth connectivity,
+                and empower your business to deliver better user experiences
+                across platforms and services
               </p>
               <Link
                 href="/contact-us"
@@ -78,9 +80,10 @@ const HeroSection = () => {
         <div className="h-[120vh] relative bg-black">
           <div className="bg-white p-10 flex flex-col justify-center items-start gap-5 text-black mx-20 h-[90vh] w-3/5 -mt-20">
             <h4 className="text-3xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-semibold">
-              Your Customer Relationship through Digital Transformation
+              Your <strong>Customer Relationship</strong> <br /> through Digital
+              Transformation
             </h4>
-            <p className="text-lg font-extralight">
+            <p className="text-lg font-light">
               From concept to launch, we bring your digital ideas to life with
               custom web solutions that elevate your brand and engage your
               audience.

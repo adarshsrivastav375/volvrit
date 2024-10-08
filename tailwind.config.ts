@@ -11,11 +11,11 @@ const config: Config = {
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" }, // Adjust to -50% for seamless looping
+          "100%": { transform: "translateX(-200%)" },
         },
       },
       animation: {
-        marquee: "marquee 20s linear infinite", // Make it infinite for continuous looping
+        marquee: "marquee 60s linear infinite",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

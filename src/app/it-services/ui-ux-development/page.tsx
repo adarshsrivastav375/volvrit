@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { questions } from "@/data/home/faqs";
+import { UIUX_FAQs } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 import CardComponent from "@/components/home/CardComponent";
@@ -99,7 +99,7 @@ export default function Page() {
           Frequently Asked Quesions
         </h5>
         <Accordion
-          faqs={questions}
+          faqs={UIUX_FAQs}
           colored="bg-[#0B2D52] text-white rounded-xl"
         />
       </div>

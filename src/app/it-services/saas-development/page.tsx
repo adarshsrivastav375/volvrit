@@ -78,6 +78,8 @@ export default function Page() {
             <Image
               width={200}
               height={200}
+              unoptimized
+              priority
               alt={"Screen"}
               src="https://volvrit.s3.ap-south-1.amazonaws.com/saas-frame2.png"
               className="object-contain absolute -top-10"

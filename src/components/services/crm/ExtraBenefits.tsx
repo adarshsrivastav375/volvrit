@@ -58,10 +58,10 @@ const ExtraSolutions = () => {
           {solutions.slice(0, 4).map((item: any) => {
             return (
               <div key={item?.id} className="pb-3 md:p-2">
-                <p className="text-lg lg:text-2xl font-bold pt-2 text-left">
+                <p className="text-base lg:text-xl font-bold pt-2 text-left">
                   {item?.title}
                 </p>
-                <p className="text-sm lg:text-base font-medium pt-2 text-left">
+                <p className="text-sm lg:text-base font-light pt-2 text-left">
                   {item?.description}
                 </p>
               </div>
@@ -81,10 +81,10 @@ const ExtraSolutions = () => {
           {solutions.slice(4, 8).map((item: any) => {
             return (
               <div key={item?.id} className="pb-3 md:p-2">
-                <p className="text-lg lg:text-2xl font-bold pt-2 text-left">
+                <p className="text-base lg:text-xl font-bold pt-2 text-left">
                   {item?.title}
                 </p>
-                <p className="text-sm lg:text-base font-medium pt-2 text-left">
+                <p className="text-sm lg:text-base font-light pt-2 text-left">
                   {item?.description}
                 </p>
               </div>

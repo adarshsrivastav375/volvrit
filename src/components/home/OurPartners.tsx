@@ -101,11 +101,11 @@ const OurPartners = () => {
         src="/assets/video/home/ourpartner.mp4"
         poster="/assets/video/home/ourpartner.mp4#t=0.1"
       /> */}
-      <h5 className="relative text-2xl md:text-3xl lg:text-4xl 2xl:text-6xl mb-2 col-span-2 font-semibold z-10 text-black">
+      <h5 className="relative text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-8xl mb-2 col-span-2 font-semibold z-10 text-black">
         A few companies who trusted <br />
         us with their projects
       </h5>
-      <div className="relative grid grid-cols-3 gap-5 lg:gap-10 pt-5 overflow-auto md:gap-0 justify-center items-center z-10">
+      <div className="relative grid grid-cols-3 gap-5 w-[80vw] mx-auto pt-5 overflow-auto md:gap-0 justify-center items-center">
         <>
           {trustedClient.map((trust, idx) => {
             return (

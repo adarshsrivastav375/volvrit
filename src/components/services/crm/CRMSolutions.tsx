@@ -55,7 +55,7 @@ const CRMSolutions = () => {
                     alt={item?.title}
                     className="w-10 h-fit object-contain"
                   />
-                  <p className="text-sm md:text-lg 2xl:text-xl lg:w-2/3 font-semibold pt-2 text-left">
+                  <p className="text-sm md:text-lg 2xl:text-xl lg:w-2/3 font-extrabold pt-2 text-left">
                     {item?.title}
                   </p>
                 </div>
@@ -85,7 +85,7 @@ const CRMSolutions = () => {
                     alt={item?.title}
                     className="w-10 h-fit object-contain"
                   />
-                  <p className="text-sm md:text-lg 2xl:text-xl lg:w-2/3 font-semibold pt-2 text-left">
+                  <p className="text-sm md:text-lg 2xl:text-xl lg:w-2/3 font-extrabold pt-2 text-left">
                     {item?.title}
                   </p>
                 </div>

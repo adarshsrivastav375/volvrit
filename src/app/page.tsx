@@ -1,14 +1,13 @@
 import AboutUs from "@/components/home/AboutUs";
 import Services from "@/components/home/Services";
 import HeroSection from "@/components/home/Banner";
+import CTASection from "@/components/home/CTAsection";
 import OurPartners from "@/components/home/OurPartners";
 import Testimonials from "@/components/home/Testimonials";
-// import OurPortfolio from "@/components/home/OurPortfolio";
-import StatsComponent from "@/components/home/StatsComponent";
-// import GetStarted from "@/components/services/common/GetStarted";
 import CardComponent from "@/components/home/CardComponent";
+import StatsComponent from "@/components/home/StatsComponent";
 import ProcessSection from "@/components/home/ProcessSection";
-import CTASection from "@/components/home/CTAsection";
+import FractionalCFOCto from "@/components/home/FractionalCTOCFO";
 
 export default function Home() {
   return (
@@ -20,10 +19,9 @@ export default function Home() {
       <StatsComponent />
       <CardComponent />
       <ProcessSection />
-      {/* <OurPortfolio /> */}
+      <FractionalCFOCto />
       <Testimonials />
       <CTASection />
-      {/* <GetStarted /> */}
     </>
   );
 }

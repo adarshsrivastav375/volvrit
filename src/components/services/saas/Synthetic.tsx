@@ -25,13 +25,13 @@ const SyntheticSurveillance: React.FC = () => {
         </p>
         <Link
           href={"/contact-us"}
-          className="py-2 2xl:py-4 px-5 flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
+          className="py-2 2xl:py-4 px-5 flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-lg lg:text-2xl 2xl:text-3xl 3xl:text-4xl transition-all duration-200 ease-in-out"
           aria-label="Contact Us"
         >
           <span>Contact Us</span> <BsArrowRightCircleFill />
         </Link>
       </div>
-      <div className="relative w-full flex justify-center items-center">
+      <div className="relative lg:px-20 w-full flex justify-center items-center">
         <div className="w-1/2">
           <Image
             width={64}
@@ -50,14 +50,14 @@ const SyntheticSurveillance: React.FC = () => {
           unoptimized
           priority
           src="https://volvrit.s3.ap-south-1.amazonaws.com/FrameLogos2.png"
-          className="object-contain absolute top-[66%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5"
+          className="object-contain absolute top-[66%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4"
         />
         <Image
-          width={72}
-          height={72}
+          width={64}
+          height={64}
           alt={"Screen"}
           src="https://volvrit.s3.ap-south-1.amazonaws.com/horizontal.png"
-          className="object-contain absolute top-[66%] left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="object-contain absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
         <div className="w-1/2">
           <Image

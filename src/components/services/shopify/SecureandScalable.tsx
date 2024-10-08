@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { IoTriangle } from "react-icons/io5";
 import { FaLocationArrow } from "react-icons/fa";
 import { BsArrowRightCircleFill } from "react-icons/bs";
 
@@ -38,23 +39,20 @@ const SecureandScalable = () => {
     {
       id: 1,
       title: "Custom Storefront Development",
-      imageUrl: "https://volvrit.s3.ap-south-1.amazonaws.com/assessment.png",
       description:
-        "From inception to launch, Volvrit Technologies can provide a route to success for your ecommerce business on Shopify.",
+        "Create a unique, user-friendly Shopify storefront that expresses your brand and gives a positive customer experience while maximizing conversion rates.",
     },
     {
       id: 2,
       title: "Shopify App Development",
-      imageUrl: "https://volvrit.s3.ap-south-1.amazonaws.com/notes.png",
       description:
-        "Unleash the true potential of your website by customizing its theme to suit the needs of your customers.",
+        "Build custom Shopify apps that enhance functionality, streamline business processes, or provide customized solutions for your business.",
     },
     {
       id: 3,
       title: "Third-Party Integrations",
-      imageUrl: "https://volvrit.s3.ap-south-1.amazonaws.com/partnership.png",
       description:
-        "Installing applications can happen with the click of a button, but monitoring compatibility between different apps.",
+        "Integrate third-party tools and platforms with your Shopify store to create smooth and cost-efficient efficiency, automation, and performance in your business operations.",
     },
   ];
   return (
@@ -132,22 +130,20 @@ const SecureandScalable = () => {
                 key={index}
                 className="p-5 rounded-2xl first:bg-[#034EA3] hover:bg-[#034EA3] cursor-pointer transition-all duration-500 ease-in-out"
               >
-                <Image
-                  width={32}
-                  height={32}
-                  alt={item.title}
-                  src={item.imageUrl}
-                  className="w-fit object-contain"
-                />
-                <h5 className="text-base mt-1 font-light mb-3 text-nowrap">
-                  {item.title}
-                </h5>
+                <div className=" flex justify-start items-center gap-2 mb-3">
+                  <div className="bg-white w-fit rounded-full p-[2px]">
+                    <IoTriangle color="black" className="text-sm" />
+                  </div>
+                  <h5 className="text-base mt-1 font-light text-nowrap">
+                    {item.title}
+                  </h5>
+                </div>
                 <p className="text-base font-extralight">{item.description}</p>
               </div>
             );
           })}
         </div>
-        <div className="bg-gradient-to-br p-16 pb-0 m-10 rounded-t-3xl from-[#E5D6F1] via-[#6D58BB] to-[#2B1F8A]">
+        <div className="bg-gradient-to-br p-16 pb-0 m-16 rounded-t-3xl from-[#E5D6F1] via-[#6D58BB] to-[#2B1F8A]">
           <Image
             priority
             unoptimized
@@ -155,7 +151,7 @@ const SecureandScalable = () => {
             height={1200}
             alt="Mobile Banner"
             src="https://volvrit.s3.ap-south-1.amazonaws.com/shopifyscreen.png"
-            className="w-full relative mx-auto h-full object-contain"
+            className="w- relative mx-auto h-full object-contain"
           />
         </div>
         <h4 className="text-center text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-semibold">

@@ -12,12 +12,11 @@ const HeroSection = () => {
       <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-10 md:pt-20 lg:pt-[25vh]">
         <div className="text-center">
           <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
-            Small Business Automation
-            <br /> and CRM Software
+            CRM Software Development <br /> Services Company India
           </h4>
           <p className="text-base font-extralight px-4 md:px-0 md:w-1/2 mx-auto mb-6">
-            we build CRM Software from scratch to transform your operations
-            through solutions designed to improve your customer interactions
+            Empowering Your Business with Scalable and Innovative CRM
+            Technologies
           </p>
           <Link
             href="/contact-us"

@@ -125,10 +125,10 @@ const ProcessSection: React.FC = () => {
 
       <div className="mx-auto max-w-9xl lg:px-40 2xl:px-40 md:px-8 px-4">
         <div className="text-center pt-10 3xl:pt-16 4xl:pt-28">
-          <h4 className="text-2xl lg:text-3xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-bold pb-2">
+          <h4 className="text-3xl lg:text-4xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold pb-2">
             Tackling complex integrations?
           </h4>
-          <p className="text-base 2xl:text-xl md:w-2/3 mx-auto 3xl:text-2xl 4xl:text-3xl">
+          <p className="text-lg 2xl:text-2xl md:w-2/3 mx-auto 3xl:text-3xl 4xl:text-4xl">
             From intricate challenges to seamless execution, We&apos;ll
             integrate all your marketing tools and automations with your website
           </p>

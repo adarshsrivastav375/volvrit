@@ -39,7 +39,7 @@ const HeroSection = () => {
               height={100}
               alt="Mobile Banner"
               src="https://volvrit.s3.ap-south-1.amazonaws.com/mobileBanner.png"
-              className="w-fit h-full object-cover"
+              className="w-2/3 h-full object-cover"
             />
           </div>
         </div>

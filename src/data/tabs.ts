@@ -54,10 +54,10 @@ export const services = [
         href: "/it-services/ui-ux-development",
         label: "UI / UX Development",
       },
-      {
-        href: "/it-services/artificial-intelligence-development",
-        label: "AI Development",
-      },
+      // {
+      //   href: "/it-services/artificial-intelligence-development",
+      //   label: "AI Development",
+      // },
       { href: "/api-services/api-development", label: "API Development" },
       // { href: "/it-services/payment-gateway", label: "Payment Gateway" },
     ],

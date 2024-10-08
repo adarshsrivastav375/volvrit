@@ -36,7 +36,7 @@ const NavbarItems = ({
             onMouseEnter={() => {
               if (item?.label === "Services") handleShowChildren();
             }}
-            className="relative inline-block py-1 cursor-pointer 2xl:text-2xl"
+            className="relative inline-block py-1 cursor-pointer 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl"
           >
             {item.label}
             <span

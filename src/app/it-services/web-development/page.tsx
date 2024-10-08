@@ -1,20 +1,13 @@
-import { websiteStats } from "@/data/home/primary";
-import OurPartners from "@/components/home/OurPartners";
-import Trusted from "@/components/services/webd/Trusted";
-import Overview from "@/components/services/common/Overview";
-import GetStarted from "@/components/services/common/GetStarted";
-import WhatWeOffer from "@/components/services/webd/WhatWeOffer";
-import HeroSection from "@/components/services/webd/Herosection";
-import WebSolutions from "@/components/services/webd/WebSolutions";
-import Testimonials from "@/components/services/webd/Testimonials";
-import DevelopmentProcess from "@/components/services/webd/DevelopmentProcess";
-import Image from "next/image";
 import Link from "next/link";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import Image from "next/image";
+import { webDQuestions } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
-import { questions } from "@/data/home/faqs";
-import ServiceDevelopment from "@/components/services/webd/ServiceDevelopment";
+import { BsArrowRightCircleFill } from "react-icons/bs";
+import Overview from "@/components/services/common/Overview";
+import HeroSection from "@/components/services/webd/Herosection";
+import WhatWeOffer from "@/components/services/webd/WhatWeOffer";
 import PortfolioOffer from "@/components/services/webd/PortfolioOffer";
+import ServiceDevelopment from "@/components/services/webd/ServiceDevelopment";
 
 export default function Page() {
   return (
@@ -22,7 +15,7 @@ export default function Page() {
       <HeroSection />
       <Overview
         headerText={["Your Trusted", "Website Development", "Services Company"]}
-        description="Volvrit being one of the best website development company in India aims to deliver creative solutions that best fit your ideas of conducting your business. Whether it&apos;s a small just-started business or a long-established one, the website development services from our company will help you build a powerful online presence."
+        description="Volvrit being one of the best website development company in India aims to deliver creative solutions that best fit your ideas of conducting your business. Whether it's a small just-started business or a long-established one, the website development services from our company will help you build a powerful online presence."
         description2="What makes a great website? It attracts visitors, but a great website converts those visitors into loyal customers. Volvrit mixes creativity, technology, and innovation to build high-performance websites that can drive your business forward, achieve your goals, and remain the best blend of aesthetics and functionality for visitors."
       />
       <div className="relative text-white py-12">
@@ -32,13 +25,13 @@ export default function Page() {
         ></div>
         <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-32">
           <div className="text-left">
-            <h4 className="text-3xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5 font-medium">
+            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-medium">
               We offer a Wide Variety of Custom Website Development Services.
             </h4>
             <div className="flex justify-between items-center gap-20">
-              <p className="w-1/2 text-xl lg:text-2xl 2xl:text-3xl opacity-80">
-                We know every organization is different, and that&apos;s the reason
-                we offer customized website development as per your
+              <p className="w-1/2 text-xl lg:text-2xl 2xl:text-3xl opacity-80 font-extralight">
+                We know every organization is different, and that&apos;s the
+                reason we offer customized website development as per your
                 requirements. You may need an e-commerce website, a corporate
                 site, or even a personal blog. Choose our solution package
                 because we will provide you with each as per your needs.
@@ -69,15 +62,13 @@ export default function Page() {
         <div className="relative z-10 flex flex-col justify-center items-center">
           <div className="text-center">
             <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
-              Let&apos;s Get Started on Your Mobile App Development Services
+              Let&apos;s Connect: Contact Us Now.
             </h4>
             <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
-              Be ready to create a personalized mobile application that could
-              take your business to the next level. Do similar businesses
-              require boosting their customer engagement efficiency and growth
-              with mobile apps? Contact us today about your project to
-              let&apos;s get started building the right mobile app for
-              furthering your business goals.
+              Are you ready to take your business to the next level? Contact us
+              today! We&apos;ll be more than happy to further address your
+              questions or get you started. Just fill in the form below and
+              we'll get right back to you.
             </p>
             <Link
               href="/contact-us"
@@ -94,7 +85,7 @@ export default function Page() {
           Frequently Asked Quesions
         </h5>
         <Accordion
-          faqs={questions}
+          faqs={webDQuestions}
           colored="bg-[#0B2D52] text-white rounded-xl"
         />
       </div>

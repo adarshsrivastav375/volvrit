@@ -9,76 +9,70 @@ const ServicesInDevelopement = () => {
       points: [
         "Aadhaar Verification API",
         "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
+        "Aadhaar to PAN API",
+        "PAN Validation API",
+        "Voter ID Verification API",
+        "DL Verification API",
+        "Passport Verification API",
+        "Vehicle RC Verification API",
+        "Chassis Number To RC API",
+        "RC With Financer Details API",
+        "Aadhaar Masking API",
       ],
     },
     {
       id: 2,
-      title: "Identity Verification APIs",
+      title: "Business & Financial Verification APIs",
       imageUrl: "/assets/api/api_dev_logo1.png",
       points: [
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "PAN Verification API",
+        "GST OTP Verification API",
+        "GST Verification API",
+        "GST To Phone Number API",
+        "TAN Verification API",
+        "Udyog Verification API",
+        "Udyam Verification API",
       ],
     },
     {
       id: 3,
-      title: "Identity Verification APIs",
+      title: "UAE Verification APIs",
       imageUrl: "/assets/api/api_dev_logo1.png",
       points: [
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
+        "Emirates ID Verification API",
+        "UAE TRN Verification API",
+        "UAE DL Verification API",
       ],
     },
     {
       id: 4,
-      title: "Identity Verification APIs",
+      title: "Income Verification APIs",
       imageUrl: "/assets/api/api_dev_logo1.png",
-      points: [
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
-      ],
+      points: ["Bank Account Verification API", "EPFO API", "Form 26AS API"],
     },
     {
       id: 5,
-      title: "Identity Verification APIs",
+      title: "Credit Score Check",
       imageUrl: "/assets/api/api_dev_logo1.png",
       points: [
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
+        "Credit Score Check With OTP API",
+        "Experian Credit Score API",
+        "Equifax Credit Score Check API",
       ],
     },
     {
       id: 6,
-      title: "Identity Verification APIs",
+      title: "Company Verification APIs",
       imageUrl: "/assets/api/api_dev_logo1.png",
       points: [
-        "Aadhaar Verification API",
-        "PAN Verification API",
-        "Aadhaar Verification API",
-        "PAN Verification API",
+        "Company Suite API",
+        "Company Detail BY CIN Number API",
+        "Company Director Profile CIN Number API",
+        "Company List Search API",
+        "DIN API - Director Search BY DIN",
       ],
     },
   ];
+
   return (
     <div className="bg-[#0B2D52] text-white">
       <div className="max-w-9xl mx-auto px-4 md:px-6 lg:px-20 text-center pt-20 pb-64">
@@ -92,19 +86,21 @@ const ServicesInDevelopement = () => {
             return (
               <div
                 key={service.id}
-                className="shadow-md border-t-2 border-l-2 border-r-[0.5px] border-b-[0.5px] border-slate-200 border-opacity-70 p-5 pb-20 rounded-2xl bg-gradient-to-b from-[#1E2A3A] via-[#183254] to-[#1E2A3A]"
+                className="shadow-md border-t-2 border-l-2 border-slate-100/50 border-opacity-70 p-5 rounded-2xl bg-gradient-to-b from-[#1E2A3A] via-[#183254] to-[#1E2A3A]"
               >
                 <div className="flex gap-2 items-center">
                   <Image
                     src={service.imageUrl}
                     alt={service?.title}
-                    width={72}
-                    height={72}
-                    className="h-auto object-cover"
+                    width={90}
+                    height={90}
+                    className="w-fit object-cover"
                   />
-                  <p className="text-left text-lg">{service?.title}</p>
+                  <p className="text-left text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+                    {service?.title}
+                  </p>
                 </div>
-                <ul className="text-left pt-5 text-sm font-light space-y-2">
+                <ul className="text-left lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl pt-5 text-sm font-light space-y-2">
                   {service.points.map((point: any, index: number) => {
                     return <li key={index}>{point}</li>;
                   })}

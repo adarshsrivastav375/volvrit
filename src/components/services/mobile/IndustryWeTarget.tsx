@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { faqs } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
+import { IndustryWeTargetQues } from "@/data/home/faqs";
 
 const IndustryWeTarget = () => {
   return (
@@ -15,7 +15,7 @@ const IndustryWeTarget = () => {
       </p>
       <div className="flex justify-between items-center gap-20 px-20 pt-10">
         <div className="w-1/2 text-left">
-          <Accordion faqs={faqs} />
+          <Accordion faqs={IndustryWeTargetQues} />
         </div>
         <div className="w-1/2">
           <Image

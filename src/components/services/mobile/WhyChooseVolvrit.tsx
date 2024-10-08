@@ -86,7 +86,7 @@ const WhyChooseVolvrit = () => {
           <h4 className="text-3xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-medium">
             Our Process of App Development
           </h4>
-          <p className="text-sm font-light px-4 md:px-0 md:w-3/4 mx-auto my-8">
+          <p className="text-base lg:text-lg font-light px-4 md:px-0 md:w-3/4 mx-auto my-8">
             We follow a clear process from conceptualization to deployment,
             which guarantees that your app is developed on schedule and without
             any issue. We begin with an understanding of your business,
@@ -98,7 +98,7 @@ const WhyChooseVolvrit = () => {
               <h4 className="text-3xl md:text-4xl font-medium 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5">
                 Designing
               </h4>
-              <p className="text-lg 2xl:text-xl 3xl:text-2xl w-2/3">
+              <p className="text-lg 2xl:text-xl 3xl:text-2xl w-3/4">
                 We have an experienced “ Ui/Ux” team that experts in crafting
                 intuitive and attractive design that your customers.
               </p>
@@ -122,7 +122,7 @@ const WhyChooseVolvrit = () => {
           <h4 className="text-2xl md:text-3xl font-medium 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5">
             Modern Technology Stack for Optimal Results
           </h4>
-          <p className="text-base 2xl:text-lg 3xl:text-xl w-2/3 mx-auto font-light opacity-50">
+          <p className="text-base 2xl:text-lg 3xl:text-xl w-2/3 mx-auto font-light opacity-80">
             We use the latest technologies to ensure your SaaS application is
             secure, scalable, and efficient.
           </p>

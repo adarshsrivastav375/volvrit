@@ -1,5 +1,5 @@
-import CardComponent from "@/components/home/CardComponent";
 import Image from "next/image";
+import CardComponent from "@/components/home/CardComponent";
 
 const PortfolioOffer = () => {
   const portfolioOffers = [
@@ -9,7 +9,7 @@ const PortfolioOffer = () => {
         "https://volvrit.s3.ap-south-1.amazonaws.com/ecommerce-website.png",
       title: "Ecommerce Web Development Services",
       description:
-        "OurOur e-commerce services ensure a convenient and secure manner of online transactions for you as well as your customers.",
+        "Our e-commerce services ensure a convenient and secure manner of online transactions for you as well as your customers.",
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ const PortfolioOffer = () => {
         <h4 className="text-3xl md:text-4xl font-semibold 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5">
           Portfolio
         </h4>
-        <p className="text-base 2xl:text-lg 3xl:text-xl w-2/3 mx-auto font-light">
+        <p className="text-base 2xl:text-lg 3xl:text-xl w-2/3 mx-auto">
           We have experience in various projects in the retail healthcare,
           education, and corporate sectors, seen the best of industry types
           through our portfolio of projects. Each project, essentially, speaks

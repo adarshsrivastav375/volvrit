@@ -3,7 +3,6 @@ import Link from "next/link";
 import Sidebar from "./Sidebar";
 import NavbarItems from "./Items";
 import Logo from "../common/Logo";
-import { FiPhone } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { MdOutlineMailLock } from "react-icons/md";
@@ -49,18 +48,11 @@ const Navbar = () => {
         <div className="w-full hidden mx-auto md:px-4 lg:px-20 md:flex gap-10 items-center justify-end text-sm 2xl:text-xl py-2">
           <Link
             href={"mailto:info@volvrit.com"}
-            className="flex justify-start items-center gap-3 pr-1"
+            className="flex justify-start items-center gap-3 pr-3 2xl:pr-4 3xl:pr-5 4xl:pr-10"
             aria-label="EmailId"
           >
             <MdOutlineMailLock size={20} /> hi@volvrit.com
           </Link>
-          {/* <Link
-            href={"tel:+917599990331"}
-            className="flex justify-start items-center gap-3"
-            aria-label="Phone number"
-          >
-            <FiPhone size={16} /> +91 7599990331
-          </Link> */}
         </div>
       </div>
       <div
@@ -84,7 +76,7 @@ const Navbar = () => {
           <div className="hidden lg:block place-self-end my-auto">
             <Link
               href={"/contact-us"}
-              className="py-2 2xl:py-4 px-5 flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
+              className="py-2 2xl:py-4 px-5 flex gap-2 items-center rounded-lg 2xl:rounded-xl 3xl:text-2xl 4xl:text-3xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
               aria-label="Contact Us"
             >
               <span>Contact Us</span> <BsArrowRightCircleFill />

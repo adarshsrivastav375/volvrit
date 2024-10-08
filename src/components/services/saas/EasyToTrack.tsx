@@ -5,7 +5,7 @@ const EasyToTrack = () => {
     {
       id: 1,
       description:
-        "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean",
+        "Derive quick insights with real-time data analytics-empowering faster decisions and anticipating evolving business conditions",
       title: "Real Time Data Analytics",
       logo: "https://volvrit.s3.ap-south-1.amazonaws.com/time-saas.png",
       imageUrl: "https://volvrit.s3.ap-south-1.amazonaws.com/easyToTrack.png",
@@ -13,14 +13,15 @@ const EasyToTrack = () => {
     {
       id: 2,
       description:
-        "commodo ligula eget dolor. Aenean massa. Cum sociis natoque",
+        "Maintain the highest levels of safety and security, ensure your data, infrastructure, and business are safeguarded from evolving digital threats",
       title: "Safely Security",
       logo: "https://volvrit.s3.ap-south-1.amazonaws.com/security-saas.png",
       imageUrl: "https://volvrit.s3.ap-south-1.amazonaws.com/easyToTrack2.png",
     },
     {
       id: 3,
-      description: "enatibus et magnis dis parturient montes, nascetur",
+      description:
+        "Smooth extension and running on multiple platforms, flexible and accessible to all users, consistent and performing everywhere.",
       title: "Multiple Platform",
       logo: "https://volvrit.s3.ap-south-1.amazonaws.com/monitor-saas.png",
       imageUrl: "https://volvrit.s3.ap-south-1.amazonaws.com/easyToTrack3.png",
@@ -38,7 +39,7 @@ const EasyToTrack = () => {
           return (
             <div
               key={index}
-              className="flex justify-between items-center gap-10"
+              className="flex justify-between items-center gap-16"
             >
               <div
                 key={sol?.id}

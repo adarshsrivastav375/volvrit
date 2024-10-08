@@ -38,7 +38,7 @@ const ServiceDevelopment = () => {
         Our Website Development <br />
         Services
       </h4>
-      <p className="text-base 2xl:text-lg 3xl:text-xl w-2/3 mx-auto font-light">
+      <p className="text-base 2xl:text-lg 3xl:text-xl w-1/2 mx-auto text-black font-light">
         Here are some reasons why we are one of the best website development
         services companies in India:
       </p>
@@ -56,7 +56,7 @@ const ServiceDevelopment = () => {
                 height={64}
                 className="w-12 md:w-8 lg:w-14 h-fit object-contain"
               />
-              <h4 className="text-lg md:text-lg my-3 font-bold text-nowrap leading-6 w-full lg:w-2/3 text-gray-800">
+              <h4 className="text-lg md:text-lg my-3 font-extrabold text-nowrap leading-6 w-full lg:w-2/3 text-gray-800">
                 {item?.title}
               </h4>
               <p className="text-base w-full">{item?.description}</p>
