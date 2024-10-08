@@ -4,15 +4,15 @@ import { BsArrowRightCircleFill } from "react-icons/bs";
 const FractionalCFOCto: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-9xl p-4 md:p-6 lg:px-20 lg:py-10">
-      <h4 className="text-3xl lg:text-4xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4">
+      <h4 className="text-3xl lg:text-4xl mx-auto text-center 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-bold mb-4">
         Hire Fractional Chief Officer
       </h4>
-      <p className="text-lg 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-8 text-center w-2/3 mx-auto">
+      <p className="text-lg 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl mb-8 text-center md:w-2/3 mx-auto">
         They are ideal for startups and growing businesses that need expert tech
         direction without the commitment and cost of a full-time executive.
       </p>
 
-      <div className="flex w-full gap-10 space-x-4 lg:px-20">
+      <div className="flex flex-col md:flex-row w-full gap-5 lg:gap-10 md:space-x-4 lg:px-20">
         <div className="flex-1 p-6 bg-[#0051B3] text-white rounded-lg shadow-lg">
           <h5 className="text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-bold mb-2">
             Fraction CTO

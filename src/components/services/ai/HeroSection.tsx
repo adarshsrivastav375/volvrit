@@ -17,7 +17,7 @@ const HeroSection = () => {
           <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
             AI Development Services Company
           </h4>
-          <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-2/3 mx-auto mb-6">
+          <p className="text-sm lg:text-base 2xl:text-lg 2xl:tex-xl 3xl:text-2xl font-extralight px-4 md:px-0 md:w-2/3 mx-auto mb-6">
             Artificial Intelligence is one of the fastest emerging markets that
             has been chosen as the flag bearer for technological innovation in
             the prosperity of any business. Volvrit is an India&apos;s leading

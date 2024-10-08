@@ -1,10 +1,16 @@
 import Link from "next/link";
-import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+import {
+  FaTwitter,
+  FaFacebook,
+  FaInstagram,
+  FaPinterest,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 const SocialMediaLinks = ({ size }: { size?: number }) => {
   const socialLinks = [
     {
-      href: "https://instagram.com",
+      href: "https://www.facebook.com/people/Volvrit/61560059016993/",
       icon: (
         <FaInstagram
           size={size ?? 20}
@@ -14,7 +20,7 @@ const SocialMediaLinks = ({ size }: { size?: number }) => {
       label: "Instagram",
     },
     {
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/people/Volvrit/61560059016993/",
       icon: (
         <FaFacebook
           size={size ?? 20}
@@ -23,15 +29,35 @@ const SocialMediaLinks = ({ size }: { size?: number }) => {
       ),
       label: "Facebook",
     },
+    // {
+    //   href: "https://twitter.com",
+    //   icon: (
+    //     <FaTwitter
+    //       size={size ?? 20}
+    //       className="text-black hover:text-primary"
+    //     />
+    //   ),
+    //   label: "Twitter",
+    // },
     {
-      href: "https://twitter.com",
+      href: "https://www.linkedin.com/company/volvrit/?viewAsMember=true",
       icon: (
-        <FaTwitter
+        <FaLinkedinIn
           size={size ?? 20}
           className="text-black hover:text-primary"
         />
       ),
-      label: "Twitter",
+      label: "LinkedIn",
+    },
+    {
+      href: "https://in.pinterest.com/volvrit/",
+      icon: (
+        <FaPinterest
+          size={size ?? 20}
+          className="text-black hover:text-primary"
+        />
+      ),
+      label: "Pinterest",
     },
   ];
 
