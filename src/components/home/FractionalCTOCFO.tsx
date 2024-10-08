@@ -13,7 +13,7 @@ const FractionalCFOCto: React.FC = () => {
       </p>
 
       <div className="flex flex-col md:flex-row w-full gap-5 lg:gap-10 md:space-x-4">
-        <div className="flex-1 p-5 lg:p-12 bg-[#0051B3] text-white rounded-xl">
+        <div className="flex-1 p-5 lg:p-14 bg-[#0051B3] text-white rounded-xl">
           <h5 className="text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-bold mb-2">
             Fraction CTO
           </h5>
