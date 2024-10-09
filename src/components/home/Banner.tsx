@@ -1,5 +1,5 @@
 import Image from "next/image";
-import LinkBtn from "../common/LinkButton";
+import StartAProjectButton from "../common/StartAProjectButton";
 
 const images = [
   { width: 100, url: "/assets/logo/services/nextjs.png" },
@@ -34,7 +34,7 @@ const HeroSection = () => {
           At VOLVRIT we help B2B-B2C & Startup&apos;s to create custom
           development solutions, Crafted by our experienced IT TEAM.
         </p>
-        <LinkBtn text="Start a Project" href="/contact-us" />
+        <StartAProjectButton />
         <div className="flex flex-wrap pt-10 lg:pb-20 justify-center items-center">
           {images.map((image, index) => {
             return (

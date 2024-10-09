@@ -1,6 +1,5 @@
-import Link from "next/link";
-import { BsArrowRightCircleFill } from "react-icons/bs";
 import BackgroundImage from "@/components/common/BackgroundImage";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 const Overview = ({
   imageUrl,
@@ -33,13 +32,7 @@ const Overview = ({
               {description2}
             </p>
           )}
-          <Link
-            href="/contact-us"
-            className="py-3 mx-auto justify-center 2xl:py-4 px-5 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
-          >
-            <span className="text-xl 2xl:text-2xl">Start a Project</span>{" "}
-            <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl" />
-          </Link>
+          <StartAProjectButton />
         </div>
       </BackgroundImage>
     </div>

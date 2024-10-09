@@ -97,3 +97,20 @@ input[value=""]:not(:focus) {
 .animate-spin-orbit-delay {
   animation: spinOrbitDelay 5s linear infinite;
 }
+/* .bg-gradient-conic {
+  background: conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops));
+} */
+
+/* Rotating animation for the gradient */
+@keyframes gradient-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-gradient-rotate {
+  animation: gradient-rotate 2s linear infinite;
+}

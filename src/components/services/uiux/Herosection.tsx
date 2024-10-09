@@ -53,7 +53,7 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="col-span-3 flex py-10 gap-5 justify-center items-center">
-          <div className="h-full">
+          <div className="h-full w-[44%]">
             <Image
               priority
               unoptimized

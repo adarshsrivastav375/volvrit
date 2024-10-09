@@ -8,29 +8,56 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
+// const testimonials = [
+//   {
+//     date: "15/04/2024",
+//     text: "The IT services provided by Volvrit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
+//     name: "Priya Sharma",
+//     title: "Digital Innovation Agency",
+//   },
+//   {
+//     date: "15/04/2024",
+//     text: "It can be challenging for a small business owner to navigate legal-associated issues. Their service delivery and high level of accuracy make them the perfect companion in business legal services in Canada.",
+//     name: "Rajesh Kumar",
+//     title: "Business Manager",
+//   },
+//   {
+//     date: "15/04/2024",
+//     text: "For a new business, we require good IT solutions and consulting services. Volvrit IT Services created a wonderful IT solution plan within our budget with an affordable and flexible cost.",
+//     name: "Anjali Patel",
+//     title: "Co-Founder Figo",
+//   },
+//   {
+//     date: "15/04/2024",
+//     text: "The IT services provided by Volvrit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
+//     name: "Riya Sharma",
+//     title: "Digital Innovation Agency",
+//   },
+// ];
+
 const testimonials = [
   {
     date: "15/04/2024",
-    text: "The IT services provided by Volvrit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
-    name: "Priya Sharma",
+    text: "Working with Volvrit was a great experience, and I have to say that they do absolutely amazing work. Their professionalism, knowledge, and commitment to providing outstanding results were clear from the start.",
+    name: "Bhavya Gautam",
     title: "Digital Innovation Agency",
   },
   {
     date: "15/04/2024",
-    text: "It can be challenging for a small business owner to navigate legal-associated issues. Their service delivery and high level of accuracy make them the perfect companion in business legal services in Canada.",
-    name: "Rajesh Kumar",
+    text: "I had a great experience with these people they are highly professional and did the job very well.",
+    name: "Kajal Taneja",
     title: "Business Manager",
   },
   {
     date: "15/04/2024",
-    text: "For a new business, we require good IT solutions and consulting services. Volvrit IT Services created a wonderful IT solution plan within our budget with an affordable and flexible cost.",
-    name: "Anjali Patel",
+    text: "Best service provider for IT and taxation services.",
+    name: "Akshat Taneja",
     title: "Co-Founder Figo",
   },
   {
     date: "15/04/2024",
-    text: "The IT services provided by Volvrit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
-    name: "Riya Sharma",
+    text: "All round solutions are being provided. Thanks.",
+    name: "Sriansh Agarwal",
     title: "Digital Innovation Agency",
   },
 ];

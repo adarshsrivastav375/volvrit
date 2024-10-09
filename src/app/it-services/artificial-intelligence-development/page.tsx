@@ -1,9 +1,8 @@
-import Link from "next/link";
 import { AI_FAQs } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
-import { BsArrowRightCircleFill } from "react-icons/bs";
 import HeroSection from "@/components/services/ai/HeroSection";
 import ImportanceAI from "@/components/services/ai/ImportanceAI";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 export default function Page() {
   return (
@@ -28,13 +27,7 @@ export default function Page() {
               let&apos;s get started building the right mobile app for
               furthering your business goals.
             </p>
-            <Link
-              href="/contact-us"
-              className="py-3 mx-auto justify-center 2xl:py-4 px-5 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
-            >
-              <span className="text-xl 2xl:text-2xl">Start a Project</span>{" "}
-              <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl" />
-            </Link>
+            <StartAProjectButton />
           </div>
         </div>
       </div>

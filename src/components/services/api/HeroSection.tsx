@@ -1,6 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 const images = [
   { width: 100, url: "/assets/logo/services/nextjs.png" },
@@ -44,13 +43,7 @@ const HeroSection = () => {
                 and empower your business to deliver better user experiences
                 across platforms and services
               </p>
-              <Link
-                href="/contact-us"
-                className="py-3 mx-auto justify-center 2xl:py-4 px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
-              >
-                <span className="text-xl 2xl:text-2xl">Start a Project</span>{" "}
-                <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl" />
-              </Link>
+              <StartAProjectButton />
               <div className="flex w-full mt-[10%] py-3 bg-gradient-to-r from-[#D2511F] via-[#9BAAAC] to-[#194077] justify-center items-center text-4xl font-light gap-10">
                 {["Flexible  API", "The Next-Gen  API", "Powerful API"].map(
                   (item: any, index: number) => {
@@ -88,13 +81,7 @@ const HeroSection = () => {
               custom web solutions that elevate your brand and engage your
               audience.
             </p>
-            <Link
-              href="/contact-us"
-              className="py-3 justify-center 2xl:py-4 px-5 mb-7 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
-            >
-              <span className="text-xl 2xl:text-2xl">Start a Project</span>{" "}
-              <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl" />
-            </Link>
+            <StartAProjectButton />
           </div>
           <Image
             priority

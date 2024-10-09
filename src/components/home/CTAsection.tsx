@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import StartAProjectButton from "../common/StartAProjectButton";
 
 const CTASection = () => {
   return (
@@ -15,13 +14,7 @@ const CTASection = () => {
             Go beyond with Volvrit
           </span>
         </h2>
-        <Link
-          href={"/contact-us"}
-          className="py-2 2xl:py-5 px-5 2xl:px-10 flex gap-2 w-fit mt-7 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl items-center rounded-lg 2xl:rounded-2xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-base transition-all duration-200 ease-in-out"
-          aria-label="Contact Us"
-        >
-          <span>Start a Project</span> <BsArrowRightCircleFill />
-        </Link>
+        <StartAProjectButton />
       </div>
     </div>
   );

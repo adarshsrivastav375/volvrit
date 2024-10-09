@@ -1,6 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 const WhatWeOffer = () => {
   const whatWeOffer = [
@@ -85,13 +84,7 @@ const WhatWeOffer = () => {
               );
             })}
           </div>
-          <Link
-            href={"/contact-us"}
-            className="py-2 2xl:py-4 w-fit mx-auto px-5 flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
-            aria-label="Contact Us"
-          >
-            <span>Start a project</span> <BsArrowRightCircleFill />
-          </Link>
+          <StartAProjectButton />
         </div>
       </div>
       <div>

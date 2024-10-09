@@ -1,6 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 const logos = [
   { src: "", alt: "Logo 1" },
@@ -14,7 +13,7 @@ const logos = [
 const SyntheticSurveillance: React.FC = () => {
   return (
     <div className="relative my-10">
-      <div className="max-w-9xl absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 mx-auto flex flex-col items-center justify-center">
+      <div className="max-w-9xl absolute top-1/4 left-1/2 -translate-x-1/2 z-20 -translate-y-1/2 mx-auto flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold text-center mb-4">
           Create, inspect, and apply <br />
           synthetic surveillance broadly.
@@ -23,13 +22,7 @@ const SyntheticSurveillance: React.FC = () => {
           Start with a stunning homepage. Stay motivated without hurting your
           pocket.
         </p>
-        <Link
-          href={"/contact-us"}
-          className="py-2 2xl:py-4 px-5 flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-lg lg:text-2xl 2xl:text-3xl 3xl:text-4xl transition-all duration-200 ease-in-out"
-          aria-label="Contact Us"
-        >
-          <span>Contact Us</span> <BsArrowRightCircleFill />
-        </Link>
+        <StartAProjectButton text="Contact Us" />
       </div>
       <div className="relative lg:px-20 w-full flex justify-center items-center">
         <div className="w-1/2">

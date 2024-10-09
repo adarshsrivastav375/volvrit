@@ -1,12 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
 import { UIUX_FAQs } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
-import { BsArrowRightCircleFill } from "react-icons/bs";
 import CardComponent from "@/components/home/CardComponent";
 import { trustedClient } from "@/components/home/OurPartners";
 import HeroSection from "@/components/services/uiux/Herosection";
 import WhatWeOffer from "@/components/services/uiux/Whatweoffer";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 const images = [
   { width: 100, url: "/assets/logo/services/nextjs.png" },
@@ -58,13 +57,7 @@ export default function Page() {
             Your website is your 24/7 sales person. Don&apos;t just settle for
             an ordinary one. Go beyond with Volvrit
           </h2>
-          <Link
-            href={"/contact-us"}
-            className="py-2 2xl:py-5 px-5 2xl:px-10 flex gap-2 w-fit my-5 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl items-center rounded-lg 2xl:rounded-2xl bg-gradient-to-r from-primary via-violet-500 to-primary hover:scale-105 hover:shadow-2xl text-white text-base transition-all duration-200 ease-in-out"
-            aria-label="Contact Us"
-          >
-            <span>Start a Project</span> <BsArrowRightCircleFill />
-          </Link>
+          <StartAProjectButton marginBottom="mb-10" />
           <div className="w-4/5 mx-auto relative">
             <Image
               width={64}

@@ -4,6 +4,7 @@ import { LuArrowUpRight } from "react-icons/lu";
 
 const cardData = [
   {
+    href: "https://www.unificars.com/",
     image: "/assets/home/unificars.png", // Replace with your image path
     title: "UnifiWheels",
     fundingStatus: "SEED FUNDED",
@@ -18,12 +19,14 @@ const cardData = [
     ],
   },
   {
+    href: "https://www.unfazed.in/",
     image: "/assets/home/unfazed.png", // Replace with your image path
     title: "Unfazed",
     fundingStatus: "BOOTSTRAP",
     tags: ["UI/UX", "SAAS", "MOBILE APP", "PERFORMANCE MARKETING", "SEO"],
   },
   {
+    href: "https://b2b.intensefocus.com/",
     image: "/assets/home/intensefocus.png", // Replace with your image path
     title: "Intense Focus",
     fundingStatus: "SEED FUNDED",
@@ -38,30 +41,35 @@ const cardData = [
     ],
   },
   {
+    href: "https://www.bookswagon.com/",
     image: "/assets/home/bookswagon.png", // Replace with your image path
     title: "Bookswagon",
     fundingStatus: "BOOTSTRAP",
     tags: ["UI/UX", "WEB DEVELOPMENT", "SEO"],
   },
   {
+    href: "https://www.tourtravelworld.com/",
     image: "/assets/home/tourtravel.png", // Replace with your image path
     title: "TourTravelWorld",
     fundingStatus: "SEED FUNDED",
     tags: ["UI/UX", "WEB PORTAL DEVELOPMENT", "CMS", "INDIAN GOVERNMENT NGO"],
   },
   {
+    href: "https://safewayrssi.com/",
     image: "/assets/home/safeway.png", // Replace with your image path
     title: "Safewayrssi",
     fundingStatus: "SEED FUNDED",
     tags: ["UI/UX", "WWB DEVELOPMENT", "CMS"],
   },
   {
+    href: "https://keintchifamilysalon.in/",
     image: "/assets/home/keintchi.png", // Replace with your image path
     title: "keintchi",
     fundingStatus: "SEED FUNDED",
     tags: ["UI/UX", "WEB DEVELOPMENT"],
   },
   {
+    href: "https://crm.growfortuna.com/",
     image: "/assets/home/fortuna.png", // Replace with your image path
     title: "Grow Fortuna",
     fundingStatus: "SEED FUNDED",
@@ -82,13 +90,15 @@ const CardComponent: React.FC = () => {
               index % 2 === 0 ? "border-blue-500" : "border-blue-300"
             } w-full h-full`}
           >
-            <Image
-              width={500}
-              height={500}
-              src={card.image}
-              alt={card.title}
-              className="mb-4 w-full h-[250px] 2xl:h-96 3xl:h-[424px] 4xl:h-[512px] object-cover object-top"
-            />
+            <Link href={card?.href} aria-label={card?.title} target="_blank">
+              <Image
+                width={500}
+                height={500}
+                src={card.image}
+                alt={card.title}
+                className="mb-4 w-full h-[250px] 2xl:h-96 3xl:h-[424px] 4xl:h-[512px] object-cover object-top"
+              />
+            </Link>
           </div>
           <div className="p-5">
             <div className="flex flex-wrap gap-2 mb-4">
@@ -102,14 +112,18 @@ const CardComponent: React.FC = () => {
               ))}
             </div>
             <h2 className="text-4xl 2xl:text-6xl py-2 2xl:py-6 font-bold">
-              {card.title}
+              <Link href={card?.href} aria-label={card?.title} target="_blank">
+                {card.title}
+              </Link>
             </h2>
             <div className="flex justify-between items-center mr-[10%]">
               <p className="font-light text-xl 2xl:text-4xl">
                 {card.fundingStatus}
               </p>
               <Link
-                href="/"
+                target="_blank"
+                href={card?.href}
+                aria-label={card?.title}
                 className="inline-block hover:scale-110 transition-all duration-200 ease-linear rounded-full border-gray-400 border p-2"
               >
                 <span>

@@ -1,8 +1,7 @@
-import Link from "next/link";
 import Image from "next/image";
 import { IoTriangle } from "react-icons/io5";
 import { FaLocationArrow } from "react-icons/fa";
-import { BsArrowRightCircleFill } from "react-icons/bs";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 const SecureandScalable = () => {
   const process = [
@@ -67,13 +66,7 @@ const SecureandScalable = () => {
               </span>
               <span className="">Scalable & Secure</span>
             </h4>
-            <Link
-              href="/contact-us"
-              className="py-3 mr-auto my-5 justify-center 2xl:py-4 px-5 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
-            >
-              <span className="text-xl 2xl:text-2xl">Start a Project</span>{" "}
-              <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl" />
-            </Link>
+            <StartAProjectButton marginBottom="my-10" />
           </div>
           <div className="w-full md:w-1/2">
             <div className="relative w-full h-full bg-[#161C40] aspect-square rounded-full border-2 border-dotted border-slate-50/30">
@@ -128,7 +121,7 @@ const SecureandScalable = () => {
             return (
               <div
                 key={index}
-                className="p-5 rounded-2xl first:bg-[#034EA3] hover:bg-[#034EA3] cursor-pointer transition-all duration-500 ease-in-out"
+                className="p-5 rounded-2xl hover:bg-[#034EA3] cursor-pointer transition-all duration-500 ease-in-out"
               >
                 <div className=" flex justify-start items-center gap-2 mb-3">
                   <div className="bg-white w-fit rounded-full p-[2px]">

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BsArrowRightCircleFill } from "react-icons/bs";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 const BlockchainBenefits: React.FC = () => {
   const services = [
@@ -183,20 +184,12 @@ const BlockchainBenefits: React.FC = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#0B335E] p-6 border-l-2 border-l-slate-400 py-24 2xl:py-32 shadow-md"
+              className="bg-[#0B335E] p-6 flex flex-col justify-center items-center gap-5 border-l-2 border-l-slate-400 py-24 2xl:py-32 shadow-md"
             >
               <h3 className="text-2xl text-center text-white font-bold mb-2">
                 {service.title}
               </h3>
-              <Link
-                href={service.link}
-                className="py-3 mx-auto mt-4 justify-center 2xl:py-4 px-5 w-fit mb-5 cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
-              >
-                <span className="text-xl inline-flex gap-5 items-center 2xl:text-2xl 3xl:text-2xl">
-                  Learn More{" "}
-                  <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl 3xl:text-4xl" />
-                </span>{" "}
-              </Link>
+              <StartAProjectButton text="Learn More" href={service.link} />
             </div>
           ))}
         </div>

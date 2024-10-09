@@ -1,12 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
 import { webDQuestions } from "@/data/home/faqs";
 import Accordion from "@/components/common/Accordion";
-import { BsArrowRightCircleFill } from "react-icons/bs";
 import Overview from "@/components/services/common/Overview";
 import HeroSection from "@/components/services/webd/Herosection";
 import WhatWeOffer from "@/components/services/webd/WhatWeOffer";
 import PortfolioOffer from "@/components/services/webd/PortfolioOffer";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 import ServiceDevelopment from "@/components/services/webd/ServiceDevelopment";
 
 export default function Page() {
@@ -70,13 +69,7 @@ export default function Page() {
               questions or get you started. Just fill in the form below and
               we&apos;ll get right back to you.
             </p>
-            <Link
-              href="/contact-us"
-              className="py-3 mx-auto justify-center 2xl:py-4 px-5 w-fit cursor-pointer flex gap-2 items-center rounded-lg 2xl:rounded-xl bg-gradient-to-r from-[#4280C4] via-[#81B6EF] to-[#4280C4] text-white text-base 2xl:text-2xl transition-all duration-200 ease-in-out"
-            >
-              <span className="text-xl 2xl:text-2xl">Start a Project</span>{" "}
-              <BsArrowRightCircleFill className="text-2xl 2xl:text-3xl" />
-            </Link>
+            <StartAProjectButton />
           </div>
         </div>
       </div>
