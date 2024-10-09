@@ -8,60 +8,56 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// const testimonials = [
-//   {
-//     date: "15/04/2024",
-//     text: "The IT services provided by Volvrit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
-//     name: "Priya Sharma",
-//     title: "Digital Innovation Agency",
-//   },
-//   {
-//     date: "15/04/2024",
-//     text: "It can be challenging for a small business owner to navigate legal-associated issues. Their service delivery and high level of accuracy make them the perfect companion in business legal services in Canada.",
-//     name: "Rajesh Kumar",
-//     title: "Business Manager",
-//   },
-//   {
-//     date: "15/04/2024",
-//     text: "For a new business, we require good IT solutions and consulting services. Volvrit IT Services created a wonderful IT solution plan within our budget with an affordable and flexible cost.",
-//     name: "Anjali Patel",
-//     title: "Co-Founder Figo",
-//   },
-//   {
-//     date: "15/04/2024",
-//     text: "The IT services provided by Volvrit IT Services have been very impactful in ensuring that my business continues to enjoy efficiency in IT services.",
-//     name: "Riya Sharma",
-//     title: "Digital Innovation Agency",
-//   },
-// ];
+function getRandomDate() {
+  const start = new Date(2024, 0, 1); // Start from Jan 1, 2024
+  const end = new Date(2024, 11, 31); // End at Dec 31, 2024
+  return new Date(
+    start.getTime() + Math.random() * (end.getTime() - start.getTime())
+  );
+}
 
 const testimonials = [
   {
-    date: "15/04/2024",
-    text: "Working with Volvrit was a great experience, and I have to say that they do absolutely amazing work. Their professionalism, knowledge, and commitment to providing outstanding results were clear from the start.",
-    name: "Bhavya Gautam",
-    title: "Digital Innovation Agency",
+    name: "Amit Taneja",
+    title: "Unifi Cars",
+    text: "Working with Volvrit was a turning point for us! Their UI/UX design significantly improved the user-friendliness of our app, increasing engagement. Highly recommend their services!",
   },
   {
-    date: "15/04/2024",
-    text: "I had a great experience with these people they are highly professional and did the job very well.",
-    name: "Kajal Taneja",
-    title: "Business Manager",
+    name: "AMan",
+    title: "Unfazed",
+    text: "Volvrit transformed our online therapy platform! The mobile app they developed has an intuitive interface that our clients like. Their professionalism and support went very smoothly. Thank you, Volvrit!",
   },
   {
-    date: "15/04/2024",
-    text: "Best service provider for IT and taxation services.",
-    name: "Akshat Taneja",
-    title: "Co-Founder Figo",
+    name: "Manish Ashokbhai Chauhan",
+    title: "Intense Focus",
+    text: "Thanks to Volvrit, our CRM system is now efficient and user-friendly! Their customized solutions along with the focus on UI/UX really enhanced our workflow. We are excited to continue our partnership!",
   },
   {
-    date: "15/04/2024",
-    text: "All round solutions are being provided. Thanks.",
-    name: "Sriansh Agarwal",
-    title: "Digital Innovation Agency",
+    name: "Shubham Jain",
+    title: "Books Wagon",
+    text: "Volvrit revamped our website beautifully! Their UI/UX design is easy to navigate, and the SEO strategies they implemented are already boosting our traffic. Highly recommend them for web development!",
+  },
+  {
+    name: "Palak Gupta",
+    title: "Tour Travel World",
+    text: "Partner with Volvrit: this is a really great idea! A fantastic web portal with an excellent UI/UX. Our clients are just thrilled with the new design. I am highly satisfied with their work!",
+  },
+  {
+    name: "Shashikant S. Bhoyar",
+    title: "Safe Way RSSI",
+    text: "Volvrit has been amazing for our NGO! Their web development and CMS solutions have really improved our online presence. Professional and dedicated, we're very happy with the results!",
+  },
+  {
+    name: "Sakshi Chandra",
+    title: "Keintchi",
+    text: "It's been fantastic working with Volvrit for our web development needs. Their creativity in UI/UX design brought a lot of improvement to our platform. We like the results, and we are waiting for the next tasks!",
+  },
+  {
+    name: "Dhruvin Bhanushali",
+    title: "Grow Fortuna",
+    text: "They changed our CRM system! Volvrit's priority on UI/UX and web development allowed us to function more efficiently. The support for the entire process has been outstanding. Highly recommend!",
   },
 ];
-
 const Testimonials = () => {
   return (
     <div className="">
@@ -77,10 +73,10 @@ const Testimonials = () => {
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={5}
-          slidesPerView={1.4}
+          slidesPerView={1}
           breakpoints={{
             640: {
-              slidesPerView: 1.4,
+              slidesPerView: 1,
             },
             768: {
               slidesPerView: 2,
@@ -105,16 +101,16 @@ const Testimonials = () => {
               >
                 <div className="flex justify-between items-start w-full mb-2">
                   <div className="flex gap-2 2xl:gap-5 items-center text-left">
-                    <div className="bg-primary text-white rounded-full h-10 w-10 2xl:h-20 2xl:w-20 flex items-center justify-center text-2xl 2xl:text-5xl font-normal">
+                    <div className="bg-primary text-white rounded-full h-10 w-10 aspect-square 2xl:h-20 2xl:w-20 flex items-center justify-center text-2xl 2xl:text-5xl font-normal">
                       {testimonial.name.charAt(0).toUpperCase()}
                     </div>
                     <div>
                       <h3 className="font-semibold text-lg 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl">
                         {testimonial.name}
                       </h3>
-                      <p className="text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
-                        {testimonial.date}
-                      </p>
+                      {/* <p className="text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+                        {getRandomDate().toLocaleDateString("en-GB")}
+                      </p> */}
                     </div>
                   </div>
                   <FcGoogle className="text-4xl 2xl:text-6xl 4xl:text-7xl" />
@@ -126,7 +122,7 @@ const Testimonials = () => {
                   <PiStarFill />
                   <PiStarFill />
                 </p>
-                <p className="text-gray-700 min-h-36 2xl:min-h-40 3xl:min-h-52 4xl:min-h-64 mb-4 text-sm 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+                <p className="text-gray-700 h-40 2xl:min-h-48 3xl:min-h-56 4xl:min-h-72 text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                   {testimonial.text}
                 </p>
               </div>
