@@ -40,7 +40,7 @@ const Benefits = () => {
   ];
   return (
     <>
-      <div className="text-center pt-20 relative">
+      <div className="text-center overflow-hidden pt-20 relative">
         <h4 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5 font-semibold">
           What&apos;s the Benefits of AI <br /> Development for Businesses?
         </h4>
@@ -51,7 +51,7 @@ const Benefits = () => {
           height={90}
           unoptimized
           priority
-          className="w-1/2 object-contain z-0 absolute -top-20 -left-20 mb-4 mx-auto"
+          className="w-full md:w-1/2 object-contain z-0 absolute -top-20 -left-20 mb-4 mx-auto"
         />
         <Image
           src={"https://volvrit.s3.ap-south-1.amazonaws.com/bannerFrame1A2.png"}
@@ -60,13 +60,13 @@ const Benefits = () => {
           height={90}
           unoptimized
           priority
-          className="w-1/2 object-contain z-0 absolute -bottom-20 -right-20 mb-4 mx-auto"
+          className="w-full md:w-1/2 object-contain z-0 absolute -bottom-10 -right-10 md:-bottom-20 md:-right-20 mb-4 mx-auto"
         />
-        <div className="justify-center my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 gap-10 rounded-xl m-10">
+        <div className="justify-center my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 gap-4 md:gap-6 lg:gap-10 rounded-xl lg:m-10">
           {aiBenefits.map((service, index) => (
             <div
               key={service.id}
-              className={`bg-transparent text-left bg-[#0A3363] p-8 rounded-lg`}
+              className={`bg-transparent text-left bg-[#0A3363] p-4 md:p-6 lg:p-8 rounded-lg`}
             >
               <Image
                 src={service.imageUrl}

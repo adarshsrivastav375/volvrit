@@ -28,7 +28,7 @@ const WhatWeOffer = () => {
             "url('https://volvrit.s3.ap-south-1.amazonaws.com/mobileframe2.png')",
         }}
       ></div>
-      <div className="relative text-center max-w-9xl mx-auto py-10 px-4 md:px-6 lg:px-20">
+      <div className="relative text-center max-w-9xl mx-auto pt-10 pb-4 md:py-10 px-4 md:px-6 lg:px-20">
         <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-medium">
           We Offering Custom Mobile
           <br /> App Development Services
@@ -40,11 +40,11 @@ const WhatWeOffer = () => {
           Our custom apps are created to help you stand out from your
           competition.
         </p>
-        <div className="grid grid-cols-3 gap-10 lg:px-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-5 lg:gap-10 lg:px-10">
           {data?.map((item: any) => {
             return (
-              <div key={item?.id} className="text-left rounded-xl bg-[#355A81] p-8">
-                <h2 className="text-2xl font-semibold mb-4">{item?.title}</h2>
+              <div key={item?.id} className="text-center md:text-left rounded-xl bg-[#355A81] p-5 md:p-6 lg:p-8">
+                <h2 className="text-3xl md:text-2xl font-semibold mb-4">{item?.title}</h2>
                 <p className="font-extralight">{item?.description}</p>
               </div>
             );

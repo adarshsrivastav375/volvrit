@@ -17,25 +17,25 @@ export default function Page() {
         description="Volvrit being one of the best website development company in India aims to deliver creative solutions that best fit your ideas of conducting your business. Whether it's a small just-started business or a long-established one, the website development services from our company will help you build a powerful online presence."
         description2="What makes a great website? It attracts visitors, but a great website converts those visitors into loyal customers. Volvrit mixes creativity, technology, and innovation to build high-performance websites that can drive your business forward, achieve your goals, and remain the best blend of aesthetics and functionality for visitors."
       />
-      <div className="relative text-white py-12">
+      <div className="relative text-white pt-10 pb-5 md:py-12">
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
         ></div>
         <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-32">
           <div className="text-left">
-            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-medium">
+            <h4 className="text-3xl w-full text-center md:text-left mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-medium">
               We offer a Wide Variety of Custom Website Development Services.
             </h4>
-            <div className="flex justify-between items-center gap-20">
-              <p className="w-1/2 text-xl lg:text-2xl 2xl:text-3xl opacity-80 font-extralight">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-10 lg:gap-20">
+              <p className="md:w-1/2 text-lg text-center md:text-left md:text-xl lg:text-2xl 2xl:text-3xl opacity-80 font-extralight">
                 We know every organization is different, and that&apos;s the
                 reason we offer customized website development as per your
                 requirements. You may need an e-commerce website, a corporate
                 site, or even a personal blog. Choose our solution package
                 because we will provide you with each as per your needs.
               </p>
-              <div className="w-1/2 flex flex-col items-center justify-center">
+              <div className="md:w-1/2 flex flex-col items-center justify-center">
                 <Image
                   priority
                   unoptimized
@@ -43,7 +43,7 @@ export default function Page() {
                   height={100}
                   alt="Mobile Banner"
                   src="https://volvrit.s3.ap-south-1.amazonaws.com/metaverse.png"
-                  className="w-3/4 h-full object-cover"
+                  className="w-full px-2 md:p-0 lg:w-3/4 h-full object-cover"
                 />
               </div>
             </div>
@@ -53,14 +53,14 @@ export default function Page() {
       <WhatWeOffer />
       <ServiceDevelopment />
       <PortfolioOffer />
-      <div className="relative text-white max-w-9xl mx-[6vw] rounded-3xl overflow-hidden p-4 md:p-6 lg:p-16">
+      <div className="relative text-white max-w-9xl mx-4 md:mx-[6vw] rounded-3xl overflow-hidden px-6 py-16 lg:p-16">
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-top"
           style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
         ></div>
         <div className="relative z-10 flex flex-col justify-center items-center">
           <div className="text-center">
-            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
+            <h4 className="text-4xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
               Let&apos;s Connect: Contact Us Now.
             </h4>
             <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
@@ -73,8 +73,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="max-w-9xl mx-auto rounded-3xl overflow-hidden px-4 md:px-6 lg:px-20 pt-20 pb-10">
-        <h5 className="text-3xl text-center w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-8 font-semibold">
+      <div className="max-w-9xl mx-auto rounded-3xl overflow-hidden px-4 md:px-6 lg:px-20 mt-10 md:pt-20 pb-10">
+        <h5 className="text-4xl text-center w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-8 font-semibold">
           Frequently Asked Quesions
         </h5>
         <Accordion

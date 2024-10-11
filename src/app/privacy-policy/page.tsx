@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <div className="pt-[15vh]">
+    <div className="pt-[10vh] md:pt-[15vh]">
       <div className="max-w-9xl mx-auto p-4 md:p-6 lg:p-20 bg-white">
         <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
         <p className="mb-4 text-sm text-gray-500">

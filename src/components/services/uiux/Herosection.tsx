@@ -9,20 +9,20 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
       ></div>
-      <div className="relative z-10 grid grid-cols-3 justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-10 md:pt-20 lg:pt-[35vh]">
-        <div className="text-left col-span-1">
+      <div className="relative z-10 grid grid-cols-3 justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[35vh]">
+        <div className="text-left col-span-3 lg:col-span-1">
           <h4 className="text-5xl !leading-tight tracking-tighter w-full mx-auto md:text-7xl uppercase 2xl:text-8xl mb-5 font-semibold">
             UI/UX
             <br />
             designing
           </h4>
-          <p className="text-lg font-extralight px-4 md:px-0 mb-8">
+          <p className="text-lg font-extralight mb-8">
             Elevate Your Digital Products with Impressive UI/UX Design by
             Volvrit
           </p>
         </div>
-        <div className="w-full col-span-2 space-y-10">
-          <div className="flex gap-20 items-center justify-center">
+        <div className="w-full col-span-3 lg:col-span-2 space-y-10">
+          <div className="flex gap-5 lg:gap-20 items-center justify-center">
             <Image
               priority
               unoptimized
@@ -33,27 +33,27 @@ const HeroSection = () => {
               className="w-2/3 h-full object-cover rounded-full"
             />
             <span className="space-y-4 flex flex-col">
-              <span className="relative right-10">
+              <span className="relative right-3 lg:right-10">
                 <FaLocationArrow
                   className="-rotate-90 text-blue-500"
                   size={25}
                 />
               </span>
-              <span className="bg-gray-400 rounded-full rounded-tl-none text-[10px] px-8 py-2">
+              <span className="bg-gray-400 rounded-full rounded-tl-none text-[10px] px-4 lg:px-8 py-2">
                 Innovation
               </span>
             </span>
           </div>
-          <div className="bg-transparent border mx-auto relative -rotate-6 border-blue-500 p-5 text-8xl w-4/5 pb-10 uppercase font-bold">
+          <div className="bg-transparent border mx-auto relative -rotate-6 border-blue-500 p-5 text-5xl md:text-6xl lg:text-8xl w-4/5 pb-10 uppercase font-bold">
             <span className="text-blue-500">Design</span>
-            <span className="w-6 h-6 rounded-full absolute -top-6 -left-6 rounded-tl-none rotate-180 bg-blue-700"></span>
-            <span className="w-6 h-6 rounded-full absolute -top-6 -right-6 rounded-tr-none rotate-180 bg-blue-700"></span>
-            <span className="w-6 h-6 rounded-full absolute -bottom-6 -left-6 rounded-bl-none rotate-180 bg-blue-700"></span>
-            <span className="w-6 h-6 rounded-full absolute -bottom-6 -right-6 rounded-br-none rotate-180 bg-blue-700"></span>
+            <span className="w-4 h-4 lg:w-6 lg:h-6 rounded-full absolute -top-4 -left-4 lg:-top-6 lg:-left-6 rounded-tl-none rotate-180 bg-blue-700"></span>
+            <span className="w-4 h-4 lg:w-6 lg:h-6 rounded-full absolute -top-4 -right-4 lg:-top-6 lg:-right-6 rounded-tr-none rotate-180 bg-blue-700"></span>
+            <span className="w-4 h-4 lg:w-6 lg:h-6 rounded-full absolute -bottom-4 -left-4 lg:-bottom-6 lg:-left-6 rounded-bl-none rotate-180 bg-blue-700"></span>
+            <span className="w-4 h-4 lg:w-6 lg:h-6 rounded-full absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 rounded-br-none rotate-180 bg-blue-700"></span>
           </div>
         </div>
-        <div className="col-span-3 flex py-10 gap-5 justify-center items-center">
-          <div className="h-full w-[44%]">
+        <div className="col-span-3 flex py-10 gap-2 md:gap-5 justify-center items-center">
+          <div className="h-full w-fit md:w-[44%]">
             <Image
               priority
               unoptimized
@@ -75,7 +75,7 @@ const HeroSection = () => {
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="w-1/4 flex flex-col gap-3">
+          <div className="w-1/4 hidden lg:flex flex-col gap-3">
             <span className="rotate-6">
               <span className="text-extralight text-xs text-gray-700">
                 Success Project

@@ -40,7 +40,7 @@ const Solutions = () => {
   ];
   return (
     <>
-      <div className="text-center relative pt-20">
+      <div className="text-center relative overflow-hidden pt-10 md:pt-20">
         <h4 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5 font-semibold">
           Industries We Target for AI Solutions
         </h4>
@@ -51,13 +51,13 @@ const Solutions = () => {
           height={90}
           unoptimized
           priority
-          className="w-3/5 object-contain z-0 absolute -bottom-20 -right-20 mb-4 mx-auto"
+          className="w-full md:w-3/5 object-contain z-0 absolute -bottom-10 -right-10 md:-bottom-20 md:-right-20 mb-4 mx-auto"
         />
-        <div className="justify-center my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 gap-10 rounded-xl m-10">
+        <div className="justify-center my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 gap-5 md:gap-10 rounded-xl lg:m-10">
           {aiUseCases.map((service) => (
             <div
               key={service.id}
-              className={`bg-transparent text-left bg-[#0A3363] p-4 rounded-xl`}
+              className={`bg-transparent text-left bg-[#0A3363] p-2 md:p-4 rounded-xl`}
             >
               <Image
                 src={service.imageUrl}

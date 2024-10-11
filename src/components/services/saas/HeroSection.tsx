@@ -22,9 +22,9 @@ const HeroSection = () => {
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
         ></div>
-        <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-10 md:pt-20 lg:pt-[25vh]">
+        <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[25vh]">
           <div className="text-center">
-            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
+            <h4 className="text-4xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
               Build Your Vision with Custom
               <br /> SaaS Development
             </h4>
@@ -42,7 +42,7 @@ const HeroSection = () => {
                 height={100}
                 alt="Mobile Banner"
                 src="https://volvrit.s3.ap-south-1.amazonaws.com/saasbanner.png"
-                className="w-4/5 h-full object-cover"
+                className="w-full lg:w-4/5 h-full object-cover"
               />
             </div>
           </div>
@@ -50,10 +50,10 @@ const HeroSection = () => {
       </div>
       <div className="bg-[#0B2D52] text-center rounded-3xl relative bottom-10 z-20 text-white">
         <div className="max-w-9xl mx-auto py-10 px-4 md:px-6 lg:px-20">
-          <h4 className="text-2xl md:text-3xl font-medium 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5">
+          <h4 className="text-3xl font-medium 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5">
             Modern Technology Stack for Optimal Results
           </h4>
-          <p className="text-base 2xl:text-lg 3xl:text-xl w-2/3 mx-auto font-light opacity-50">
+          <p className="text-base 2xl:text-lg 3xl:text-xl md:w-2/3 mx-auto font-light opacity-50">
             We use the latest technologies to ensure your SaaS application is
             secure, scalable, and efficient.
           </p>

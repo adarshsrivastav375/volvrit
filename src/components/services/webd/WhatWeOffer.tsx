@@ -4,7 +4,7 @@ import Image from "next/image";
 const WhatWeOffer = () => {
   return (
     <div className="max-w-9xl mx-auto px-4 md:px-6 lg:px-20 mb-5 md:mb-10 text-center pt-14">
-      <h4 className="text-3xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5 font-semibold">
+      <h4 className="text-4xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5 font-semibold">
         Why Choose Volvrit for Website <br /> Development
       </h4>
       <div className="flex flex-col md:flex-row py-10 justify-between items-center gap-5 md:gap-10 lg:gap-12">
@@ -17,7 +17,7 @@ const WhatWeOffer = () => {
             className="w-full object-cover md:object-contain"
           />
         </div>
-        <div className="w-full md:w-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+        <div className="w-full md:w-3/5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7 md:gap-5">
           {whatWeOffer.map((item: any) => {
             return (
               <div key={item?.id}>
@@ -28,7 +28,7 @@ const WhatWeOffer = () => {
                   height={64}
                   className="w-12 md:w-8 lg:w-14 h-fit object-contain"
                 />
-                <h4 className="md:hidden text-lg md:text-xl text-left font-bold leading-6 w-full lg:w-2/3 text-gray-800">
+                <h4 className="md:hidden py-4 text-2xl text-left font-bold leading-6 w-full lg:w-2/3 text-gray-800">
                   {item?.title}
                 </h4>
                 <h4 className="hidden md:block text-lg md:text-xl text-left font-bold leading-6 my-2 w-full lg:w-2/3 text-gray-800">

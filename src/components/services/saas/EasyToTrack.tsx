@@ -29,22 +29,21 @@ const EasyToTrack = () => {
   ];
 
   return (
-    <div className="max-w-9xl text-center mx-auto px-4 md:px-6 lg:px-20 pt-10">
-      <h4 className="text-4xl md:text-5xl font-semibold 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl">
-        We make it easy to track all
-        <br /> data analytics
+    <div className="max-w-9xl text-center mx-auto md:px-6 lg:px-20 pt-10">
+      <h4 className="text-3xl md:text-5xl px-6 md:px-0 font-semibold 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl">
+        We make it easy to track all data analytics
       </h4>
-      <div className="flex flex-col justify-between items-center px-4 md:px-6 my-10">
+      <div className="flex flex-col justify-between gap-8 md:gap-0 items-center px-4 md:px-6 my-10">
         {solutions.map((sol: any, index: number) => {
           return (
             <div
               key={index}
-              className="flex justify-between items-center gap-16"
+              className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-8 lg::gap-16"
             >
               <div
                 key={sol?.id}
-                className={`w-1/2 bg-white text-left text-black p-4 ${
-                  index === 1 ? "order-last pr-0" : "order-first pl-0"
+                className={`w-full md:w-1/2 bg-white text-left text-black pl-4 md:p-4 ${
+                  index === 1 ? "order-last md:pr-0" : "order-first md:pl-0"
                 }`}
               >
                 <Image
@@ -62,8 +61,10 @@ const EasyToTrack = () => {
                 </p>
               </div>
               <div
-                className={`w-1/2 ${
-                  index === 1 ? "order-first" : "order-last"
+                className={`w-full md:w-1/2 ${
+                  index === 1
+                    ? "order-last md:order-first"
+                    : "order-first md:order-last"
                 }`}
               >
                 <Image

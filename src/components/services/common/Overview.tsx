@@ -18,7 +18,7 @@ const Overview = ({
         imageUrl={imageUrl ? imageUrl : "/assets/banners/shape.png"}
       >
         <div className="pt-5 lg:pt-24 flex flex-col justify-center items-center">
-          <h3 className="inline text-2xl md:text-4xl md:font-medium 2xl:text-5xl 3xl:text-6xl">
+          <h3 className="inline text-3xl md:text-4xl font-semibold 2xl:text-5xl 3xl:text-6xl">
             {headerText[0]}{" "}
             <span className="font-semibold text-primary">{headerText[1]}</span>{" "}
             <br />
@@ -32,7 +32,7 @@ const Overview = ({
               {description2}
             </p>
           )}
-          <StartAProjectButton />
+          <StartAProjectButton marginBottom="mb-3 md:mb-0" />
         </div>
       </BackgroundImage>
     </div>

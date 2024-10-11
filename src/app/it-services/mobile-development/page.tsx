@@ -13,17 +13,17 @@ export default function Page() {
       <WhatWeOffer />
       <WhyChooseVolvrit />
       <IndustryWeTarget />
-      <div className="relative text-white max-w-9xl mx-[6vw] rounded-3xl overflow-hidden p-4 md:p-6 lg:p-16">
+      <div className="relative text-white max-w-9xl mx-4 md:mx-[6vw] rounded-3xl overflow-hidden px-6 py-10 md:p-6 lg:p-16">
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-top"
           style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
         ></div>
         <div className="relative z-10 flex flex-col justify-center items-center">
           <div className="text-center">
-            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
+            <h4 className="text-4xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
               Let&apos;s Get Started on Your Mobile App Development Services
             </h4>
-            <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
+            <p className="text-sm lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
               Be ready to create a personalized mobile application that could
               take your business to the next level. Do similar businesses
               require boosting their customer engagement efficiency and growth
@@ -35,8 +35,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="max-w-9xl mx-auto rounded-3xl overflow-hidden px-4 md:px-6 lg:px-20 pt-20 pb-10">
-        <h5 className="text-3xl text-center w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-8 font-semibold">
+      <div className="max-w-9xl mx-auto rounded-3xl overflow-hidden px-4 md:px-6 lg:px-20 pt-10 md:pt-20 pb-5 md:pb-10">
+        <h5 className="text-4xl text-center w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-8 font-semibold">
           Frequently Asked Quesions
         </h5>
         <Accordion

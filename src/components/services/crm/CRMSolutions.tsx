@@ -34,7 +34,7 @@ const CRMSolutions = () => {
     },
   ];
   return (
-    <div className="bg-[#0B2D52] text-white pb-10">
+    <div className="bg-[#0B2D52] text-white pb-1 md:pb-10">
       <div className="container mx-auto lg:px-20 text-center mb-12 md:mb-16">
         <p className="text-sm font-medium mb-2 pt-10">― Custom CRM</p>
         <h3 className="text-2xl md:text-4xl inline font-semibold mb-4 leading-tight">

@@ -13,8 +13,8 @@ const HeroSection = () => {
         src="/assets/home/banner.jpg"
         className="w-full h-full object-cover"
       />
-      <div className="flex z-10 absolute inset-0 top-[10vh] justify-between items-center gap-20 max-w-9xl mx-auto px-4 md:px-6 lg:px-20">
-        <div className="lg:w-1/2">
+      <div className="flex flex-col md:flex-row z-10 absolute inset-0 top-[15vh] lg:top-[10vh] justify-between items-center md:gap-10 lg:gap-20 max-w-9xl mx-auto px-4 md:px-6 lg:px-20">
+        <div className="w-full md:w-1/2">
           <h1 className="text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl font-semibold mr-auto mb-5">
             Are you looking for
             <br /> blockchain Experts?
@@ -26,7 +26,7 @@ const HeroSection = () => {
           </p>
           <StartAProjectButton />
         </div>
-        <div className="lg:w-1/2 flex justify-center">
+        <div className="w-full md:w-1/2 flex justify-center">
           <Image
             priority
             unoptimized
@@ -34,7 +34,7 @@ const HeroSection = () => {
             height={100}
             alt="Home page Bannr"
             src="https://volvrit.s3.ap-south-1.amazonaws.com/Union.png"
-            className="w-2/3 h-full object-contain"
+            className="w-full lg:w-2/3 mb-24 md:mb-0 h-full object-contain"
           />
         </div>
       </div>

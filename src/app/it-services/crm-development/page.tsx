@@ -26,7 +26,7 @@ export default function Page() {
       <HeroSection />
       <div className="relative text-white bg-black">
         <div
-          className="absolute inset-0 w-full h-full bg-cover bg-center opacity-90"
+          className="md:absolute inset-0 w-full h-full bg-cover bg-center opacity-90"
           style={{
             backgroundImage:
               "url('https://volvrit.s3.ap-south-1.amazonaws.com/crmframe1.png')",
@@ -34,11 +34,11 @@ export default function Page() {
         ></div>
         <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 py-10 md:py-20 lg:py-[25vh]">
           <div className="text-center">
-            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl my-8 font-semibold">
+            <h4 className="text-4xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl my-8 font-semibold">
               Your Customer Relationship
               <br /> through Digital Transformation
             </h4>
-            <p className="text-lg font-extralight px-4 md:px-0 md:w-3/4 mx-auto mb-8">
+            <p className="text-base font-extralight px-4 md:px-0 md:w-3/4 mx-auto mb-8">
               Digital transformation redefines customer relationships by
               integrating advanced technologies into everyday interactions. By
               utilizing data analytics, businesses can gain insights into
@@ -53,7 +53,7 @@ export default function Page() {
         </div>
       </div>
       <div className="overflow-hidden py-2">
-        <div className="flex animate-marquee justify-start items-center whitespace-nowrap">
+        <div className="flex animate-marqueeSm md:animate-marqueejustify-start items-center whitespace-nowrap">
           {[...trustedClient, ...trustedClient, ...trustedClient].map(
             (client) => (
               <div key={client.id} className="flex-none px-6">
@@ -73,10 +73,10 @@ export default function Page() {
       <CRMBenefits />
       <div className="bg-[#0B2D52] text-center text-white">
         <div className="max-w-9xl mx-auto py-16 px-4 md:px-6 lg:px-20">
-          <h4 className="text-2xl md:text-3xl font-medium 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5">
+          <h4 className="text-3xl font-medium 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5">
             Modern Technology Stack for Optimal Results
           </h4>
-          <p className="text-base 2xl:text-lg 3xl:text-xl w-2/3 mx-auto font-light opacity-50">
+          <p className="text-base 2xl:text-lg 3xl:text-xl md:w-2/3 mx-auto font-light opacity-70">
             We use the latest technologies to ensure your SaaS application is
             secure, scalable, and efficient.
           </p>
@@ -104,17 +104,17 @@ export default function Page() {
         </div>
       </div>
       <ExtraBenefits />
-      <div className="relative text-white max-w-9xl mx-[6vw] rounded-3xl overflow-hidden p-4 md:p-6 lg:p-16">
+      <div className="relative text-white max-w-9xl mx-4 md:mx-[6vw] rounded-3xl overflow-hidden py-10 px-6 md:p-6 lg:p-16">
         <div
           className="absolute inset-0 w-full h-full bg-cover bg-top"
           style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
         ></div>
         <div className="relative z-10 flex flex-col justify-center items-center">
           <div className="text-center">
-            <h4 className="text-3xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
+            <h4 className="text-4xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
               Let&apos;s start growing your business
             </h4>
-            <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
+            <p className="text-sm lg:text-lg font-extralight px-4 md:px-0 md:w-4/5 mx-auto mb-6">
               Be ready to create a personalized mobile application that could
               take your business to the next level. Do similar businesses
               require boosting their customer engagement efficiency and growth
@@ -126,8 +126,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <div className="max-w-9xl mx-auto rounded-3xl overflow-hidden px-4 md:px-6 lg:px-20 pt-20 pb-10">
-        <h5 className="text-3xl text-center w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-8 font-semibold">
+      <div className="max-w-9xl mx-auto rounded-3xl overflow-hidden px-4 md:px-6 lg:px-20 pt-10 md:pt-20 pb-10">
+        <h5 className="text-4xl text-center w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-8 font-semibold">
           Frequently Asked Quesions
         </h5>
         <Accordion

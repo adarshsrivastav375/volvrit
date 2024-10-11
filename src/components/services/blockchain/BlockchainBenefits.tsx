@@ -45,9 +45,9 @@ const BlockchainBenefits: React.FC = () => {
   return (
     <div className="bg-[#0C2C4F]">
       <div className="relative text-white px-4 md:px-6 lg:px-20 max-w-9xl mx-auto overflow-hidden">
-        <div className="flex z-10 relative justify-between items-center gap-20">
-          <div className="lg:w-1/2">
-            <h2 className="text-3xl ml-[7%] 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl font-bold mb-8">
+        <div className="flex flex-col md:flex-row z-10 relative justify-between items-center gap-5 md:gap-10 lg:gap-20">
+          <div className="w-full lg:w-1/2">
+            <h2 className="text-3xl text-center md:text-left ml-[7%] 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl font-bold mb-8">
               Key Benefits of Blockchain
             </h2>
             <div className="flex flex-col gap-5">
@@ -130,7 +130,7 @@ const BlockchainBenefits: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="lg:w-1/2 flex flex-col justify-between items-center p-7">
+          <div className="w-full lg:w-1/2 flex flex-col justify-between items-center px-3 md:p-7">
             <Image
               src="https://volvrit.s3.ap-south-1.amazonaws.com/frame1.png"
               alt="Cost Efficiency"
@@ -180,13 +180,13 @@ const BlockchainBenefits: React.FC = () => {
           priority
           className="w-96 absolute -right-10 top-0 opacity-80"
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 z-40 relative gap-10 p-20 pt-0">
+        <div className="grid grid-cols-2 lg:grid-cols-3 z-40 relative gap-3 md:gap-10 p-3 pb-10 md:p-8 lg:p-20 pt-0">
           {services.map((service, index) => (
             <div
               key={index}
-              className="bg-[#0B335E] p-6 flex flex-col justify-center items-center gap-5 border-l-2 border-l-slate-400 py-24 2xl:py-32 shadow-md"
+              className="bg-[#0B335E] p-6 flex flex-col justify-center items-center gap-5 border-l-2 border-l-slate-400  py-12 md:py-24 2xl:py-32 shadow-md"
             >
-              <h3 className="text-2xl text-center text-white font-bold mb-2">
+              <h3 className="text-lg md:text-2xl text-center text-white font-bold mb-2">
                 {service.title}
               </h3>
               <StartAProjectButton text="Learn More" href={service.link} />

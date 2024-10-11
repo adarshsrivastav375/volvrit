@@ -8,8 +8,8 @@ const ImportanceAI = () => {
   return (
     <div className="bg-[#0B2D52] text-white">
       <div className="max-w-9xl mx-auto p-4 md:p-6 lg:p-20">
-        <div className="flex justify-between items-center gap-20">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row justify-between items-center md:gap-10 lg:gap-20">
+          <div className="w-full md:w-1/2 p-4 pb-0 md:p-0">
             <h4 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5 font-semibold">
               What&apos;s the Importance of AI for Business?
             </h4>
@@ -25,7 +25,7 @@ const ImportanceAI = () => {
               and reducing manual labor.
             </p>
           </div>
-          <div className="w-1/2">
+          <div className="w-full md:w-1/2 px-4 md:p-0">
             <Image
               priority
               unoptimized
@@ -37,8 +37,8 @@ const ImportanceAI = () => {
             />
           </div>
         </div>
-        <div className="flex justify-between items-center gap-20">
-          <div className="w-1/2">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-10 lg:gap-20">
+          <div className="w-full md:w-1/2 order-last md:order-first px-4 md:p-0">
             <Image
               priority
               unoptimized
@@ -49,7 +49,7 @@ const ImportanceAI = () => {
               className="w-full h-full object-contain"
             />
           </div>
-          <div className="w-1/2 text-right">
+          <div className="w-full md:w-1/2 order-first md:order-last p-4 md:p-0 md:text-right">
             <h4 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5 font-semibold">
               AI Development Services - Volvrit&apos;s Expertise
             </h4>

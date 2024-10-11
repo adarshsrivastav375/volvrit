@@ -57,9 +57,9 @@ const SecureandScalable = () => {
   return (
     <div className="bg-black mb-10 text-white">
       <div className="max-w-9xl mx-auto p-4 md:p-6 lg:p-20">
-        <div className="flex fex-col md:flex-row justify-center pb-16 items-center gap-20 lg:px-20">
+        <div className="flex flex-col md:flex-row justify-center md:pb-16 items-center md:gap-10 lg:gap-20 lg:px-20">
           <div className="w-full md:w-1/2">
-            <h4 className="flex flex-col gap-2 text-3xl lg:text-4xl font-light">
+            <h4 className="flex flex-col mt-10 md:mt-0 gap-2 text-3xl lg:text-4xl font-light">
               <span className="opacity-40">
                 Certified Shopify Experts <br />
                 End-to-End Solutions
@@ -68,7 +68,7 @@ const SecureandScalable = () => {
             </h4>
             <StartAProjectButton marginBottom="my-10" />
           </div>
-          <div className="w-full md:w-1/2">
+          <div className="w-4/5 md:w-1/2">
             <div className="relative w-full h-full bg-[#161C40] aspect-square rounded-full border-2 border-dotted border-slate-50/30">
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-[#161C40] aspect-square rounded-full border-2 border-dotted border-slate-50/30"></div>
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-[#161C40] aspect-square rounded-full border-2 border-dotted border-slate-50/30"></div>
@@ -116,12 +116,12 @@ const SecureandScalable = () => {
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 pt-5 lg:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10 pt-10 md:pt-5 lg:px-16">
           {process1.map((item: any, index: number) => {
             return (
               <div
                 key={index}
-                className="p-5 rounded-2xl hover:bg-[#034EA3] cursor-pointer transition-all duration-500 ease-in-out"
+                className="p-5 rounded-2xl first:bg-[#034EA3] hover:bg-[#034EA3] cursor-pointer transition-all duration-500 ease-in-out"
               >
                 <div className=" flex justify-start items-center gap-2 mb-3">
                   <div className="bg-white w-fit rounded-full p-[2px]">
@@ -136,7 +136,7 @@ const SecureandScalable = () => {
             );
           })}
         </div>
-        <div className="bg-gradient-to-br p-16 pb-0 m-16 rounded-t-3xl from-[#E5D6F1] via-[#6D58BB] to-[#2B1F8A]">
+        <div className="bg-gradient-to-br p-6 md:p-16 pb-0 m-4 md:m-16 rounded-t-3xl from-[#E5D6F1] via-[#6D58BB] to-[#2B1F8A]">
           <Image
             priority
             unoptimized
@@ -147,10 +147,10 @@ const SecureandScalable = () => {
             className="w- relative mx-auto h-full object-contain"
           />
         </div>
-        <h4 className="text-center text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-semibold">
+        <h4 className="text-center mt-10 md:mt-0 text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl font-semibold">
           Our Process
         </h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pt-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-5 pt-5">
           {process.map((item: any, index: number) => {
             return (
               <div

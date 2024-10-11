@@ -12,17 +12,16 @@ const logos = [
 
 const SyntheticSurveillance: React.FC = () => {
   return (
-    <div className="relative my-10">
+    <div className="relative mt-16 mb-8 md:my-10">
       <div className="max-w-9xl absolute top-1/4 left-1/2 -translate-x-1/2 z-20 -translate-y-1/2 mx-auto flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-center mb-4">
-          Create, inspect, and apply <br />
-          synthetic surveillance broadly.
+        <h1 className="text-lg !leading-5 md:leading-none md:text-xl lg:text-4xl font-bold text-center mb-2 md:mb-4">
+          Create, inspect, and apply synthetic surveillance broadly.
         </h1>
-        <p className="text-lg text-gray-400 text-center mb-8">
+        <p className="text-xs lg:text-lg text-gray-400 text-center mb-8">
           Start with a stunning homepage. Stay motivated without hurting your
           pocket.
         </p>
-        <StartAProjectButton text="Contact Us" />
+        <StartAProjectButton text="Contact Us" marginBottom="hidden md:block" />
       </div>
       <div className="relative lg:px-20 w-full flex justify-center items-center">
         <div className="w-1/2">
@@ -43,14 +42,14 @@ const SyntheticSurveillance: React.FC = () => {
           unoptimized
           priority
           src="https://volvrit.s3.ap-south-1.amazonaws.com/FrameLogos2.png"
-          className="object-contain absolute top-[66%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4"
+          className="object-contain absolute top-[66%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 md:w-3/4"
         />
         <Image
           width={64}
           height={64}
           alt={"Screen"}
           src="https://volvrit.s3.ap-south-1.amazonaws.com/horizontal.png"
-          className="object-contain absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2"
+          className="w-fit md:w-auto object-contain absolute top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2"
         />
         <div className="w-1/2">
           <Image

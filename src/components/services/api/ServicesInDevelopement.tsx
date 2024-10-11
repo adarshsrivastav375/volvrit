@@ -75,13 +75,13 @@ const ServicesInDevelopement = () => {
 
   return (
     <div className="bg-[#0B2D52] text-white">
-      <div className="max-w-9xl mx-auto px-4 md:px-6 lg:px-20 text-center pt-20 pb-64">
+      <div className="max-w-9xl mx-auto px-4 md:px-6 lg:px-20 text-center pt-12 md:pt-20 pb-64">
         <p className="text-sm font-medium">― API Integration</p>
         <h3 className="text-2xl md:text-4xl inline font-light mb-4 leading-tight">
           Choose from a list of
           <span className="font-semibold"> Verification APIs</span>
         </h3>
-        <div className="my-10 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 px-4 md:px-6 lg:px-20">
+        <div className="my-10 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 md:px-6 lg:px-20">
           {services.map((service: any) => {
             return (
               <div

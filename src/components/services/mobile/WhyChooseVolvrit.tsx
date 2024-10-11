@@ -53,14 +53,14 @@ const WhyChooseVolvrit = () => {
   return (
     <>
       <div className="relative text-center max-w-9xl mx-auto py-10 px-4 md:px-6 lg:px-20">
-        <h4 className="text-3xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-medium">
+        <h4 className="text-3xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-semibold">
           Why Choose Volvrit for Your <br /> Mobile App Development?
         </h4>
         <p className="text-base lg:text-lg font-extralight px-4 md:px-0 md:w-3/4 mx-auto my-8">
           There are hundreds and thousands of mobile app development companies
           in India, but there is a reason why Volvrit is good at everything.
         </p>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {data?.map((item: any) => {
             return (
               <div
@@ -83,7 +83,7 @@ const WhyChooseVolvrit = () => {
           })}
         </div>
         <div className="pt-16">
-          <h4 className="text-3xl w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-medium">
+          <h4 className="w-full mx-auto text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-semibold">
             Our Process of App Development
           </h4>
           <p className="text-base lg:text-lg font-light px-4 md:px-0 md:w-3/4 mx-auto my-8">
@@ -93,17 +93,17 @@ const WhyChooseVolvrit = () => {
             understanding your target audience, and what you want your
             application to achieve.
           </p>
-          <div className="flex justify-between items-center gap-20 px-20">
-            <div className="w-1/2 text-left">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-5 md:gap-10 lg:gap-20 px-4 md:px-6 lg:px-20">
+            <div className="w-full order-last md:order-1 md:w-1/2 text-left">
               <h4 className="text-3xl md:text-4xl font-medium 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5">
                 Designing
               </h4>
-              <p className="text-lg 2xl:text-xl 3xl:text-2xl w-3/4">
+              <p className="text-lg 2xl:text-xl 3xl:text-2xl lg:w-3/4">
                 We have an experienced “ Ui/Ux” team that experts in crafting
                 intuitive and attractive design that your customers.
               </p>
             </div>
-            <div className="w-1/2">
+            <div className="w-full order-1 md:order-last md:w-1/2">
               <Image
                 width={100}
                 unoptimized
@@ -119,10 +119,10 @@ const WhyChooseVolvrit = () => {
       </div>
       <div className="bg-[#0B2D52] text-center text-white">
         <div className="max-w-9xl mx-auto py-16 px-4 md:px-6 lg:px-20">
-          <h4 className="text-2xl md:text-3xl font-medium 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5">
+          <h4 className="text-3xl font-medium 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5">
             Modern Technology Stack for Optimal Results
           </h4>
-          <p className="text-base 2xl:text-lg 3xl:text-xl w-2/3 mx-auto font-light opacity-80">
+          <p className="text-base 2xl:text-lg 3xl:text-xl md:w-2/3 mx-auto font-light opacity-80">
             We use the latest technologies to ensure your SaaS application is
             secure, scalable, and efficient.
           </p>

@@ -16,12 +16,12 @@ export default function Home() {
       <HeroSection />
       <Services />
       {/* <OurPartners /> */}
-      <h5 className="relative text-center py-10 text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-8xl mb-2 col-span-2 font-semibold z-10 text-black">
+      <h5 className="relative text-center pt-10 md:py-10 text-2xl md:text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-8xl mb-2 col-span-2 font-semibold z-10 text-black">
         A few companies who trusted <br />
         us with their projects
       </h5>
       <div className="overflow-hidden py-2">
-        <div className="flex animate-marquee pb-20 justify-start items-center whitespace-nowrap">
+        <div className="flex animate-marqueeSm md:animate-marquee pb-5 md:pb-20 justify-start items-center whitespace-nowrap">
           {[...trustedClient, ...trustedClient, ...trustedClient].map(
             (client) => (
               <div key={client.id} className="flex-none px-6">

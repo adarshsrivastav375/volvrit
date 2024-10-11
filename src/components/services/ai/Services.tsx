@@ -48,25 +48,25 @@ const Services = () => {
         <p className="text-base font-extralight">
           Volvrit offers the entire range of AI Development services:
         </p>
-        <div className="flex justify-center my-10 relative z-10 flex-wrap bg-[#0A3363] rounded-xl p-10">
+        <div className="flex justify-center my-10 relative z-10 flex-wrap bg-[#0A3363] m-4 rounded-xl md:p-6 lg:p-10">
           {aiServices.map((service, index) => (
             <div
               key={service.id}
-              className={`bg-transparent w-full md:w-1/2 lg:w-1/3 flex flex-col justify-start items-center p-6 pt-10 text-center ${
-                index === 1 && "border-x border-white/20"
-              } ${index === 3 && "border-r border-white/20"}`}
+              className={`bg-transparent w-full md:w-1/2 lg:w-1/3 flex flex-col justify-start items-center p-4 md:p-6 pt-10 text-center ${
+                index === 1 && "md:border-x md:border-white/20"
+              } ${index === 3 && "md:border-r md:border-white/20"}`}
             >
               <Image
                 src={service.imageUrl}
                 alt={service.title}
                 width={90}
                 height={90}
-                className="w-6 object-contain mb-4 mx-auto"
+                className="w-8 md:w-6 object-contain mb-4 mx-auto"
               />
-              <h3 className="text-xl lg:text:2xl 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl font-semibold mb-2">
+              <h3 className="text-2xl lg:text:2xl 2xl:text-3xl 3xl:text-4xl 4xl:text-5xl font-semibold mb-2">
                 {service.title}
               </h3>
-              <p className="w-3/4 mx-auto font-extralight opacity-80">
+              <p className="md:w-3/4 mx-auto font-extralight opacity-80">
                 {service.description}
               </p>
             </div>

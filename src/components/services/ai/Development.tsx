@@ -40,7 +40,7 @@ const Development = () => {
   ];
   return (
     <>
-      <div className="text-center pt-20 relative">
+      <div className="text-center pt-10 md:pt-20 relative">
         <h4 className="text-3xl md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl mb-5 font-semibold">
           Our AI Development Process
         </h4>
@@ -51,7 +51,7 @@ const Development = () => {
           height={90}
           unoptimized
           priority
-          className="w-1/3 object-contain z-0 absolute top-0 -left-20 mb-4 mx-auto"
+          className="w-full hidden lg:block md:w-1/3 object-contain z-0 absolute top-0 -left-20 mb-4 mx-auto"
         />
         <Image
           src={"https://volvrit.s3.ap-south-1.amazonaws.com/aiframe.png"}
@@ -60,13 +60,13 @@ const Development = () => {
           height={90}
           unoptimized
           priority
-          className="w-[30%] object-contain z-0 absolute -bottom-20 right-10 mb-4 mx-auto"
+          className="w-1/2 lg:w-[30%] object-contain z-0 absolute bottom-0 right-0 md:-bottom-20 md:right-10 mb-4 mx-auto"
         />
-        <div className="justify-center my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-10 gap-10 rounded-xl m-10">
+        <div className="justify-center my-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 relative z-10 gap-3 md:gap-5 lg:gap-10 rounded-xl lg:m-10">
           {aiDevelopmentProcess.map((service, index) => (
             <div
               key={service.id}
-              className={`bg-transparent text-left p-4 rounded-lg`}
+              className={`bg-transparent text-left p-2 md:p-4 rounded-lg`}
             >
               <Image
                 src={service.imageUrl}
