@@ -8,7 +8,7 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
       ></div>
-      <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[25vh]">
+      <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[15vh] lg:pt-[25vh]">
         <div className="text-center">
           <div className="flex justify-center mx-auto items-center gap-5">
             <Image

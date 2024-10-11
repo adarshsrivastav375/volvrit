@@ -22,7 +22,7 @@ const HeroSection = () => {
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
         ></div>
-        <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[20vh] md:pt-[25vh]">
+        <div className="relative z-10 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[20vh] md:pt-[10vh] lg:pt-[25vh]">
           <div className="w-full text-center flex flex-col items-center justify-center">
             <Image
               priority
@@ -71,12 +71,12 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="h-[42vh] lg:h-[120vh] relative bg-black">
-          <div className="bg-white relative z-10 p-6 md:p-10 flex flex-col justify-center items-start gap-5 text-black md:mx-20 h-auto md:h-[90vh] w-3/4 md:w-3/5 mt-20 md:-mt-20">
-            <h4 className="text-lg w-full mx-auto md:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-semibold">
+          <div className="bg-white relative z-10 p-6 lg:p-10 flex flex-col justify-center items-start gap-5 text-black md:mx-20 h-auto lg:h-[90vh] w-3/4 md:w-3/5 mt-20 md:mt-10 lg:-mt-20">
+            <h4 className="text-lg w-full mx-auto lg:text-4xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl font-semibold">
               Your <strong>Customer Relationship</strong> <br className="hidden md:block" /> through Digital
               Transformation
             </h4>
-            <p className="text-sm md:text-lg font-light">
+            <p className="text-sm lg:text-lg font-light">
               From concept to launch, we bring your digital ideas to life with
               custom web solutions that elevate your brand and engage your
               audience.
@@ -90,7 +90,7 @@ const HeroSection = () => {
             height={100}
             alt="Mobile Banner"
             src="https://volvrit.s3.ap-south-1.amazonaws.com/apidev2.png"
-            className="w-fit h-[50vh] z-0 lg:h-[120vh] -top-20 md:top-0 absolute right-0 object-cover"
+            className="w-fit h-[50vh] md:h-[35vh] z-0 lg:h-[120vh] -top-20 md:top-0 absolute right-0 object-cover"
           />
         </div>
       </div>

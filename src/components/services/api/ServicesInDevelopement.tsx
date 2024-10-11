@@ -81,7 +81,7 @@ const ServicesInDevelopement = () => {
           Choose from a list of
           <span className="font-semibold"> Verification APIs</span>
         </h3>
-        <div className="my-10 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 md:px-6 lg:px-20">
+        <div className="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-10 md:px-6 lg:px-20">
           {services.map((service: any) => {
             return (
               <div

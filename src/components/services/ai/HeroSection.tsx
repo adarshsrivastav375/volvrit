@@ -10,7 +10,7 @@ const HeroSection = () => {
             "url('https://volvrit.s3.ap-south-1.amazonaws.com/bannerai.jpg')",
         }}
       ></div>
-      <div className="relative z-10 pb-20 lg:pb-0 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[35vh]">
+      <div className="relative z-10 pb-20 lg:pb-0 flex flex-col justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[12vh] lg:pt-[35vh]">
         <div className="text-center">
           <h4 className="text-4xl w-full mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
             AI Development Services Company

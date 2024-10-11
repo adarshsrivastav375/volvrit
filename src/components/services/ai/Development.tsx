@@ -60,9 +60,9 @@ const Development = () => {
           height={90}
           unoptimized
           priority
-          className="w-1/2 lg:w-[30%] object-contain z-0 absolute bottom-0 right-0 md:-bottom-20 md:right-10 mb-4 mx-auto"
+          className="w-1/2 md:w-[30%] object-contain z-0 absolute bottom-0 right-0 md:-bottom-20 md:right-10 mb-4 mx-auto"
         />
-        <div className="justify-center my-10 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 relative z-10 gap-3 md:gap-5 lg:gap-10 rounded-xl lg:m-10">
+        <div className="justify-center my-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 relative z-10 gap-3 md:gap-5 lg:gap-10 rounded-xl lg:m-10">
           {aiDevelopmentProcess.map((service, index) => (
             <div
               key={service.id}

@@ -9,7 +9,7 @@ const HeroSection = () => {
         className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{ backgroundImage: "url('/assets/home/banner.jpg')" }}
       ></div>
-      <div className="relative z-10 grid grid-cols-3 justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[35vh]">
+      <div className="relative z-10 grid grid-cols-3 justify-center items-center max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[12vh] lg:pt-[35vh]">
         <div className="text-left col-span-3 lg:col-span-1">
           <h4 className="text-5xl !leading-tight tracking-tighter w-full mx-auto md:text-7xl uppercase 2xl:text-8xl mb-5 font-semibold">
             UI/UX

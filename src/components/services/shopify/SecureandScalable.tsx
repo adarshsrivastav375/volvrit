@@ -69,7 +69,7 @@ const SecureandScalable = () => {
             <StartAProjectButton marginBottom="my-10" />
           </div>
           <div className="w-4/5 md:w-1/2">
-            <div className="relative w-full h-full bg-[#161C40] aspect-square rounded-full border-2 border-dotted border-slate-50/30">
+            <div className="relative md:w-4/5 lg:w-full w-full h-full bg-[#161C40] aspect-square rounded-full border-2 border-dotted border-slate-50/30">
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-[#161C40] aspect-square rounded-full border-2 border-dotted border-slate-50/30"></div>
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-[#161C40] aspect-square rounded-full border-2 border-dotted border-slate-50/30"></div>
               <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/4 h-1/4 bg-gradient-to-b from-[#145FB9] z-10 to-[#DDE9F5]  aspect-square rounded-full"></div>
