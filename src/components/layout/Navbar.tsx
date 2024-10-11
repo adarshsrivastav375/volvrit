@@ -32,6 +32,8 @@ const Navbar = () => {
       pathname === "/it-services/saas-development" ||
       pathname === "/it-services/ui-ux-development" ||
       pathname === "/about" ||
+      pathname === "/fractional-cto" ||
+      pathname === "/fractional-cfo" ||
       pathname === "/api-services/api-development" ||
       pathname === "/it-services/artificial-intelligence-development"
     )
