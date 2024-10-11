@@ -153,7 +153,7 @@ export default function Page() {
                 Technical teams need strong leadership to stay focused on their
                 goals and work efficiently. A Fractional CTO leads and mentors
                 your development team to ensure that everything they do will be
-                focused on achieving your company's business goals. They can
+                focused on achieving your company&apos;s business goals. They can
                 also help with recruiting the right talent, setting team
                 processes, and improving collaboration between tech and other
                 departments. Strong leadership ensures that the team works

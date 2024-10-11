@@ -125,7 +125,7 @@ export default function Page() {
                 financial oversight to ensure the organization is financially on
                 the right track. His or her responsibility will include
                 financial planning, ensuring tax compliance, and risk
-                management, freeing the founder's time to concentrate on growing
+                management, freeing the founder&apos;s time to concentrate on growing
                 the business. This means all the financial functions are well
                 aligned with the real business goals, meaning the Fractional CFO
                 can advise the founders effectively on which way to go.
