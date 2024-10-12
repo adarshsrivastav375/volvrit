@@ -10,12 +10,12 @@ const HeeaderSection = () => {
             "url('https://volvrit.s3.ap-south-1.amazonaws.com/ctobanner.png')",
         }}
       ></div>
-      <div className="relative z-10 flex flex-col justify-center ml-5 md:ml-20 items-start max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[10vh] lg:pt-[35vh]">
+      <div className="relative z-10 flex flex-col justify-center ml-5 md:ml-12 lg:ml-20 3xl:ml-40 items-start max-w-9xl mx-auto px-4 md:px-6 lg:px-20 pt-[15vh] md:pt-[15vh] lg:pt-[35vh]">
         <div className="text-left">
-          <h4 className="text-xl w-full mx-auto md:text-6xl 2xl:text-7xl 3xl:text-8xl 4xl:text-9xl mb-2 md:mb-5 font-semibold">
+          <h4 className="text-xl w-full mx-auto md:text-4xl lg:text-6xl 2xl:text-7xl 3xl:text-8xl 4xl:text-9xl mb-2 md:mb-5 font-semibold">
             Volvrit- Your <br /> Fractional CTO
           </h4>
-          <p className="text-sm md:text-lg md:w-3/4 mr-auto mb-3 md:mb-6">
+          <p className="text-sm md:text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl md:w-3/4 mr-auto mb-3 md:mb-6">
             The Tech Leadership You Need, Without the Full-Time Commitment
           </p>
           <StartAProjectButton marginBottom="mb-10" text="Hire Us" />

@@ -35,7 +35,7 @@ export default function Page() {
     <>
       <HeaderSection />
       <div className="flex max-w-9xl mx-auto p-4 md:p-6 lg:py-10 lg:pl-32 lg:pr-0 flex-col md:flex-row justify-center items-center md:gap-20 lg:gap-10">
-        <h4 className="w-full text-center md:text-left md:w-1/3 text-4xl mx-auto md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
+        <h4 className="w-full text-center md:text-left md:w-1/3 text-4xl mx-auto lg:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl mb-5 font-semibold">
           Understanding the Role and Flexibility of a Fractional CTO
         </h4>
         <div className="w-full md:w-2/3 flex flex-col items-center justify-center">
@@ -64,11 +64,13 @@ export default function Page() {
           />
         </div>
         <div className="w-full order-1 md:order-last md:w-2/3 text-center p-4 md:p-6 lg:p-10">
-          <h2 className="text-3xl md:text-6xl mb-5 font-semibold">
+          <h2 className="text-3xl md:text-4xl lg:text-6xl 3xl:text-7xl mb-5 2xl:mb-10 font-semibold">
             Why Fractional CTOs Are Essential for Modern Businesses
           </h2>
-          <p className="mb-5 text-2xl md:text-4xl font-medium">Cost-Effective Leadership</p>
-          <p className="text-xl">
+          <p className="mb-5 2xl:mb-10 text-2xl lg:text-4xl 3xl:text-6xl font-medium">
+            Cost-Effective Leadership
+          </p>
+          <p className="text-lg lg:text-xl 2xl:text-2xl 3xl:text-3xl 4xl:text-4xl">
             For a startup or a small business, hiring a full-time CTO will be
             very costly. A Fractional CTO, means you get access to senior-level
             technical expertise without all the overhead of a full-time
@@ -80,7 +82,7 @@ export default function Page() {
         </div>
       </div>
       <div className="mx-auto max-w-9xl text-center">
-        <h4 className="py-10 md:py-20 font-semibold md:w-4/5 mx-auto text-3xl md:text-5xl">
+        <h4 className="py-10 md:py-20 font-semibold md:w-4/5 mx-auto text-3xl md:text-5xl 2xl:text-6xl 3xl:text-7xl 4xl:text-8xl">
           How Fractional CTOs Boost Business Growth and Efficiency
         </h4>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 px-4 md:px-8 lg:px-20">
@@ -90,8 +92,12 @@ export default function Page() {
                 className="bg-[#E6EEF5]/50 cursor-pointer transition-all duration-200 ease-linear hover:bg-[#E6EEF5] text-left rounded-2xl p-6"
                 key={item?.id}
               >
-                <h4 className="text-3xl mb-5 font-semibold">{item?.title}</h4>
-                <p className="text-lg">{item?.description}</p>
+                <h4 className="text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5 font-semibold">
+                  {item?.title}
+                </h4>
+                <p className="text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+                  {item?.description}
+                </p>
               </div>
             );
           })}
@@ -153,8 +159,8 @@ export default function Page() {
                 Technical teams need strong leadership to stay focused on their
                 goals and work efficiently. A Fractional CTO leads and mentors
                 your development team to ensure that everything they do will be
-                focused on achieving your company&apos;s business goals. They can
-                also help with recruiting the right talent, setting team
+                focused on achieving your company&apos;s business goals. They
+                can also help with recruiting the right talent, setting team
                 processes, and improving collaboration between tech and other
                 departments. Strong leadership ensures that the team works
                 productively for better outcomes.

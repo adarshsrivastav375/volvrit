@@ -1,39 +1,33 @@
 "use client";
-import StartAProjectButton from "@/components/common/StartAProjectButton";
+
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
+import StartAProjectButton from "@/components/common/StartAProjectButton";
 
 const ParallaxSection: React.FC = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
-  const [isInView, setIsInView] = useState(false);
+  const [translateY, setTranslateY] = useState(0);
 
   useEffect(() => {
     const handleScroll = () => {
       if (sectionRef.current && contentRef.current) {
         const sectionTop = sectionRef.current.getBoundingClientRect().top;
         const sectionHeight = sectionRef.current.clientHeight;
+        const contentHeight = contentRef.current.clientHeight;
         const windowHeight = window.innerHeight;
 
-        // Check if section is in view
-        if (sectionTop >= 0 && sectionTop <= windowHeight) {
-          setIsInView(true);
-        } else {
-          setIsInView(false);
-        }
-
-        if (isInView) {
-          // Calculate scroll offset within the section
+        if (sectionTop <= windowHeight && sectionTop + sectionHeight >= 0) {
           const sectionOffsetTop =
             window.scrollY - sectionRef.current.offsetTop;
           const sectionScrollHeight = sectionHeight - windowHeight;
-          const scrollPercentage = sectionOffsetTop / sectionScrollHeight;
-
-          // Translate content based on scroll within section bounds
-          const translateY =
-            scrollPercentage *
-            (sectionHeight - contentRef.current.clientHeight);
-          contentRef.current.style.transform = `translateY(${translateY}px)`;
+          const scrollPercentage = Math.min(
+            Math.max(sectionOffsetTop / sectionScrollHeight, 0),
+            1
+          );
+          setTranslateY(
+            -((contentHeight - sectionHeight) * (1 - scrollPercentage))
+          );
         }
       }
     };
@@ -42,14 +36,12 @@ const ParallaxSection: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isInView]);
-
+  }, []);
   return (
     <section
       ref={sectionRef}
-      className="relative hidden lg:block h-fit w-full overflow-hidden"
+      className="relative md:h-[50vh] lg:h-[80vh] w-full overflow-hidden"
     >
-      {/* Background Image with black overlay */}
       <div className="absolute top-0 left-0 w-full h-full">
         <Image
           src="https://volvrit.s3.ap-south-1.amazonaws.com/ctobanner2.png"
@@ -60,30 +52,32 @@ const ParallaxSection: React.FC = () => {
           height={100}
           className="z-0 w-full"
         />
-        {/* Black overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
       </div>
 
-      <div className="flex justify-center max-w-9xl mx-auto px-4 md:px-6 lg:px-[10vw] items-center gap-20">
-        <div className="w-2/5 relative mb-[110vh] z-40">
-          <h1 className="text-6xl 2xl:text-7xl 3xl:text-9xl text-white relative z-20 font-bold mb-8">
+      <div className="flex flex-col md:flex-row justify-start max-w-9xl mx-auto px-4 md:px-6 lg:px-[10vw] items-start gap-10 lg:gap-20">
+        <div className="w-full md:w-2/5 relative mt-[10vh] z-40">
+          <h1 className="text-4xl lg:text-5xl 2xl:text-6xl 3xl:text-8xl text-white relative z-20 font-bold mb-8">
             Who Can Benefit from a Fractional CTO?
           </h1>
           <StartAProjectButton />
         </div>
-        {/* Parallax scrolling content */}
         <div
           ref={contentRef}
-          className="relative z-20 text-black ml-auto w-3/5 bg-white h-full flex flex-col justify-center items-center"
+          className="relative z-20 text-black ml-auto w-full md:w-3/5 bg-white h-full flex flex-col justify-center items-center"
           style={{
-            transform: "translateY(0px)", // Start centered
+            transform: `translateY(${
+              translateY && window.innerWidth > 564 ? translateY : 0
+            }px)`, // Dynamic scroll translation
             transition: "transform 0.1s ease-out", // Smooth scrolling effect
           }}
         >
-          <div className="max-w-3xl space-y-6 p-10">
+          <div className="w-full space-y-6 p-5 md:p-10">
             <div>
-              <h2 className="text-3xl mb-5 font-semibold">1. Startups</h2>
-              <p className="text-lg">
+              <h2 className="text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5 font-semibold">
+                1. Startups
+              </h2>
+              <p className="text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                 Early-stage startups would face technical challenges during
                 early growth stages but may lack the resources to hire a
                 full-time CTO. A Fractional CTO provides the technical expertise
@@ -97,10 +91,10 @@ const ParallaxSection: React.FC = () => {
             </div>
 
             <div>
-              <h2 className="text-3xl mb-5 font-semibold">
+              <h2 className="text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5 font-semibold">
                 2. Small to Mid-Sized Businesses (SMBs)
               </h2>
-              <p className="text-lg">
+              <p className="text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                 SMBs often experience rapid growth, which can lead to technology
                 outpacing their internal expertise. When the in-house teams can
                 no longer handle the increasing demands for tech, a Fractional
@@ -114,10 +108,10 @@ const ParallaxSection: React.FC = () => {
             </div>
 
             <div>
-              <h2 className="text-3xl mb-5 font-semibold">
+              <h2 className="text-3xl 2xl:text-4xl 3xl:text-5xl 4xl:text-6xl mb-5 font-semibold">
                 3. Non-Tech Founders
               </h2>
-              <p className="text-lg">
+              <p className="text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
                 Non-technical founders may struggle to bridge the gap between
                 their business vision and the technical requirements needed to
                 achieve it. A Fractional CTO would guide by talking about
