@@ -10,7 +10,7 @@ import {
 const SocialMediaLinks = ({ size }: { size?: number }) => {
   const socialLinks = [
     {
-      href: "https://www.facebook.com/people/Volvrit/61560059016993/",
+      href: "https://www.instagram.com/volvrit1/",
       icon: (
         <FaInstagram
           size={size ?? 20}
