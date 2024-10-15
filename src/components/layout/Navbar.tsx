@@ -96,18 +96,36 @@ const Navbar = () => {
           />
           <div className="hidden lg:block place-self-end my-auto">
             <button className="relative py-3 2xl:py-4 px-5 text-white bg-gradient-to-r from-primary via-violet-500 to-primary rounded-lg overflow-hidden group">
+              {/* Background blur and gradient */}
               <span className="absolute inset-0 w-full h-full bg-gradient-to-r from-primary via-violet-500 to-primary opacity-50 blur-xl -z-10"></span>
-              <span className="relative z-20">
+
+              {/* Main button content with z-index properly adjusted */}
+              <span className="relative z-40">
                 <Link
                   href={"/contact-us"}
                   aria-label="Contact Us"
-                  className="flex gap-2 items-center"
+                  className="flex gap-2 items-center text-white"
                 >
-                  <span>Contact Us</span> <BsArrowRightCircleFill />
+                  <span className="text-white">Contact Us</span>
+                  <BsArrowRightCircleFill />
                 </Link>
               </span>
-              <span className="absolute inset-0 bg-white animate-gradient-rotate blur-lg z-0"></span>
+
+              {/* Rotating animation background (make sure this is behind the text) */}
+              <span className="absolute inset-0 bg-white animate-gradient-rotate blur-lg z-10"></span>
+
+              {/* Button gradient border */}
               <span className="absolute inset-0 bg-gradient-to-r from-primary via-violet-500 to-primary rounded-lg z-10 m-[1.5px]"></span>
+              <span className="absolute inset-0 flex justify-center items-center z-40">
+                <Link
+                  href={"/contact-us"}
+                  aria-label="Contact Us"
+                  className="flex gap-2 items-center text-white"
+                >
+                  <span className="text-white">Contact Us</span>
+                  <BsArrowRightCircleFill />
+                </Link>
+              </span>
             </button>
           </div>
           <Sidebar />
