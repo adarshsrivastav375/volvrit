@@ -16,6 +16,7 @@ import Footer from "@/components/layout/Footer";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
 import InterativeLink from "@/components/common/InterativeLink";
+import ClientScripts from "@/components/common/ClientScripts";
 
 export const metadata: Metadata = {
   title: "Volvrit",
@@ -29,6 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <ClientScripts />
+      </head>
       <body className={`relative ${raleway.className}`}>
         <Navbar />
         <div className="min-h-screen">
