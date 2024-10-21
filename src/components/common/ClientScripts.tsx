@@ -25,6 +25,23 @@ const ClientScripts = () => {
           style={{ display: "none", visibility: "hidden" }}
         ></iframe>
       </noscript>
+      {/* Google Analytics script */}
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-YR3212YYB5"
+        strategy="afterInteractive"
+      />
+      <Script
+        id="google-analytics"
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YR3212YYB5');
+        `,
+        }}
+      />
     </>
   );
 };
