@@ -54,13 +54,13 @@ const cardData = [
     fundingStatus: "SEED FUNDED",
     tags: ["UI/UX", "WEB PORTAL DEVELOPMENT", "CMS", "INDIAN GOVERNMENT NGO"],
   },
-  {
-    href: "https://safewayrssi.com/",
-    image: "/assets/home/safeway.png", // Replace with your image path
-    title: "Safewayrssi",
-    fundingStatus: "SEED FUNDED",
-    tags: ["UI/UX", "WWB DEVELOPMENT", "CMS"],
-  },
+  // {
+  //   href: "https://safewayrssi.com/",
+  //   image: "/assets/home/safeway.png", // Replace with your image path
+  //   title: "Safewayrssi",
+  //   fundingStatus: "SEED FUNDED",
+  //   tags: ["UI/UX", "WWB DEVELOPMENT", "CMS"],
+  // },
   {
     href: "https://keintchifamilysalon.in/",
     image: "/assets/home/keintchi.png", // Replace with your image path
@@ -68,13 +68,13 @@ const cardData = [
     fundingStatus: "SEED FUNDED",
     tags: ["UI/UX", "WEB DEVELOPMENT"],
   },
-  {
-    href: "https://crm.growfortuna.com/",
-    image: "/assets/home/fortuna.png", // Replace with your image path
-    title: "Grow Fortuna",
-    fundingStatus: "SEED FUNDED",
-    tags: ["UI/UX", "WEB DEVELOPMENT", "CRM"],
-  },
+  // {
+  //   href: "https://crm.growfortuna.com/",
+  //   image: "/assets/home/fortuna.png", // Replace with your image path
+  //   title: "Grow Fortuna",
+  //   fundingStatus: "SEED FUNDED",
+  //   tags: ["UI/UX", "WEB DEVELOPMENT", "CRM"],
+  // },
 ];
 
 const CardComponent: React.FC = () => {
