@@ -97,6 +97,14 @@ const Footer = () => {
             >
               Privacy Policy
             </Link>
+            <Link
+              aria-label="Refund Policy"
+              className="hover:underline mt-3 md:mt-0"
+              href="/refund-policy"
+              passHref
+            >
+              Refund Policy
+            </Link>
           </div>
         </div>
       </div>
