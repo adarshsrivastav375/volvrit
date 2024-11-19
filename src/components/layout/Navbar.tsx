@@ -23,6 +23,7 @@ const Navbar = () => {
   useEffect(() => {
     if (
       pathname === "/" ||
+      pathname === "/pay-now" ||
       pathname === "/contact-us" ||
       pathname === "/it-services/blockchain-development" ||
       pathname === "/it-services/mobile-development" ||
