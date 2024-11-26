@@ -40,7 +40,7 @@ const PayNowForm = () => {
       return toast.warn("Please accept the terms and conditions to proceed.");
 
     console.log("Form Data Submitted: ", formData);
-    initiateRazorpayPayment(formData);
+    initiateRazorpayPayment({ ...formData, id: "order_KInHJ7hso9gOlf" });
     // Add your form submission logic here
   };
   return (
