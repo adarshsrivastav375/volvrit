@@ -1,9 +1,10 @@
+
 {
   "name": "volvrit",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 192.168.0.148 -p 3001",
+    "dev": "next dev ",
     "build": "next build",
     "start": "next start -H 192.168.0.148 -p 3001",
     "lint": "next lint"

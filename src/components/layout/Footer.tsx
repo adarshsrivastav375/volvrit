@@ -16,6 +16,7 @@ const Footer = () => {
               technology to drive growth and efficiency for clients all around
               the world.
             </p>
+            <p className="my-5">info@volvrit.com </p>
             <SocialMediaLinks size={25} />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 col-span-3 justify-center lg:justify-between w-full">
@@ -56,8 +57,9 @@ const Footer = () => {
                   <span className="font-bold text-base md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
                     India
                   </span>{" "}
-                  : Building No.9 Plot No.1 Moti Nagar, DLF Industrial Area, New
-                  Delhi, 110015
+                  : PLOT NO. A-1 , 2 ND AND 3RD FLOOR,DLF IND. AREA,NAJAFGARH ROAD,MOTI NAGAR ,NEAR FUN CINEMA ,NEW
+
+DELHI,L. M. Nagar Indl. Area, New Delhi, West Delhi-110015,Delhi
                 </li>
                 <li className="text-sm leading-4 md:text-[10px] lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
                   <span className="font-bold text-base md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
@@ -78,7 +80,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-start md:items-center mt-2 md:mt-10 text-xs 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-left md:text-center lg:text-left text-black">
           <p>
-            Copyright © {new Date().getFullYear()} Volvrit. All rights reserved.
+             © {new Date().getFullYear()} 2024  VARANITI CONSULTANCY SERVICES PRIVATE LIMITED - All Rights Reserved.
           </p>
           <div className="flex flex-col md:flex-row justify-start md:space-x-4">
             <Link
