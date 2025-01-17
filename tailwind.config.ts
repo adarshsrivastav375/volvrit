@@ -47,6 +47,10 @@ const config: Config = {
         "4xl": "2560px", // for screens between 2K and 4K
         "5xl": "3840px", // for 4K screens
       },
+      rotate: {
+        'y-45': 'rotateY(45deg)', // Example for 45 degrees
+        'y-90': 'rotateY(90deg)', // Example for 90 degrees
+      },
     },
   },
   plugins: [],
