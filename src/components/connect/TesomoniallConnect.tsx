@@ -91,7 +91,7 @@ export default function TesomoniallConnect() {
               />
             </span>
 
-            <div className=" text-center relative p-10 px-20 top-[-17rem] lg:left-[-2.5rem]  z-20">
+            <div className=" text-center relative p-10 px-20 top-[-17.3rem] left-[-1rem] lg:left-[-2.5rem]  z-20">
               <h3 className="text-xl font-semibold text-gray-900">
                 Vikram Patel
               </h3>
