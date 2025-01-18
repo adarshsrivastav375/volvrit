@@ -24,9 +24,9 @@ export default function WhyChooseUs() {
     },
   ];
   return (
-    <div className="bg-gray-100 h-auto pb-10 relative">
+    <div className="bg-gray-100 h-[85rem] md:h-[50rem] lg:h-[40rem] lg:min-h-screen pb-10 relative">
       <AnimationBackground />
-      <div className="absolute top-0 z-10 mb-10 text-gray-800 p-6">
+      <div className="absolute top-0 z-10 mb-10 text-gray-800 md:p-6 lg:p-6">
         {" "}
         {/* Your content here */}
         <h1 className="text-4xl font-bold mb-8 mt-8 text-center">Why Choose Us</h1>
@@ -36,10 +36,10 @@ export default function WhyChooseUs() {
           ensures that our Android app development services always surpass
           competitors and deliver unparalleled success for our clients.
         </p>
-        <div className="mt-6 ;g:flex justify-center items-center gap-4 ">
+        <div className="mt-6 md:flex lg:flex justify-center items-center gap-4 ">
           {steps &&
             steps?.map((step,index) => (
-              <div className="bg-transparent p-6  "key={index}>
+              <div className="bg-transparent md:p-6 lg:p-6  "key={index}>
                 {" "}
                 <div className="flex justify-center items-center mx-auto w-44 h-44 rounded-full p-6 border border-gray-800 mb-4">
                   {" "}

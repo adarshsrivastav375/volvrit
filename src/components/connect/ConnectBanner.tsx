@@ -3,7 +3,7 @@ import React from "react";
 
 export default function ConnectBanner() {
   return (
-    <div className="pt-20 relative text-white lg:h-screen md:h-auto lg:min-h-screen lg:pt-28 2xl:pt-56 flex flex-col justify-center items-center">
+    <div className="pt-20 relative text-white lg:h-fit md:h-auto lg:min-h-screen lg:pt-28 2xl:pt-56 flex flex-col justify-center items-center">
       <Image
         priority
         unoptimized
@@ -14,14 +14,14 @@ export default function ConnectBanner() {
         className="bg-violet-950 absolute inset-0 w-full h-full object-cover"
       />
       <div className="min-h-screen z-10 flex items-center justify-center bg-transparent text-white">
-        <div className="container mx-auto lg:px-12">
+        <div className="container mx-auto lg:px-0">
           <div className="flex flex-col md:flex-row items-start justify-between ">
             {/* Left Section */}
             <div className="text-center p-7 md:text-left md:w-3/5">
-              <h1 className="text-4xl md:text-4xl font-bold   mb-4">
+              <h1 className="text-2xl md:text-4xl font-bold   mb-4">
                 Best Mobile App Development Services Company In India
               </h1>
-              <p className="text-lg text-gray-300 mb-6">
+              <p className="lg:text-lg text-gray-300 mb-6">
                 We transform your ideas into powerful, user-friendly mobile
                 applications. Our expertise is in creating innovative and
                 customized apps to meet your specific needs with guaranteed
@@ -33,8 +33,8 @@ export default function ConnectBanner() {
             </div>
 
             {/* Right Section */}
-            <div className="bg-transparent  text-gray-700 p-0 rounded-lg shadow-lg w-full lg:w-2/5 mt-8 md:mt-0 ">
-              <div className="bg-white rounded-xl p-7 w-4/5 mx-auto">
+            <div className="bg-transparent p-5  text-gray-700 lg:p-0 rounded-lg shadow-lg w-full lg:w-2/5 mt-8 md:mt-0 ">
+              <div className="bg-white rounded-xl p-7  mx-auto">
                 <h2 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h2>
                 <form className="">
                   <div className="mb-4 border-b-2 border-gray-300">
