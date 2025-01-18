@@ -1,9 +1,120 @@
+"use client";
+
+import { Post } from "@/utils/api";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
+import { toast } from "react-toastify";
+
+interface FormValues {
+  companyName: string | number | readonly string[] | undefined;
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+  services: string[];
+}
 
 export default function ConnectBanner() {
+  const [formData, setFormData] = useState<FormValues>({
+    name: "",
+    email: "",
+    phone: "",
+    companyName: "",
+    services: [],
+    message: "",
+  });
+
+  const [errors, setErrors] = useState<FormValues>({
+    name: "",
+    phone: "",
+    email: "",
+    companyName: "",
+    services: [],
+    message: "",
+  });
+
+  const servicesOptions = [
+    "App Development",
+    "Web Development",
+    "API Development",
+    "Digital Marketing",
+    "CRM Development",
+    "UI/UX Design",
+  ];
+
+  // Handle input changes
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleServicesChange = (service: string) => {
+    const newServices = formData.services.includes(service)
+      ? formData.services.filter((s) => s !== service)
+      : [...formData.services, service];
+    setFormData({ ...formData, services: newServices });
+  };
+
+  const validateForm = () => {
+    let newErrors: any = {};
+    if (!formData.name) newErrors.name = "Full name is required.";
+    if (!formData.email || !/\S+@\S+\.\S+/.test(formData.email)) {
+      newErrors.email = "A valid email is required.";
+    }
+    // if (formData.services.length === 0) {
+    //   newErrors.services = ["Please select at least one service."];
+    // }
+    if (formData.phone.length < 10) {
+      newErrors.phone = ["Must be at least 10 characters."];
+    }
+    if (formData.message.length < 10) {
+      newErrors.message = ["Please describe your message."];
+    }
+    setErrors(newErrors);
+    return Object.values(newErrors).every((error) => error === "");
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!validateForm()) return;
+    try {
+      setErrors({
+        name: "",
+        email: "",
+        phone: "",
+        companyName: "",
+        services: [],
+        message: "",
+      });
+      const data = {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        companyName:formData.companyName,
+        message: formData.message,
+        service: "Development",
+      };
+      const response: any = await Post(
+        "https://crm.volvrit.com/api/contact-us",
+        data
+      );
+      if (response?.message) toast.success(response?.message);
+    } catch (error) {
+      console.error("Form submission error:", error);
+    } finally {
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        companyName: "",
+        services: [],
+        message: "",
+      });
+    }
+  };
   return (
-    <div className="pt-20 relative text-white lg:h-fit md:h-auto lg:min-h-screen lg:pt-28 2xl:pt-56 flex flex-col justify-center items-center">
+    <div className="pt-20 relative text-white lg:h-fit md:h-auto lg:min-h-screen lg:pt-28 2xl:pt-56 flex flex-col justify-center items-center px-10">
       <Image
         priority
         unoptimized
@@ -34,56 +145,100 @@ export default function ConnectBanner() {
 
             {/* Right Section */}
             <div className="bg-transparent p-5  text-gray-700 lg:p-0 rounded-lg shadow-lg w-full lg:w-2/5 mt-8 md:mt-0 ">
-              <div className="bg-white rounded-xl p-7  mx-auto">
-                <h2 className="text-2xl font-semibold mb-6">Let&apos;s Connect</h2>
-                <form className="">
+              <div className="bg-white rounded-xl p-7  mx-auto ">
+                <h2 className="text-2xl font-semibold mb-6">
+                  Let&apos;s Connect
+                </h2>
+                <form className="" onSubmit={handleSubmit}>
                   <div className="mb-4 border-b-2 border-gray-300">
                     <label className="block text-xs font-medium ">
                       Your Name
                     </label>
                     <input
-                      type="text"
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       className="w-full text-xs  px-4 py-1 border-none bg-transparent text-gray-700 focus:outline-none"
                       placeholder="Enter your name"
                     />
+                    {errors.name && (
+                      <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                    )}
                   </div>
                   <div className="mb-4 border-b-2 border-gray-300">
                     <label className="block text-xs font-medium">
                       Your Email
                     </label>
                     <input
-                      type="email"
+                      id="email"
+                      name="email"
+                      type="text"
+                      value={formData.email}
+                      onChange={handleChange}
                       className="w-full text-xs px-4 py-1 rounded-md bg-transparent text-gray-700 focus:outline-none "
                       placeholder="Enter your email"
                     />
+                    {errors.email && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.email}
+                      </p>
+                    )}
                   </div>
                   <div className="mb-4 border-b-2 border-gray-300">
                     <label className="block text-xs font-medium">
                       Company Name
                     </label>
                     <input
+                      id="companyName"
+                      name="companyName"
                       type="text"
+                      value={formData.companyName}
+                      onChange={handleChange}
                       className="w-full text-xs px-4 py-1 rounded-md bg-transparent text-gray-700 focus:outline-none"
                       placeholder="Enter your company name"
                     />
+                    {errors.companyName && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.companyName}
+                      </p>
+                    )}
                   </div>
                   <div className="mb-4 border-b-2 border-gray-300">
                     <label className="block text-xs font-medium ">
                       Your Mobile Number
                     </label>
                     <input
-                      type="text"
+                      id="phone"
+                      name="phone"
+                      type="number"
+                      value={formData.phone}
+                      onChange={handleChange}
                       className="w-full px-4 text-xs py-1 rounded-md bg-transparent text-gray-700 focus:outline-none"
                       placeholder="Enter your mobile number"
                     />
+                    {errors.phone && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.phone}
+                      </p>
+                    )}
                   </div>
                   <div className="mb-4 border-b-2 border-gray-300 ">
                     <label className="block text-xs font-medium">Message</label>
                     <input
+                      id="message"
+                      name="message"
                       type="text"
+                      value={formData.message}
+                      onChange={handleChange}
                       className="w-full px-4 text-xs py-1 rounded-md bg-transparent text-gray-700 focus:outline-none"
                       placeholder="Enter your message"
                     />
+                    {errors.message && (
+                      <p className="text-red-500 text-sm mt-1">
+                        {errors.message}
+                      </p>
+                    )}
                   </div>
                   <button
                     type="submit"

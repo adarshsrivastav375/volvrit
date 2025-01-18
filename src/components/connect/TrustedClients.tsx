@@ -4,6 +4,7 @@
 import React, { useState, useEffect } from "react";
 import { trustedClient } from "../home/OurPartners";
 import { IoArrowBack, IoArrowForward } from "react-icons/io5";
+import Image from "next/image";
 
 const TrustedClientsGridCarousel: React.FC = () => {
   const clients = [
@@ -32,7 +33,7 @@ const TrustedClientsGridCarousel: React.FC = () => {
       );
     }, 3000); // Slide every 3 seconds
     return () => clearInterval(interval);
-  }, [trustedClient.length]);
+  }, []);
 
   // Calculate the visible logos
   const visibleClients = [...trustedClient, ...trustedClient].slice(
@@ -51,7 +52,9 @@ const TrustedClientsGridCarousel: React.FC = () => {
                 key={index}
                 className="flex justify-center items-center p-4 border-none"
               >
-                <img
+                <Image
+                  width={100}
+                  height={12}
                   src={client.imageUrl}
                   alt={client.title}
                   className="max-h-12 max-w-full object-contain"
@@ -73,7 +76,7 @@ const TrustedClientsGridCarousel: React.FC = () => {
               className="absolute left-0 top-1/2 transform -translate-y-1/6 hover:bg-gray-100 p-2 rounded-full  focus:outline-none z-10"
               aria-label="Previous"
             >
-              <IoArrowBack width={15 } height={20} />
+              <IoArrowBack width={15} height={20} />
             </button>
             <button
               onClick={() =>

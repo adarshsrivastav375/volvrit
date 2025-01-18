@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface Service {
@@ -67,7 +68,9 @@ const OurServices: React.FC = () => {
               <span className="inline-block h-24 w-44 absolute items-center rotate-[-35deg] rounded-full right-[-5%] top-[-15%] group-hover:top-0 group-hover:right-0  group-hover:scale-[4.5] transition-transform ease-in-out bg-[#7187FF] px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"></span>
               <span className="inline-block h-24 w-40 absolute items-center rotate-[-35deg] rounded-full right-[-12%] top-[-15%] group-hover:top-[110%] group-hover:right-[-12%]  group-hover:scale-[3] transition-transform ease-in-out bg-[#DDE2FF] px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"></span>
               <div className="w-16 h-16 flex items-center z-10 justify-center bg-transparent border group-hover:border-white rounded-full mb-4">
-                <img
+                <Image
+                  width={8}
+                  height={8}
                   src={service.icon}
                   alt={service.title}
                   className="w-8 h-8 object-contain"
@@ -76,7 +79,9 @@ const OurServices: React.FC = () => {
               <h3 className="text-xl font-semibold group-hover:text-white text-gray-800 mb-2 z-10">
                 {service.title}
               </h3>
-              <p className="text-gray-600 group-hover:text-white z-10">{service.description}</p>
+              <p className="text-gray-600 group-hover:text-white z-10">
+                {service.description}
+              </p>
             </div>
           ))}
         </div>
