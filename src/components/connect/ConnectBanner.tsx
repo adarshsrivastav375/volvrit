@@ -2,7 +2,9 @@
 
 import { Post } from "@/utils/api";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
+import { IoCall } from "react-icons/io5";
 import { toast } from "react-toastify";
 
 interface FormValues {
@@ -138,9 +140,9 @@ export default function ConnectBanner() {
                 customized apps to meet your specific needs with guaranteed
                 smooth performance and an exceptional user experience.
               </p>
-              <button className="bg-white text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
-                Book a free demo ↗
-              </button>
+              <Link href="tel:+919889988909" className="bg-white  bg-gradient-to-r from-purple-500 to-blue-500 flex justify-center items-center w-44 text-gray-50 px-1 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+                 <IoCall className="text-white text-2xl mx-1" width={25} height={25} />Make a call
+              </Link>
             </div>
 
             {/* Right Section */}
