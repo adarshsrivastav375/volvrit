@@ -26,7 +26,7 @@ const HeroSection = () => {
         className="bg-violet-950 absolute inset-0 w-full h-full object-cover"
       />
       <div className="relative z-10 text-center px-4 md:px-6 lg:px-20 md:py-20 lg:py-0">
-        <h1 className="text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-8xl font-semibold mx-auto mb-5">
+        <h1 className="text-4xl lg:text-5xl 2xl:text-7xl 3xl:text-8cxl font-semibold mx-auto mb-5">
           Web Designing & Development
           <br /> Digital marketing & Mobile App&apos;s
         </h1>

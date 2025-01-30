@@ -4,7 +4,7 @@ import { Post } from "@/utils/api";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { IoCall } from "react-icons/io5";
+import { IoArrowUpCircleOutline, IoCall } from "react-icons/io5";
 import { toast } from "react-toastify";
 
 interface FormValues {
@@ -16,7 +16,7 @@ interface FormValues {
   services: string[];
 }
 
-export default function ConnectBanner() {
+export default function ConnectBanner2() {
   const [formData, setFormData] = useState<FormValues>({
     name: "",
     email: "",
@@ -93,7 +93,7 @@ export default function ConnectBanner() {
         name: formData.name,
         phone: formData.phone,
         email: formData.email,
-        companyName:formData.companyName,
+        companyName: formData.companyName,
         message: formData.message,
         service: "Development",
       };
@@ -122,32 +122,36 @@ export default function ConnectBanner() {
         unoptimized
         width={100}
         height={100}
-        alt="Home page Bannr"
-        src="/assets/home/banner.jpg"
-        className="bg-violet-950 absolute inset-0 w-full h-full object-cover"
+        alt="Home page Banner"
+        src="/assets/banners/banner_bg.svg"
+        className="bg-gray-50 absolute inset-0 blur-[0.7px] w-full h-full bg-center object-cover"
       />
-      <div className="min-h-screen z-10 flex items-center justify-center bg-transparent text-white">
+      <div className="min-h-[90vh] z-10 flex items-center justify-center bg-transparent text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-pink-500">
         <div className="container mx-auto lg:px-0">
-          <div className="flex flex-col md:flex-row items-start justify-between ">
+          <div className="flex flex-col md:flex-row items-start justify-around">
             {/* Left Section */}
-            <div className="text-center p-7 md:text-left md:w-3/5">
-              <h1 className="text-2xl md:text-4xl font-bold   mb-4">
-                Best Mobile App Development Services Company In India
-              </h1> 
-              <p className="lg:text-lg text-gray-300 mb-6">
-                We transform your ideas into powerful, user-friendly mobile
-                applications. Our expertise is in creating innovative and
-                customized apps to meet your specific needs with guaranteed
-                smooth performance and an exceptional user experience.
-              </p>
-              <Link href="tel:+919889988909" className="bg-white  bg-gradient-to-r from-purple-500 to-blue-500 flex justify-center items-center w-44 text-gray-50 px-1 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
-                 <IoCall className="text-white text-2xl mx-1" width={25} height={25} />Make a call
+            <div className="text-center pl-10 p-2 md:text-left md:w-2/5">
+              <h1 className="text-[48px] md:text-[48px] font-bold leading-[3.5rem]      mb-4">
+                Your One-Stop Solution for Website, Web App, and Mobile App
+                Development
+              </h1>
+
+              <Link
+                href="tel:+919889988909"
+                className="bg-white flex justify-center items-center border-2  w-40 text-gray-700 px-1 py-3  rounded-full font-semibold hover:bg-gray-200 transition"
+              >
+                Contact Us
+                <IoArrowUpCircleOutline
+                  className="text-gray-900 rotate-45 text-2xl ml-1"
+                  width={25}
+                  height={25}
+                />
               </Link>
             </div>
 
             {/* Right Section */}
-            <div className="bg-transparent p-5  text-gray-700 lg:p-0 rounded-lg shadow-lg w-full lg:w-2/5 mt-8 md:mt-0 ">
-              <div className="bg-white rounded-xl p-7  mx-auto ">
+            <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-5  text-gray-50 lg:p-0 rounded-lg shadow-lg w-full lg:w-2/5 mt-8 md:mt-0 ">
+              <div className="bg-transparent  rounded-xl p-7  mx-auto ">
                 <h2 className="text-2xl font-semibold mb-6">
                   Let&apos;s Connect
                 </h2>
@@ -161,11 +165,12 @@ export default function ConnectBanner() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full text-xs  px-4 py-1 border-none bg-transparent text-gray-700 focus:outline-none"
-                      placeholder="Enter your name"
+                      className="w-full text-xs  px-4 py-1 border-none bg-transparent text-gray-50 focus:outline-none"
                     />
                     {errors.name && (
-                      <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+                      <p className="text-gray-200 text-sm mt-1">
+                        {errors.name}
+                      </p>
                     )}
                   </div>
                   <div className="mb-4 border-b-2 border-gray-300">
@@ -178,11 +183,10 @@ export default function ConnectBanner() {
                       type="text"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full text-xs px-4 py-1 rounded-md bg-transparent text-gray-700 focus:outline-none "
-                      placeholder="Enter your email"
+                      className="w-full text-xs px-4 py-1 rounded-md bg-transparent text-gray-50 focus:outline-none "
                     />
                     {errors.email && (
-                      <p className="text-red-500 text-sm mt-1">
+                      <p className="text-gray-200 text-sm mt-1">
                         {errors.email}
                       </p>
                     )}
@@ -197,11 +201,10 @@ export default function ConnectBanner() {
                       type="text"
                       value={formData.companyName}
                       onChange={handleChange}
-                      className="w-full text-xs px-4 py-1 rounded-md bg-transparent text-gray-700 focus:outline-none"
-                      placeholder="Enter your company name"
+                      className="w-full text-xs px-4 py-1 rounded-md bg-transparent text-gray-50 focus:outline-none"
                     />
                     {errors.companyName && (
-                      <p className="text-red-500 text-sm mt-1">
+                      <p className="text-gray-200 text-sm mt-1">
                         {errors.companyName}
                       </p>
                     )}
@@ -216,11 +219,10 @@ export default function ConnectBanner() {
                       type="number"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full px-4 text-xs py-1 rounded-md bg-transparent text-gray-700 focus:outline-none"
-                      placeholder="Enter your mobile number"
+                      className="w-full px-4 text-xs py-1 rounded-md bg-transparent text-gray-50 focus:outline-none"
                     />
                     {errors.phone && (
-                      <p className="text-red-500 text-sm mt-1">
+                      <p className="text-gray-200 text-sm mt-1">
                         {errors.phone}
                       </p>
                     )}
@@ -233,18 +235,17 @@ export default function ConnectBanner() {
                       type="text"
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 text-xs py-1 rounded-md bg-transparent text-gray-700 focus:outline-none"
-                      placeholder="Enter your message"
+                      className="w-full px-4 text-xs py-1 rounded-md bg-transparent text-gray-5 0 focus:outline-none"
                     />
                     {errors.message && (
-                      <p className="text-red-500 text-sm mt-1">
+                      <p className="text-gray-200 text-sm mt-1">
                         {errors.message}
                       </p>
                     )}
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-purple-500 to-blue-500 py-2 rounded-full font-semibold text-white hover:opacity-90 transition"
+                    className="w-full  py-2 rounded-full font-semibold bg-gray-50 text-gray-800 hover:opacity-90 transition"
                   >
                     Submit ↗
                   </button>
