@@ -1,14 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { IoArrowUpCircleOutline } from "react-icons/io5";
 
 export default function WhyWeAreBest() {
   return (
-    <div className="container max-w-7xl m-auto lg:p-10 flex">
-      <div className="w-1/5">
-        <h2 className="lg:text-3xl">What We Are Best</h2>
-        <p>
+    <div className="container max-w-7xl m-auto lg:p-16 flex justify-center items-center">
+      <div className="w-2/5">
+        <h2 className="lg:text-3xl mb-8">Why We Are Best</h2>
+        <p className="w-4/5 leading-7">
           We design and deliver top-tier Android apps using cutting-edge
           technology, ensuring innovative, high-performance solutions that
           outpace competitors and drive exceptional success for our clients

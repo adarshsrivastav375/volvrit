@@ -1,8 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-import { Bricolage_Grotesque } from "next/font/google";
+import { Bricolage_Grotesque, Nunito, Poppins } from "next/font/google";
 
+const nunito = Nunito({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  style: ["normal"],
+  display: "swap",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  style: ["normal"],
+  display: "swap",
+});
 const raleway = Bricolage_Grotesque({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],
@@ -33,7 +45,9 @@ export default function RootLayout({
       <head>
         <ClientScripts />
       </head>
-      <body className={`relative ${raleway.className}`}>
+      <body
+        className={`relative ${raleway.className} ${nunito.className} ${poppins.className}}`}
+      >
         <Navbar />
         <div className="min-h-screen">
           <main>{children}</main>

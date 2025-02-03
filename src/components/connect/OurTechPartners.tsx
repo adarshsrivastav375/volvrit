@@ -49,10 +49,10 @@ const OurTechPartners: React.FC = () => {
   return (
     <section className="py-12 bg-white">
       <div className="w-full lg:w-full mt-8 lg:mt-0 lg:pl-12  text-left">
-        <h2 className="text-3xl  tracking-tight text-gray-900">
+        <h2 className="text-3xl mb-4  tracking-tight text-gray-900">
           Our tech partners
         </h2>
-        <p className="text-sm tracking-tight text-gray-900">
+        <p className="">
           Advanced technology platforms and software have given our development
           services a quality edge over competition, ensuring that these Android
           apps meet the gold standard of excellence in performance for client

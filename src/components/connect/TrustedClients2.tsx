@@ -69,11 +69,29 @@ const TrustedClients2: React.FC = () => {
   return (
     <section className="py-12 bg-white">
       <div className="w-full lg:w-full mt-8 lg:mt-0 lg:pl-12  text-center">
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+        <h2 className="text-2xl relative font-normal tracking-tight text-gray-900">
+          <span>
+            <Image
+              src={"assets/banners/curly-arrow.svg"}
+              width={120}
+              height={120}
+              className=" absolute left-28"
+              alt=""
+            />
+          </span>
+          <span>
+            <Image
+              src={"assets/banners/curly-arrow-2.svg"}
+              width={120}
+              height={120}
+              className=" absolute right-28 "
+              alt=""
+            />
+          </span>
           100% Happy Customers | 10+ Years of experience | 500+ Projects
           Completed
         </h2>
-        <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+        <h2 className="text-2xl font-normal tracking-tight text-gray-900">
           Join <span className="text-purple-600">500+</span> Happy Customers
           From all over the world
         </h2>

@@ -131,11 +131,10 @@ export default function ConnectBanner2() {
           <div className="flex flex-col md:flex-row items-start justify-around">
             {/* Left Section */}
             <div className="text-center pl-10 p-2 md:text-left md:w-2/5">
-              <h1 className="text-[48px] md:text-[48px] font-bold leading-[3.5rem]      mb-4">
+              <h1 className="text-[48px] md:text-[48px] leading-[3.5rem] font-extrabold mb-4">
                 Your One-Stop Solution for Website, Web App, and Mobile App
                 Development
               </h1>
-
               <Link
                 href="tel:+919889988909"
                 className="bg-white flex justify-center items-center border-2  w-40 text-gray-700 px-1 py-3  rounded-full font-semibold hover:bg-gray-200 transition"
@@ -150,10 +149,21 @@ export default function ConnectBanner2() {
             </div>
 
             {/* Right Section */}
-            <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-5  text-gray-50 lg:p-0 rounded-lg shadow-lg w-full lg:w-2/5 mt-8 md:mt-0 ">
+            <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-5  text-gray-50 lg:p-0 rounded-2xl shadow-lg w-full lg:w-2/5 mt-8 md:mt-0 ">
               <div className="bg-transparent  rounded-xl p-7  mx-auto ">
-                <h2 className="text-2xl font-semibold mb-6">
-                  Let&apos;s Connect
+                <h2 className="text-2xl font-semibold flex">
+                  Hello{" "}
+                  <Image
+                    src={"assets/banners/handHii.svg"}
+                    width={20}
+                    height={20}
+                    alt="hand"
+                    className="ml-1"
+                  />
+                </h2>
+                <h2 className="text-sm font-thin mb-6 ">
+                  Got Questions? Talk to our <br />{" "}
+                  <span className="font-bold">Experts</span>
                 </h2>
                 <form className="" onSubmit={handleSubmit}>
                   <div className="mb-4 border-b-2 border-gray-300">
@@ -165,7 +175,7 @@ export default function ConnectBanner2() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full text-xs  px-4 py-1 border-none bg-transparent text-gray-50 focus:outline-none"
+                      className="w-full text-xs  px-4 py-0 border-none bg-transparent text-gray-50 focus:outline-none"
                     />
                     {errors.name && (
                       <p className="text-gray-200 text-sm mt-1">
@@ -183,7 +193,7 @@ export default function ConnectBanner2() {
                       type="text"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full text-xs px-4 py-1 rounded-md bg-transparent text-gray-50 focus:outline-none "
+                      className="w-full text-xs px-4 py-0 rounded-md bg-transparent text-gray-50 focus:outline-none "
                     />
                     {errors.email && (
                       <p className="text-gray-200 text-sm mt-1">
@@ -201,7 +211,7 @@ export default function ConnectBanner2() {
                       type="text"
                       value={formData.companyName}
                       onChange={handleChange}
-                      className="w-full text-xs px-4 py-1 rounded-md bg-transparent text-gray-50 focus:outline-none"
+                      className="w-full text-xs px-4 py-0 rounded-md bg-transparent text-gray-50 focus:outline-none"
                     />
                     {errors.companyName && (
                       <p className="text-gray-200 text-sm mt-1">
@@ -245,9 +255,14 @@ export default function ConnectBanner2() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full  py-2 rounded-full font-semibold bg-gray-50 text-gray-800 hover:opacity-90 transition"
+                    className="w-full flex justify-center items-center py-2 rounded-full font-semibold bg-gray-50 text-gray-800 hover:opacity-90 transition"
                   >
-                    Submit ↗
+                    Submit{" "}
+                    <IoArrowUpCircleOutline
+                      className="text-gray-900 rotate-45 text-2xl ml-1"
+                      width={25}
+                      height={25}
+                    />
                   </button>
                 </form>
               </div>
