@@ -93,9 +93,9 @@ export default function ConnectBanner2() {
         name: formData.name,
         phone: formData.phone,
         email: formData.email,
-        companyName: formData.companyName,
+        company_name: formData.companyName,
         message: formData.message,
-        service: "Development",
+        service: "",
       };
       const response: any = await Post(
         "https://crm.volvrit.com/api/contact-us",
@@ -116,7 +116,7 @@ export default function ConnectBanner2() {
     }
   };
   return (
-    <div className="pt-20 relative text-white lg:h-fit md:h-auto lg:min-h-screen lg:pt-28 2xl:pt-56 flex flex-col justify-center items-center px-10">
+    <div className="pt-20 relative max-w-7xl m-auto text-white lg:h-fit md:h-auto lg:min-h-screen lg:pt-28 2xl:pt-56 flex flex-col justify-center items-center px-1 sm:px-10">
       <Image
         priority
         unoptimized
@@ -130,14 +130,14 @@ export default function ConnectBanner2() {
         <div className="container mx-auto lg:px-0">
           <div className="flex flex-col md:flex-row items-start justify-around">
             {/* Left Section */}
-            <div className="text-center pl-10 p-2 md:text-left md:w-2/5">
-              <h1 className="text-[48px] md:text-[48px] leading-[3.5rem] font-extrabold mb-4">
+            <div className="text-center sm:pl-10 p-2 md:text-left w-full sm:w-2/5">
+              <h1 className="text-[28px] md:text-[48px] leading-[3.5rem] font-extrabold mb-4 lg:text-[48px] 2xl:text-7xl 3xl:text-8cxl ">
                 Your One-Stop Solution for Website, Web App, and Mobile App
                 Development
               </h1>
               <Link
                 href="tel:+919889988909"
-                className="bg-white flex justify-center items-center border-2  w-40 text-gray-700 px-1 py-3  rounded-full font-semibold hover:bg-gray-200 transition"
+                className="bg-white flex justify-center items-center border-2  w-40 m-auto sm:m-0 text-gray-700 px-1 py-3  rounded-full font-semibold hover:bg-gray-200 transition"
               >
                 Contact Us
                 <IoArrowUpCircleOutline
@@ -149,9 +149,9 @@ export default function ConnectBanner2() {
             </div>
 
             {/* Right Section */}
-            <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-5  text-gray-50 lg:p-0 rounded-2xl shadow-lg w-full lg:w-2/5 mt-8 md:mt-0 ">
+            <div className="bg-gradient-to-r from-purple-500 to-blue-500 lg:p-5  text-gray-50 lg:p-0 rounded-2xl shadow-lg w-11/12 m-auto lg:m-0 lg:w-2/5 mt-8 md:mt-0 ">
               <div className="bg-transparent  rounded-xl p-7  mx-auto ">
-                <h2 className="text-2xl font-semibold flex">
+                <h2 className="text-2xl font-semibold flex mb-2">
                   Hello{" "}
                   <Image
                     src={"assets/banners/handHii.svg"}

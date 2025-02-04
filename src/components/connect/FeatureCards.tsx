@@ -35,12 +35,12 @@ export default function FeatureCards() {
   ];
 
   return (
-    <div className="container flex justify-center items-center w-11/12 px-16 mb-10  max-w-7xl m-auto">
+    <div className="container flex-col sm:flex justify-center items-center w-11/12 lg:px-16 mb-10  max-w-7xl m-auto">
       {datas?.map((data, index) => (
         <div
           key={index}
           className={`card border-gray-200 p-4 px-5 flex-col justify-center items-center w-full text-center ${
-            datas.length - 1 === index ? "border-l-2  border-r-2" : "border-l-2 "
+            datas.length - 1 === index ? "lg:border-l-2  lg:border-r-2 border-b-2 border-t-2 lg:border-b-0 lg:border-t-0 " : "border-t-2 lg:border-t-0 lg:border-l-2 "
           }`}
         >
           <h2 className="text-4xl flex items-center justify-center w-full font-mono font-bold ">

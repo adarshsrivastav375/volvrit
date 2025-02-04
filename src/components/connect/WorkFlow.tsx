@@ -3,9 +3,9 @@ import React from "react";
 
 export default function WorkFlow() {
   return (
-    <div className="container mx-w-7xl m-auto lg:px-16">
+    <div className="container max-w-7xl m-auto p-4 lg:p-0 lg:px-16">
       <div>
-        <h2 className="text-3xl mb-4 tracking-tight text-gray-900">Product Development Strategy</h2>
+        <h2 className="text-2xl lg:text-3xl mb-4 tracking-tight text-gray-900">Product Development Strategy</h2>
         <p>
            We develop innovative, scalable, and market-ready solutions using
           innovative technologies in tandem with agile methods and user-focused

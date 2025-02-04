@@ -47,9 +47,9 @@ const OurTechPartners: React.FC = () => {
   };
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-whitem max-w-7xl m-auto p-4 lg:p-0">
       <div className="w-full lg:w-full mt-8 lg:mt-0 lg:pl-12  text-left">
-        <h2 className="text-3xl mb-4  tracking-tight text-gray-900">
+        <h2 className="text-2xl lg:text-3xl mb-4  tracking-tight text-gray-900">
           Our tech partners
         </h2>
         <p className="">

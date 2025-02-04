@@ -5,11 +5,11 @@ import { IoArrowUpCircleOutline } from "react-icons/io5";
 
 export default function WhatWeOffer() {
   return (
-    <div className="container max-w-7xl m-auto lg:p-10">
-      <h2 className="lg:text-3xl">What We Offer</h2>
+    <div className="container max-w-7xl m-auto p-4 lg:p-10">
+      <h2 className="text-xl font-semibold lg:text-3xl">What We Offer</h2>
       <div>
-        <div className="flex justify-start items-center gap-6 max-w-6xl py-4 mx-auto">
-          <div className="bg-gray-100 rounded-lg p-4  shadow-md lg:max-h-44 min-w-56 ">
+        <div className="flex flex-col sm:flex sm:justify-start sm:items-center gap-6 max-w-6xl py-4 mx-auto">
+          <div className="bg-gray-100 rounded-lg p-4 mb-4 lg:m-0 shadow-md lg:max-h-44 min-w-56 ">
             <div className="flex justify-center items-center p-3 border border-gray-900  rounded-full bg-white w-16 h-16 ">
               <Image
                 src={"assets/banners/mobileDev.svg"}
@@ -31,7 +31,7 @@ export default function WhatWeOffer() {
               />
             </Link>
           </div>
-          <div className="bg-gray-100 rounded-lg p-4  shadow-md lg:max-h-44  min-w-56">
+          <div className="bg-gray-100 rounded-lg p-4 mb-4 lg:m-0 shadow-md lg:max-h-44  min-w-56">
             <div className="flex justify-center items-center p-3 border border-gray-900  rounded-full bg-white w-16 h-16 ">
               <Image
                 src={"assets/banners/mobileDev.svg"}
@@ -55,7 +55,7 @@ export default function WhatWeOffer() {
               />
             </Link>
           </div>
-          <div className="bg-gray-100 rounded-lg p-4  shadow-md lg:max-h-44 min-w-56">
+          <div className="bg-gray-100 rounded-lg p-4 mb-4 lg:m-0  shadow-md lg:max-h-44 min-w-56">
             <div className="flex justify-center items-center p-3 border border-gray-900  rounded-full bg-white w-16 h-16 ">
               <Image
                 src={"assets/banners/mobileDev.svg"}
@@ -94,14 +94,14 @@ export default function WhatWeOffer() {
             </p>
           </div>
         </div>
-        <div className="flex justify-end items-center gap-6 max-w-6xl py-4 mx-auto">
-          <div className="bg-transparent absolute left-10 pt-10 pl-5 w-80 ">
+        <div className="flex flex-col-reverse  sm:flex sm:justify-end sm:items-center gap-6 max-w-6xl py-4 mx-auto">
+          <div className="bg-transparent relative left-[-50px] pt-10 pl-5 w-80 ">
          
               {" "}
               <Image
                 src={"assets/banners/curly-arrow-2.svg"}
                 alt=""
-                className="rotate-[-90deg] absolute top-0 right-[-100px] -z-0"
+                className="lg:rotate-[-90deg] absolute top-[-20px] rotate-[180deg] lg:top-0 left-10 lg:right-[-100px] -z-0"
                 width={120}
                 height={120}
               />{" "}
@@ -119,7 +119,7 @@ export default function WhatWeOffer() {
               experience it yourself.
             </p>
           </div>
-          <div className="bg-gray-100 rounded-lg p-4  shadow-md lg:max-h-44 min-w-56 ">
+          <div className="bg-gray-100 rounded-lg p-4 mb-4 lg:m-0 shadow-md lg:max-h-44 min-w-56 ">
             <div className="flex justify-center items-center p-3 border border-gray-900  rounded-full bg-white w-16 h-16 ">
               <Image
                 src={"assets/banners/mobileDev.svg"}
@@ -141,7 +141,7 @@ export default function WhatWeOffer() {
               />
             </Link>
           </div>
-          <div className="bg-gray-100 rounded-lg p-4 min-w shadow-md lg:max-h-44  min-w-56">
+          <div className="bg-gray-100 rounded-lg p-4 mb-4 lg:m-0 min-w shadow-md lg:max-h-44  min-w-56">
             <div className="flex justify-center items-center p-3 border border-gray-900  rounded-full bg-white w-16 h-16 ">
               <Image
                 src={"assets/banners/mobileDev.svg"}
@@ -165,7 +165,7 @@ export default function WhatWeOffer() {
               />
             </Link>
           </div>
-          <div className="bg-gray-100 rounded-lg p-4  shadow-md lg:max-h-44 min-w-56">
+          <div className="bg-gray-100 rounded-lg p-4 mb-4 lg:m-0 shadow-md lg:max-h-44 min-w-56">
             <div className="flex justify-center items-center p-3 border border-gray-900  rounded-full bg-white w-16 h-16 ">
               <Image
                 src={"assets/banners/mobileDev.svg"}

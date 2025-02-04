@@ -2,49 +2,35 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import React from "react";
-import { IoArrowUpCircleOutline } from "react-icons/io5";
+import { IoArrowUpCircleOutline, IoStar } from "react-icons/io5";
 import Image from "next/image";
 import { trustedClient } from "../home/OurPartners";
 
 export default function TestimonialsBanner() {
-  const clients = [
-    { id: 1, name: "Fitness 4 U", logo: "/path/to/logo1.png" },
-    { id: 2, name: "WoodHeaven Interiors", logo: "/path/to/logo2.png" },
-    { id: 3, name: "Unfazed", logo: "/path/to/logo3.png" },
-    { id: 4, name: "Deerghayu", logo: "/path/to/logo4.png" },
-    { id: 5, name: "BooksWagon", logo: "/path/to/logo5.png" },
-    { id: 6, name: "Unifi Cars", logo: "/path/to/logo6.png" },
-    { id: 7, name: "Affinity Salon", logo: "/path/to/logo7.png" },
-    { id: 8, name: "Kingsmen Apparels", logo: "/path/to/logo8.png" },
-    { id: 9, name: "Keintchi Family Salon", logo: "/path/to/logo9.png" },
-    { id: 10, name: "Extra Client 1", logo: "/path/to/logo10.png" },
-    { id: 11, name: "Extra Client 2", logo: "/path/to/logo11.png" },
-    { id: 12, name: "Extra Client 3", logo: "/path/to/logo12.png" },
-  ];
-
+  const bannerImage = "assets/banners/advance2.png";
   // Duplicate clients for infinite scrolling effect
   const scrollingClients = [...trustedClient, ...trustedClient];
 
   return (
     <div
-      className="grid grid-cols-2 gap-4 max-w-7xl m-auto p-10 w-full"
+      className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-7xl m-auto p-4 lg:p-10 w-full"
       style={{
-        backgroundImage: `url(assets/banners/monile.png)`,
+        backgroundImage: `url(${bannerImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <div className="p-6">
-        <h2 className="text-3xl mb-4 bg-blue-700 rounded-full tracking-tight text-gray-100 px-2 w-auto">
+      <div className="lg:p-6">
+        <h2 className="text-lg lg:text-xl mb-4 bg-gradient-to-r from-purple-500 to-blue-500 flex rounded-full tracking-tight text-gray-100 p-3 px-5 w-full lg:w-2/4">
           Hear From Happy Clients
         </h2>
-        <p>
+        <p className=" px-4 lg:p-1 text-lg mb-8">
           We always deploy and use the world’s most powerful technology
           platforms and software for developing and launching Android apps.
         </p>
         <Link
           href="tel:+919889988909"
-          className="bg-gradient-to-r from-purple-500 to-blue-500 flex justify-center items-center border-2  w-40 text-gray-50 px-1 py-3 rounded-full font-semibold hover:bg-gray-200 transition"
+          className="flex justify-center items-center border-2 w-11/12   bg-white text-gray-700 px-1 py-3 rounded-full font-semibold hover:bg-gray-100"
         >
           Contact Us
           <IoArrowUpCircleOutline
@@ -54,7 +40,7 @@ export default function TestimonialsBanner() {
           />
         </Link>
       </div>
-      <div className="relative overflow-hidden py-8 h-80">
+      <div className="relative overflow-hidden py-8 h-[100vh]">
         <motion.div
           className="flex flex-col space-y-6"
           initial={{ y: "0%" }}
@@ -68,19 +54,39 @@ export default function TestimonialsBanner() {
           {scrollingClients.map((client, index) => (
             <div
               key={index}
-              className="h-44 rounded-lg flex justify-center items-center bg-white shadow-md"
+              className="h-fit rounded-2xl flex justify-center items-center bg-[#ffffff30] shadow-md p-4"
             >
-              <div className="w-4/5 rounded-xl bg-gray-50 border border-gray-200 p-2 flex justify-center items-center">
-                <div className="w-96 rounded-xl bg-white">
-                  <div className="h-16 w-16 overflow-hidden border overflow-hidden rounded-full">
+              <div className="w-full rounded-2xl bg-gray-50 border border-gray-200 p-2 flex-col justify-center items-center">
+                <div className="w-96 rounded-x flex justify-start items-center">
+                  <div className="h-14 w-14 overflow-hidden  rounded-full">
                     <Image
-                      src={client.imageUrl}
+                      src={"/assets/banners/google.png"}
                       width={50}
                       height={50}
                       alt={client.title}
                       className="w-full h-full rounded-full object-contain p-2"
                     />
                   </div>
+                  <div className="mx-2">
+                    <h2>Kunal Verma</h2>
+                    <p className="flex items-center justify-start">
+                      <span className="flex items-center mx-2">
+                        {[1, 2, 3, 4, 5].map((index) => {
+                          return <IoStar key={index} width={20} height={20} />;
+                        })}
+                      </span>
+                      <span className="text-gray-600">{"| 6 days ago"}</span>
+                    </p>
+                  </div>
+                </div>
+                <div className="p-5">
+                  <p>
+                    Volvorit delivered an exceptional, responsive, and visually
+                    stunning website. Their team was professional,
+                    communicative, and attentive to our needs. Highly recommend
+                    them for reliable, creative,web development services! Hope
+                    to work on further projects.
+                  </p>
                 </div>
               </div>
             </div>
