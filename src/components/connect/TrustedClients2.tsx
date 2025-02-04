@@ -75,7 +75,7 @@ const TrustedClients2: React.FC = () => {
               src={"assets/banners/curly-arrow.svg"}
               width={120}
               height={120}
-              className=" absolute top-12 sm:left-28"
+              className=" absolute top-10 sm:left-52"
               alt=""
             />
           </span>
@@ -84,14 +84,14 @@ const TrustedClients2: React.FC = () => {
               src={"assets/banners/curly-arrow-2.svg"}
               width={120}
               height={120}
-              className=" absolute top-12 right-0 sm:right-28 "
+              className=" absolute top-10 right-0 sm:right-52 "
               alt=""
             />
           </span>
           100% Happy Customers | 10+ Years of experience | 500+ Projects
           Completed
         </h2>
-        <h2 className="text-xl sm:  text-2xl font-normal tracking-tight text-gray-900">
+        <h2 className="text-xl sm:text-2xl sm:mb-8 font-normal tracking-tight text-gray-900">
           Join <span className="text-purple-600">500+</span> Happy Customers
           From all over the world
         </h2>

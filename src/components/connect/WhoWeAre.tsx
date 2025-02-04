@@ -16,7 +16,25 @@ export default function WhoWeAre() {
         />
         <div className="z-20 bg-[#00000078] lg:min-h-72 lg:p-10 w-full">
           <h2 className="text-3xl p-4">Who We Are</h2>
-          <p className="p-4 pt-0   sm:px-10 sm:py-3">
+          <p className="p-4 pt-0 relative  sm:px-12 sm:py-3">
+            <span>
+              <Image
+                src={"assets/banners/quote2.svg"}
+                width={40}
+                height={40}
+                className=" absolute top-3 sm:left-2"
+                alt=""
+              />
+            </span>
+            <span>
+              <Image
+                src={"assets/banners/quote2.svg"}
+                width={40}
+                height={40}
+                className=" absolute top-3 sm:right-8 rotate-180 "
+                alt=""
+              />
+            </span>
             Since we started in the year 2015, we have achieved a good
             foundation of tech know-how and new ideas. We are good at giving
             real-time advance answers that help businesses do well in a rapidly

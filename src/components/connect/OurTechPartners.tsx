@@ -8,25 +8,21 @@ import { motion } from "framer-motion";
 
 const OurTechPartners: React.FC = () => {
   const clients = [
-    { id: 1, name: "Fitness 4 U", logo: "/path/to/logo1.png" },
-    { id: 2, name: "WoodHeaven Interiors", logo: "/path/to/logo2.png" },
-    { id: 3, name: "Unfazed", logo: "/path/to/logo3.png" },
-    { id: 4, name: "Deerghayu", logo: "/path/to/logo4.png" },
-    { id: 5, name: "BooksWagon", logo: "/path/to/logo5.png" },
-    { id: 6, name: "Unifi Cars", logo: "/path/to/logo6.png" },
-    { id: 7, name: "Affinity Salon", logo: "/path/to/logo7.png" },
-    { id: 8, name: "Kingsmen Apparels", logo: "/path/to/logo8.png" },
-    { id: 9, name: "Keintchi Family Salon", logo: "/path/to/logo9.png" },
-    { id: 10, name: "Extra Client 1", logo: "/path/to/logo10.png" },
-    { id: 11, name: "Extra Client 2", logo: "/path/to/logo11.png" },
-    { id: 12, name: "Extra Client 3", logo: "/path/to/logo12.png" },
+    { id: 1, name: "Android", logo: "/assets/banners/android.svg" },
+    { id: 2, name: "Kotlin", logo: "/assets/banners/kotlin.svg" },
+    { id: 3, name: "FireStore", logo: "/assets/banners/firebase.svg" },
+    { id: 4, name: "Java", logo: "/assets/banners/java.svg" },
+    { id: 5, name: "stream", logo: "/assets/banners/stream.svg" },
+    { id: 6, name: "Google Fit", logo: "/assets/banners/googlefit.svg" },
+    { id: 7, name: "Foot", logo: "/assets/banners/foot.svg" },
+    { id: 8, name: "crom", logo: "/assets/banners/crom.svg" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const visibleItems = 6; // Number of logos visible per row
 
   // Duplicate clients to create the infinite scrolling effect
-  const visibleClients = [...trustedClient, ...trustedClient];
+  const visibleClients = [...clients, ...clients];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -64,8 +60,8 @@ const OurTechPartners: React.FC = () => {
         <div className="relative flex overflow-hidden max-w-screen-xl mx-auto">
           <motion.div
             className="flex space-x-6"
-            initial={{ x: "-50%" }}
-            animate={{ x: "0%" }}
+            initial={{ x: "0%" }}
+            animate={{ x: "-100%" }}
             transition={{
               repeat: Infinity,
               ease: "linear",
@@ -73,10 +69,10 @@ const OurTechPartners: React.FC = () => {
             }}
           >
             {/* Map clients to show in pairs */}
-            {[...trustedClient, ...trustedClient].map((client, index) => (
+            {[...clients, ...clients].map((client, index) => (
               <div key={index} className="flex-shrink-0 w-36 h-20 rounded-lg">
                 <Image
-                  src={client.imageUrl}
+                  src={client.logo}
                   width={150}
                   height={20}
                   alt={`Client ${index + 1}`}

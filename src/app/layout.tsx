@@ -3,18 +3,8 @@ import "./globals.css";
 
 import { Bricolage_Grotesque } from "next/font/google";
 
-// const nunito = Nunito({
-//   subsets: ["latin"],
-//   weight: ["200", "300", "400", "500", "600", "700", "800"],
-//   style: ["normal"],
-//   display: "swap",
-// });
-// const poppins = Poppins({
-//   subsets: ["latin"],
-//   weight: ["200", "300", "400", "500", "600", "700", "800"],
-//   style: ["normal"],
-//   display: "swap",
-// });
+
+
 const raleway = Bricolage_Grotesque({
   subsets: ["latin"],
   weight: ["200", "300", "400", "500", "600", "700", "800"],

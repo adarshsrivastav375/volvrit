@@ -1,5 +1,12 @@
+import { Poppins } from "next/font/google";
 import React from "react";
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700", "800"],
+  style: ["normal"],
+  display: "swap",
+});
 export default function FeatureCards() {
   const datas = [
     {
@@ -35,7 +42,7 @@ export default function FeatureCards() {
   ];
 
   return (
-    <div className="container flex-col sm:flex sm:flex-row justify-center items-center w-11/12 lg:px-16 mb-10  max-w-7xl m-auto">
+    <div className="container flex-col lg:flex lg:flex-row justify-center items-center w-11/12 lg:px-16 mb-10  max-w-7xl m-auto">
       {datas?.map((data, index) => (
         <div
           key={index}
@@ -43,7 +50,7 @@ export default function FeatureCards() {
             datas.length - 1 === index ? "lg:border-l-2  lg:border-r-2 border-b-2 border-t-2 lg:border-b-0 lg:border-t-0 " : "border-t-2 lg:border-t-0 lg:border-l-2 "
           }`}
         >
-          <h2 className="text-4xl flex items-center justify-center w-full font-mono font-bold ">
+          <h2 className={`text-4xl flex items-center justify-center w-full font-mono ${poppins.className} font-bold `}>
             {data?.value || "4.5"}
             <svg
               width="25"
