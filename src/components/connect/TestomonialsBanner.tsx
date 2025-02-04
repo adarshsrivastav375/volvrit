@@ -1,11 +1,14 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import React from "react";
 import { IoArrowUpCircleOutline, IoStar } from "react-icons/io5";
 import Image from "next/image";
 
-export default function TestimonialsBanner() {
+export default function TestimonialsBanner({
+  setModalOpen,
+}: {
+  setModalOpen: any;
+}) {
   const bannerImage = "assets/banners/advance2.png";
   // Duplicate clients for infinite scrolling effect
   const clients = [
@@ -44,8 +47,10 @@ export default function TestimonialsBanner() {
           We always deploy and use the world’s most powerful technology
           platforms and software for developing and launching Android apps.
         </p>
-        <Link
-          href="tel:+919889988909"
+        <span
+          onClick={() => {
+            setModalOpen(true);
+          }}
           className="flex justify-center items-center border-2 w-11/12   bg-white text-gray-700 px-1 py-3 rounded-full font-semibold hover:bg-gray-100"
         >
           Contact Us
@@ -54,7 +59,7 @@ export default function TestimonialsBanner() {
             width={25}
             height={25}
           />
-        </Link>
+        </span>
       </div>
       <div className="relative overflow-hidden py-8 h-[100vh]">
         <motion.div

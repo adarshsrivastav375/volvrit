@@ -4,9 +4,10 @@ import { Post } from "@/utils/api";
 import { Nunito } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
 import { toast } from "react-toastify";
+import ContactUsModal from "../common/ContactUsModal";
 
 interface FormValues {
   companyName: string | number | readonly string[] | undefined;
@@ -23,7 +24,11 @@ const nunito = Nunito({
   style: ["normal"],
   display: "swap",
 });
-export default function ConnectBanner2() {
+export default function ConnectBanner2({
+  setModalOpen,
+}: {
+  setModalOpen: any;
+}) {
   const [formData, setFormData] = useState<FormValues>({
     name: "",
     email: "",
@@ -122,6 +127,7 @@ export default function ConnectBanner2() {
       });
     }
   };
+
   return (
     <div className="pt-20 relative max-w-7xl m-auto text-white lg:h-fit md:h-auto lg:min-h-screen lg:pt-36 2xl:pt-56 flex flex-col justify-center items-center px-1 sm:p-20">
       <Image
@@ -145,7 +151,10 @@ export default function ConnectBanner2() {
                 Development
               </h1>
               <Link
-                href="tel:+919889988909"
+                href={""}
+                onClick={() => {
+                  setModalOpen(true);
+                }}
                 className="bg-white flex justify-center items-center border-2  w-40 mr-auto sm:mr-0 text-gray-700 px-1 py-3  rounded-full font-semibold hover:bg-gray-200 transition"
               >
                 Contact Us

@@ -17,7 +17,7 @@ const Footer = () => {
               the world.
             </p>
             <p className="mb-1">info@volvrit.com </p>
-            <Link href={"mob:+919889988909"} className="mb-5 inline-block" >+91 98899 88909</Link>
+            <Link href={"tel:+919889988909"} className="mb-5 inline-block" >+91 98899 88909</Link>
             <SocialMediaLinks size={25} />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 col-span-3 justify-center lg:justify-between w-full">
