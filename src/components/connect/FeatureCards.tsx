@@ -35,7 +35,7 @@ export default function FeatureCards() {
   ];
 
   return (
-    <div className="container flex-col sm:flex justify-center items-center w-11/12 lg:px-16 mb-10  max-w-7xl m-auto">
+    <div className="container flex-col sm:flex sm:flex-row justify-center items-center w-11/12 lg:px-16 mb-10  max-w-7xl m-auto">
       {datas?.map((data, index) => (
         <div
           key={index}

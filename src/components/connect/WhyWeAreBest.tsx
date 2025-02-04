@@ -4,7 +4,7 @@ import React from "react";
 
 export default function WhyWeAreBest() {
   return (
-    <div className="container max-w-7xl m-auto lg:p-16 flex-col sm:flex justify-center items-center p-4 ">
+    <div className="container max-w-7xl m-auto lg:p-16 flex-col sm:flex sm:flex-row justify-center items-center p-4 ">
       <div className="text-left sm:text-left sm:w-2/5">
         <h2 className="text-2xl lg:text-3xl mb-2 lg:mb-8">Why We Are Best</h2>
         <p className="sm:w-4/5 leading-7">
@@ -14,7 +14,7 @@ export default function WhyWeAreBest() {
         </p>
       </div>
 
-      <div className="flex-col justify-center sm:flex sm:justify-end items-center gap-6 max-w-6xl py-4 mx-auto">
+      <div className="flex-col justify-center sm:flex sm:flex-row sm:justify-end items-center gap-6 max-w-6xl py-4 mx-auto">
         <div className="bg-gray-100 rounded-lg p-4 mb-4 m-auto lg:m-0 shadow-md lg:min-h-72 max-h-72 min-w-56 lg:max-w-56 ">
           <div className="flex justify-center items-center p-3 border border-gray-900  rounded-full bg-white w-16 h-16 ">
             <Image

@@ -1,10 +1,11 @@
 "use client";
 
 import { Post } from "@/utils/api";
+import { Nunito } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import { IoArrowUpCircleOutline, IoCall } from "react-icons/io5";
+import { IoArrowUpCircleOutline } from "react-icons/io5";
 import { toast } from "react-toastify";
 
 interface FormValues {
@@ -131,7 +132,7 @@ export default function ConnectBanner2() {
           <div className="flex flex-col md:flex-row items-start justify-around">
             {/* Left Section */}
             <div className="text-center sm:pl-10 p-2 md:text-left w-full sm:w-2/5">
-              <h1 className="text-[28px] md:text-[48px] leading-[3.5rem] font-extrabold mb-4 lg:text-[48px] 2xl:text-7xl 3xl:text-8cxl ">
+              <h1 className="text-[28px] md:text-[48px] leading-[3.5rem] font-[Nunito] font-extrabold mb-4 lg:text-[48px] 2xl:text-7xl 3xl:text-8cxl ">
                 Your One-Stop Solution for Website, Web App, and Mobile App
                 Development
               </h1>

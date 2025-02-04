@@ -8,7 +8,7 @@ export default function WhatWeOffer() {
     <div className="container max-w-7xl m-auto p-4 lg:p-10">
       <h2 className="text-xl font-semibold lg:text-3xl">What We Offer</h2>
       <div>
-        <div className="flex flex-col sm:flex sm:justify-start sm:items-center gap-6 max-w-6xl py-4 mx-auto">
+        <div className="flex flex-co sm:flex sm:flex-row sm:justify-start sm:items-center gap-6 max-w-6xl py-4 mx-auto">
           <div className="bg-gray-100 rounded-lg p-4 mb-4 lg:m-0 shadow-md lg:max-h-44 min-w-56 ">
             <div className="flex justify-center items-center p-3 border border-gray-900  rounded-full bg-white w-16 h-16 ">
               <Image
@@ -94,7 +94,7 @@ export default function WhatWeOffer() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col-reverse  sm:flex sm:justify-end sm:items-center gap-6 max-w-6xl py-4 mx-auto">
+        <div className="flex flex-col-reverse  sm:flex sm:flex-row sm:justify-end sm:items-center gap-6 max-w-6xl py-4 mx-auto">
           <div className="bg-transparent relative left-[-50px] pt-10 pl-5 w-80 ">
          
               {" "}
