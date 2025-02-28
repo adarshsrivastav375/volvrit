@@ -38,7 +38,7 @@ const testimonials = [
 const Testimonials2 = () => {
   return (
     <div>
-      <div className="max-w-9xl mx-auto pt-8 pb-4 md:pb-8 px-4 md:px-8 lg:px-28 2xl:px-40">
+      <div className="max-w-9xl mx-auto pt-8 pb-4 md:pb-8 px-4 md:px-8 lg:px-16">
         <div className="text-left mb-8 3xl:my-16 4xl:my-20">
           <h2 className="text-2xl md:text-3xl 2xl:text-5xl 3xl:text-6xl 4xl:text-7xl text-gray-50  font-semibold">
             Ready to Step Into the Future?{" "}

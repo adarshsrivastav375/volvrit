@@ -97,7 +97,8 @@ export const Post = async <T>(
     toast.dismiss(); // Dismiss the loading toast
     // toast.success("Data submitted successfully");
     return response.data;
-  } catch (error) {
+  } catch (error:any) {
+    console.log(error?.response?.data?.error?.message)
     toast.dismiss(); // Dismiss the loading toast
     toast.error("Failed to submit data");
     throw error;

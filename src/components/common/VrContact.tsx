@@ -30,25 +30,30 @@ const VrContact = () => {
     if (!formData.email) newErrors.email = "Email is required";
     else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
       newErrors.email = "Invalid email format";
-    if (!formData.phone) newErrors.subject = "Phone is required";
-    if (!formData.companyName) newErrors.subject = "Company Name is required";
+    
+    if (!formData.phone) newErrors.phone = "Phone is required";
+    if (!formData.companyName) newErrors.companyName = "Company Name is required";
     if (!formData.subject) newErrors.subject = "Subject is required";
-    if (!formData.message) newErrors.message = "Message is required";
+    if (!formData.message) {
+      newErrors.message = "Message is required";
+    } else if (formData.message.length < 10) {
+      newErrors.message = "Message must be at least 10 characters long";
+    }
     return newErrors;
   };
-
+  
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!validate()) return;
+  
+    const validationErrors = validate();
+    setErrors(validationErrors);
+  
+    // Stop form submission if there are validation errors
+    if (Object.keys(validationErrors).length > 0) {
+      return;
+    }
+  
     try {
-      setErrors({
-        name: "",
-        email: "",
-        phone: "",
-        companyName: "",
-        services: [],
-        message: "",
-      });
       const data = {
         name: formData.name,
         phone: formData.phone,
@@ -57,25 +62,30 @@ const VrContact = () => {
         message: formData.message,
         service: "Ar Vr",
       };
+  
       const response: any = await Post(
         "https://crm.volvrit.com/api/contact-us",
         data
       );
+  
       if (response?.message) toast.success(response?.message);
-    } catch (error) {
-      console.error("Form submission error:", error);
-    } finally {
+      
+      // Reset form only after successful submission
       setFormData({
         name: "",
         email: "",
         phone: "",
         companyName: "",
-        services: [],
+        subject: "",
         message: "",
       });
+  
       setSubmitted(true);
+    } catch (error) {
+      console.error("Form submission error:", error);
     }
   };
+  
 
   return (
     <div id="contact" className="bg-[#121212] max-w-9xl mx-auto pt-8 pb-4 md:pb-8 px-4 md:px-8 lg:px-28 2xl:px-40">
