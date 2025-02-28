@@ -19,6 +19,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import Toastify styles
 import InterativeLink from "@/components/common/InterativeLink";
 import ClientScripts from "@/components/common/ClientScripts";
+import { nunito, poppins } from "@/data/font";
 
 export const metadata: Metadata = {
   title: "Volvrit",
@@ -36,7 +37,7 @@ export default function RootLayout({
         <ClientScripts />
       </head>
       <body
-        className={`relative ${raleway.className}`}
+        className={`relative ${raleway.className} ${nunito.className} ${poppins.className}`}
       >
         <Navbar />
         <div className="min-h-screen">
