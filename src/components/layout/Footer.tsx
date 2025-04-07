@@ -81,8 +81,7 @@ const Footer = () => {
         </div>
         <div className="flex flex-col md:flex-row gap-3 md:gap-0 justify-between items-start md:items-center mt-2 md:mt-10 text-xs 2xl:text-lg 3xl:text-xl 4xl:text-2xl text-left md:text-center lg:text-left text-black">
           <p>
-            © {new Date().getFullYear()} 2024  VARANITI CONSULTANCY SERVICES
-            PRIVATE LIMITED - All Rights Reserved.
+            © {new Date().getFullYear()} - All Rights Reserved.
           </p>
           <div className="flex flex-col md:flex-row justify-start md:space-x-4">
             <Link

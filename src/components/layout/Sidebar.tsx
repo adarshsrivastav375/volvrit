@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import Logo from "../common/Logo";
-import { services, SidebarTabs } from "@/data/tabs";
 import Accordion from "./FooterAccordion";
 import { IoIosMenu } from "react-icons/io";
 import { useEffect, useState } from "react";
+import { services, SidebarTabs } from "@/data/tabs";
 import SocialMediaLinks from "../common/SocialMediaLinks";
 
 const Sidebar = () => {
@@ -28,9 +28,8 @@ const Sidebar = () => {
   return (
     <div className="relative">
       <div
-        className={`fixed top-0 right-0 h-full bg-white text-primary z-50 transform ${
-          isOpen ? "w-[90%] md:w-3/4" : "w-0"
-        } transition-all duration-500 ease-in-out`}
+        className={`fixed top-0 right-0 h-full bg-white text-primary z-50 transform ${isOpen ? "w-[90%] md:w-3/4" : "w-0"
+          } transition-all duration-500 ease-in-out`}
       >
         <div>
           <div className="flex p-3 shadow-md z-50 justify-between items-center">

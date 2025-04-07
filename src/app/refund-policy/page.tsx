@@ -10,8 +10,7 @@ export default function RefundPolicyPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
           <p className="text-gray-700">
-            At Volvrit (Varaniti Consultancy Services Pvt Ltd), we strive to
-            deliver exceptional website design and development, app development,
+            At Volvrit, we strive to deliver exceptional website design and development, app development,
             software development, and digital marketing services to meet your
             expectations. However, if you are not satisfied with our services,
             we have outlined our refund policy to ensure transparency and
@@ -165,8 +164,7 @@ export default function RefundPolicyPage() {
 
         <section className="mb-8">
           <p className="text-gray-700 text-sm">
-            Volvrit (Varaniti Consultancy Services Pvt Ltd) reserves the right
-            to update or modify this policy at any time without prior notice.
+            Volvrit reserves the right to update or modify this policy at any time without prior notice.
           </p>
         </section>
       </div>
