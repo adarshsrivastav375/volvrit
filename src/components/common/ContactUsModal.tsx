@@ -118,7 +118,7 @@ const ContactUsModal = ({ isOpen, onClose }: any) => {
             <p className="text-sm font-thin mb-6">
              For instant contact, Please tab on call now button.
             </p>
-            <Link href={"tel:+919889988909"} >
+            <Link href={"tel:"} >
               <button
                 onClick={handleThankYouButton}
                 className="w-2/5 m-auto flex justify-center items-center py-2 rounded-full font-semibold bg-gray-50 text-gray-800 hover:opacity-90 transition"

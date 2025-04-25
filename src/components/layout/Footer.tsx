@@ -17,7 +17,7 @@ const Footer = () => {
               the world.
             </p>
             <p className="mb-1">info@volvrit.com </p>
-            <Link href={"tel:+919889988909"} className="mb-5 inline-block" >+91 98899 88909</Link>
+            
             <SocialMediaLinks size={25} />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 col-span-3 justify-center lg:justify-between w-full">
@@ -61,19 +61,6 @@ const Footer = () => {
                   : PLOT NO. A-1 , 2 ND AND 3RD FLOOR,DLF IND. AREA,NAJAFGARH
                   ROAD,MOTI NAGAR ,NEAR FUN CINEMA ,NEW DELHI,L. M. Nagar Indl.
                   Area, New Delhi, West Delhi-110015,Delhi
-                </li>
-                <li className="text-sm leading-4 md:text-[10px] lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
-                  <span className="font-bold text-base md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
-                    Dubai
-                  </span>{" "}
-                  : Al Moosa Tower 18th floor Office no #1804, sheikh zayed
-                  road, Dubai,U.A.E
-                </li>
-                <li className="text-sm leading-4 md:text-[10px] lg:text-base 2xl:text-lg 3xl:text-xl 4xl:text-2xl">
-                  <span className="font-bold text-base md:text-base 2xl:text-xl 3xl:text-2xl 4xl:text-3xl pb-1">
-                    Australia
-                  </span>{" "}
-                  : 31 Tweed St, The Ponds. NSW 2769, Sydney
                 </li>
               </ul>
             </div>

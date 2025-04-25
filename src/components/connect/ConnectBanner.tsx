@@ -140,7 +140,7 @@ export default function ConnectBanner() {
                 customized apps to meet your specific needs with guaranteed
                 smooth performance and an exceptional user experience.
               </p>
-              <Link href="tel:+919889988909" className="bg-white  bg-gradient-to-r from-purple-500 to-blue-500 flex justify-center items-center w-44 text-gray-50 px-1 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+              <Link href="tel:" className="bg-white  bg-gradient-to-r from-purple-500 to-blue-500 flex justify-center items-center w-44 text-gray-50 px-1 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
                  <IoCall className="text-white text-2xl mx-1" width={25} height={25} />Make a call
               </Link>
             </div>
